@@ -9,6 +9,7 @@ function EducationPage() {
       <EduSection
         degree="BACHELOR'S DEGREE, DATA SCIENCE"
         institution="Igor Sikorsky Kyiv Polytechnic Institute"
+        institutionLink="https://www.linkedin.com/school/national-technical-university-of-ukraine-'kyiv-pol/"
         startDate="SEP 2016"
         endDate="JUN 2020"
         courses={
@@ -27,6 +28,7 @@ function EducationPage() {
       <EduSection
         degree="MASTER'S DEGREE, DATA SCIENCE"
         institution="Igor Sikorsky Kyiv Polytechnic Institute"
+        institutionLink="https://www.linkedin.com/school/national-technical-university-of-ukraine-'kyiv-pol/"
         startDate="SEP 2020"
         endDate="JUN 2022"
         courses={
