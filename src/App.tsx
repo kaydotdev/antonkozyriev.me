@@ -4,6 +4,7 @@ import {
 } from '@mantine/core';
 import Social from './Social';
 import EducationPage from './EducationPage';
+import WorkExperiencePage from './WorkExperiencePage';
 import profile from './static/profile.png';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       </Blockquote>
       <Space h="xl" />
       <EducationPage />
+      <WorkExperiencePage />
     </Container>
   );
 }
