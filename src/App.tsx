@@ -3,6 +3,7 @@ import {
   Grid, Blockquote, Image, Divider
 } from '@mantine/core';
 import Social from './Social';
+import EducationPage from './EducationPage';
 import profile from './static/profile.png';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <Container>
-      <Divider size={10} color="blue" />
+      <Divider size={10} color="dark" />
       <Space h="xl" />
       <Grid columns={24}>
         <Grid.Col span={12} style={styles.header as React.CSSProperties}>
@@ -43,6 +44,8 @@ function App() {
         Features that motivate me to develop are unique and challenging tasks, discoveries, and friendly team members.
         My strengths are <strong>ideation</strong>, <strong>perfectionism</strong>, competitiveness, persistence, and focusing on the final result.
       </Blockquote>
+      <Space h="xl" />
+      <EducationPage />
     </Container>
   );
 }
