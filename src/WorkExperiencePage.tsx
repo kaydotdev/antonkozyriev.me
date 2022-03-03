@@ -11,7 +11,7 @@ function WorkExperiencePage() {
 
     return (
         <div>
-            <Title order={3}>Work experience</Title>
+            <Title order={2}>Work experience</Title>
             <Divider size="sm" color="dark" />
             <Space h="xs" />
             <Grid gutter="xl">

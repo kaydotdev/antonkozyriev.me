@@ -3,6 +3,7 @@ import {
   Grid, Blockquote, Image, Divider
 } from '@mantine/core';
 import Social from './Social';
+import SkillsPage from './SkillsPage';
 import EducationPage from './EducationPage';
 import WorkExperiencePage from './WorkExperiencePage';
 import profile from './static/profile.png';
@@ -46,6 +47,7 @@ function App() {
         My strengths are <strong>ideation</strong>, <strong>perfectionism</strong>, competitiveness, persistence, and focusing on the final result.
       </Blockquote>
       <Space h="xl" />
+      <SkillsPage />
       <EducationPage />
       <WorkExperiencePage />
     </Container>

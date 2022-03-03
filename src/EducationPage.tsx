@@ -3,7 +3,7 @@ import EduSection from './EduSection';
 
 function EducationPage() {
     return (<div>
-      <Title order={3}>Education</Title>
+      <Title order={2}>Education</Title>
       <Divider size="sm" color="dark" />
       <Space h="xs" />
       <EduSection
