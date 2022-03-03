@@ -65,9 +65,9 @@ function App() {
           </Group>
           <Space h="xs" />
           <Blockquote cite="My summary">
-            I'm a Ukrainian graduate student interested in the field of Web technologies and Big Data.
+            I'm a Ukrainian graduate student interested in Web technologies and Big Data.
             Features that motivate me to develop are unique and challenging tasks, discoveries, and friendly team members.
-            My strengths are <strong>ideation</strong>, <strong>perfectionism</strong>, competitiveness, persistence, and focusing on the final result.
+            My strengths are <strong>creativity</strong>, <strong>perfectionism</strong>, <strong>competitiveness</strong>, <strong>persistence</strong>, and <strong>focusing on the final result</strong>.
           </Blockquote>
           <Space h="xl" />
           <EducationPage />
