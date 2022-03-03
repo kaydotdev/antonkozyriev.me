@@ -3,9 +3,13 @@ import {
   Grid, Blockquote, Image, Divider,
   Group, Badge
 } from '@mantine/core';
+import { useState } from 'react';
+import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
 import Social from './Social';
 import EducationPage from './EducationPage';
 import WorkExperiencePage from './WorkExperiencePage';
+import ThemeSwitch from './ThemeSwitch';
+
 import profile from './static/profile.png';
 
 function App() {
@@ -29,39 +33,48 @@ function App() {
     "Applied mathematics", "Statistics", "Cloud"
   ];
 
+  const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
+  const toggleColorScheme = (value?: ColorScheme) =>
+    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+
   return (
-    <Container>
-      <Divider size={10} color="dark" />
-      <Space h="xl" />
-      <Grid columns={24}>
-        <Grid.Col span={12} style={styles.header as React.CSSProperties}>
-          <Title order={1}>Anton Kozyriev</Title>
-          <Text transform="uppercase">Chief Data Science Officer @ Postello.ai</Text>
-          <Space h="md" />
-          <Social />
-        </Grid.Col>
-        <Grid.Col span={12} style={styles.profilePicWrapper as React.CSSProperties}>
-          <div style={styles.profilePic as React.CSSProperties}>
-            <Image radius="xl" src={profile} alt="profile photo" />
-          </div>
-        </Grid.Col>
-      </Grid>
-      <Space h="xs" />
-      <Group spacing="xs">
-          {skills.map(skill => (
-              <Badge variant="gradient" gradient={{ from: 'indigo', to: 'blue' }}>{skill}</Badge>
-          ))}
-      </Group>
-      <Space h="xs" />
-      <Blockquote cite="My summary">
-        I'm a Ukrainian graduate student interested in the field of Web technologies and Big Data.
-        Features that motivate me to develop are unique and challenging tasks, discoveries, and friendly team members.
-        My strengths are <strong>ideation</strong>, <strong>perfectionism</strong>, competitiveness, persistence, and focusing on the final result.
-      </Blockquote>
-      <Space h="xl" />
-      <EducationPage />
-      <WorkExperiencePage />
-    </Container>
+    <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
+      <MantineProvider theme={{ colorScheme }} withGlobalStyles>
+        <Container>
+          <ThemeSwitch />
+          <Divider size={10} color="dark" />
+          <Space h="xl" />
+          <Grid columns={24}>
+            <Grid.Col span={12} style={styles.header as React.CSSProperties}>
+              <Title order={1}>Anton Kozyriev</Title>
+              <Text transform="uppercase">Chief Data Science Officer @ Postello.ai</Text>
+              <Space h="md" />
+              <Social />
+            </Grid.Col>
+            <Grid.Col span={12} style={styles.profilePicWrapper as React.CSSProperties}>
+              <div style={styles.profilePic as React.CSSProperties}>
+                <Image radius="xl" src={profile} alt="profile photo" />
+              </div>
+            </Grid.Col>
+          </Grid>
+          <Space h="xs" />
+          <Group spacing="xs">
+              {skills.map(skill => (
+                  <Badge variant="gradient" gradient={{ from: 'indigo', to: 'blue' }}>{skill}</Badge>
+              ))}
+          </Group>
+          <Space h="xs" />
+          <Blockquote cite="My summary">
+            I'm a Ukrainian graduate student interested in the field of Web technologies and Big Data.
+            Features that motivate me to develop are unique and challenging tasks, discoveries, and friendly team members.
+            My strengths are <strong>ideation</strong>, <strong>perfectionism</strong>, competitiveness, persistence, and focusing on the final result.
+          </Blockquote>
+          <Space h="xl" />
+          <EducationPage />
+          <WorkExperiencePage />
+        </Container>
+      </MantineProvider>
+    </ColorSchemeProvider>
   );
 }
 
