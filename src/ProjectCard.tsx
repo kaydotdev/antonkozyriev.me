@@ -1,6 +1,9 @@
-import { Card, Image, Text, Badge, Space, Group } from '@mantine/core';
+import {
+    Card, Image, Text, Badge,
+    Space, Group, Spoiler
+} from '@mantine/core';
 
-type WorkProjectsProps = {
+type ProjectProps = {
     imagePath: string,
     href: string,
     name: string,
@@ -9,7 +12,7 @@ type WorkProjectsProps = {
     description: string,
 }
 
-function WorkProjects(props: WorkProjectsProps) {
+function ProjectCard(props: ProjectProps) {
     return (
         <Card shadow="sm" padding="lg">
             <Card.Section>
@@ -29,9 +32,13 @@ function WorkProjects(props: WorkProjectsProps) {
             <Space h="xs" />
             <Text size="xs" transform="uppercase">{props.dateCaption}</Text>
             <Space h="md" />
-            <Text size="sm" style={{ lineHeight: 1.5, minHeight: "11rem" }}>{props.description}</Text>
+            <Text size="sm" style={{ lineHeight: 1.5, minHeight: 120 }}>
+                <Spoiler maxHeight={90} showLabel="More" hideLabel="Less">
+                    {props.description}
+                </Spoiler>
+            </Text>
         </Card>
     );
 }
 
-export default WorkProjects;
+export default ProjectCard;

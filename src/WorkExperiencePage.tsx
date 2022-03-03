@@ -1,10 +1,9 @@
 import { Space, Title, Divider, Grid } from '@mantine/core';
-import WorkProjects from './WorkProjects';
+import ProjectCard from './ProjectCard';
 
 import PostelloLogo from './static/postello_logo.jpg';
 import NRFULogo from './static/nrfu_logo.jpg';
 import WKLogo from './static/wk_logo.png';
-import GithubLogo from './static/github_logo.png';
 
 function WorkExperiencePage() {
     const gridSpan = 4;
@@ -16,7 +15,7 @@ function WorkExperiencePage() {
             <Space h="xs" />
             <Grid gutter="xl">
                 <Grid.Col span={gridSpan}>
-                    <WorkProjects
+                    <ProjectCard
                         imagePath={PostelloLogo}
                         href="https://app.postello.ai/"
                         name="CHIEF DATA SCIENCE OFFICER – Postello AI"
@@ -26,7 +25,7 @@ function WorkExperiencePage() {
                     />
                 </Grid.Col>
                 <Grid.Col span={gridSpan}>
-                    <WorkProjects
+                    <ProjectCard
                         imagePath={NRFULogo}
                         href="https://nrfu.org.ua/en/"
                         name="PROFESSOR ASSISTANT – National Research Foundation of Ukraine"
@@ -36,23 +35,13 @@ function WorkExperiencePage() {
                     />
                 </Grid.Col>
                 <Grid.Col span={gridSpan}>
-                    <WorkProjects
+                    <ProjectCard
                         imagePath={WKLogo}
                         href="https://www.wolterskluwer.com/en/about-us/resources"
                         name="FULLSTACK WEB DEVELOPER – Wolters Kluwer: CRA Wiz SaaS"
                         dateCaption="SEP 2019 – NOV 2020"
                         badges={["Finances", "Web app"]}
                         description="Developed and maintained CRA WizNG SaaS - technology solutions to help you prepare for and ensure compliance. Designed and implemented architecture of database for a particular microservice. Implemented end-to-end functionality for regular request-response features (HTTPS) and real-time features (WebSockets)."
-                    />
-                </Grid.Col>
-                <Grid.Col span={gridSpan}>
-                    <WorkProjects
-                        imagePath={GithubLogo}
-                        href="https://github.com/antonAce"
-                        name="OPENSOURCE CONTRIBUTOR – GitHub"
-                        dateCaption="SEP 2016 – PRESENT"
-                        badges={["Opensource", "Contribution"]}
-                        description="Contributed to Common ML and Calculus Algorithms in TheAlgorithms/C-Sharp. Contributed to Python package freezer brentvollebregt/auto-py-to-exe. Contributed to Python GUI library ChrisKnott/Eel."
                     />
                 </Grid.Col>
             </Grid>    

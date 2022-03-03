@@ -1,9 +1,9 @@
 import {
   Container, Title, Text, Space,
-  Grid, Blockquote, Image, Divider
+  Grid, Blockquote, Image, Divider,
+  Group, Badge
 } from '@mantine/core';
 import Social from './Social';
-import SkillsPage from './SkillsPage';
 import EducationPage from './EducationPage';
 import WorkExperiencePage from './WorkExperiencePage';
 import profile from './static/profile.png';
@@ -23,6 +23,12 @@ function App() {
     }
   }
 
+  const skills = [
+    "Software development", "Natural language processing", "Database management (SQL, NoSQL)",
+    "Big Data", "Feature engineering", "Machine learning", "Deep learning", "Data Visualization",
+    "Applied mathematics", "Statistics", "Cloud"
+  ];
+
   return (
     <Container>
       <Divider size={10} color="dark" />
@@ -41,13 +47,18 @@ function App() {
         </Grid.Col>
       </Grid>
       <Space h="xs" />
+      <Group spacing="xs">
+          {skills.map(skill => (
+              <Badge variant="gradient" gradient={{ from: 'indigo', to: 'blue' }}>{skill}</Badge>
+          ))}
+      </Group>
+      <Space h="xs" />
       <Blockquote cite="My summary">
         I'm a Ukrainian graduate student interested in the field of Web technologies and Big Data.
         Features that motivate me to develop are unique and challenging tasks, discoveries, and friendly team members.
         My strengths are <strong>ideation</strong>, <strong>perfectionism</strong>, competitiveness, persistence, and focusing on the final result.
       </Blockquote>
       <Space h="xl" />
-      <SkillsPage />
       <EducationPage />
       <WorkExperiencePage />
     </Container>
