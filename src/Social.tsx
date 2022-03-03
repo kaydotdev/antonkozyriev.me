@@ -4,10 +4,15 @@ import {
     faFacebook, faKaggle, faTelegram,
     faGithub, faLinkedin, faMedium
 } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Social() {
     return (
         <Group position="left">
+            <ActionIcon
+                component="a" target="_blank" variant="hover" size="xl" radius="lg"
+                rel="noopener noreferrer" href="mailto:anton.kozyriev99@gmail.com?subject=Job offer" color="red"
+            ><FontAwesomeIcon icon={faEnvelope} size="lg" /></ActionIcon>
             <ActionIcon
                 component="a" target="_blank" variant="hover" size="xl" radius="lg"
                 rel="noopener noreferrer" href="https://www.facebook.com/anton.kozyriev" color="blue"
