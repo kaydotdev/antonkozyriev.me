@@ -8,6 +8,7 @@ import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core
 import Social from './Social';
 import EducationPage from './EducationPage';
 import WorkExperiencePage from './WorkExperiencePage';
+import PersonalProjectsPage from './PersonalProjectsPage';
 import ThemeSwitch from './ThemeSwitch';
 
 import profile from './static/profile.png';
@@ -72,6 +73,7 @@ function App() {
           <Space h="xl" />
           <EducationPage />
           <WorkExperiencePage />
+          <PersonalProjectsPage />
         </Container>
       </MantineProvider>
     </ColorSchemeProvider>

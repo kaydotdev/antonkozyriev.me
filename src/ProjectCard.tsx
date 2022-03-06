@@ -1,11 +1,13 @@
+import React from 'react';
 import {
     Card, Image, Text, Badge,
     Space, Group, Spoiler
 } from '@mantine/core';
 
-type ProjectProps = {
+export type ProjectProps = {
     imagePath: string,
     href: string,
+    demoHref?: string;
     name: string,
     dateCaption: string,
     badges: string[],
@@ -14,7 +16,7 @@ type ProjectProps = {
 
 function ProjectCard(props: ProjectProps) {
     return (
-        <Card shadow="sm" padding="lg">
+        <Card shadow="sm" padding="lg" style={{ minHeight: "27rem" }}>
             <Card.Section>
                 <Image src={props.imagePath} height={160} alt="thumbnail" />
             </Card.Section>
@@ -30,10 +32,19 @@ function ProjectCard(props: ProjectProps) {
             </Group>
 
             <Space h="xs" />
-            <Text size="xs" transform="uppercase">{props.dateCaption}</Text>
+            <Group position="apart">
+                <Text size="xs" transform="uppercase">{props.dateCaption}</Text>
+                {
+                    !!props.demoHref ? (
+                        <Text variant="link" component="a" size="xs" href={props.demoHref}>LIVE DEMO</Text>
+                    ) : (<React.Fragment></React.Fragment>)
+                }
+            </Group>
+            
             <Space h="md" />
-            <Text size="sm" style={{ lineHeight: 1.5, minHeight: 120 }}>
-                <Spoiler maxHeight={90} showLabel="More" hideLabel="Less">
+
+            <Text size="sm" style={{ lineHeight: 1.5, minHeight: "2rem" }}>
+                <Spoiler maxHeight={90} showLabel="More" hideLabel="Less">     
                     {props.description}
                 </Spoiler>
             </Text>
