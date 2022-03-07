@@ -29,7 +29,7 @@ function ProjectCard(props: ProjectProps) {
 
             <Group spacing="xs">
                 {props.badges.map(badge => (
-                    <Badge variant="gradient" gradient={{ from: 'indigo', to: 'blue' }}>{badge}</Badge>
+                    <Badge key={badge} variant="gradient" gradient={{ from: 'indigo', to: 'blue' }}>{badge}</Badge>
                 ))}
             </Group>
 
@@ -53,7 +53,7 @@ function ProjectCard(props: ProjectProps) {
                         icon={<FontAwesomeIcon icon={faHashtag}></FontAwesomeIcon>}
                     >
                         {
-                            props.description.map(d => (<List.Item>{d}</List.Item>))
+                            props.description.map(d => (<List.Item key={d}>{d}</List.Item>))
                         }
                     </List>
                 </Spoiler>

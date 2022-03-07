@@ -95,7 +95,11 @@ function PersonalProjectsSection() {
             <Grid gutter="xl">
                 {
                     personalProjectsList.map(
-                        prj => (<Grid.Col span={gridSpan}><ProjectCard {...prj} /></Grid.Col>)
+                        prj => (
+                            <Grid.Col key={prj.name} span={gridSpan}>
+                                <ProjectCard key={prj.name} {...prj} />
+                            </Grid.Col>
+                        )
                     )
                 }
             </Grid>  
