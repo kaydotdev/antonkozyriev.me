@@ -14,6 +14,7 @@ function PersonalProjectsSection() {
     const personalProjectsList: ProjectProps[] = [
         {
             imagePath: GithubLogo,
+            fitImage: true,
             href: "https://github.com/antonAce",
             name: "OPENSOURCE CONTRIBUTOR – GitHub",
             dateCaption: "SEP 2016 – PRESENT",
@@ -38,6 +39,7 @@ function PersonalProjectsSection() {
         },
         {
             imagePath: GradientDescent,
+            fitImage: true,
             href: "https://github.com/antonAce/adaptive-gradient-descent",
             demoHref: "https://colab.research.google.com/github/antonAce/adaptive-gradient-descent/blob/master/gradient_descent.ipynb",
             name: "ADAPTIVE STOCHASTIC GRADIENT DESCENT – Research paper",
@@ -75,6 +77,7 @@ function PersonalProjectsSection() {
         },
         {
             imagePath: TriggergramLogo,
+            fitImage: true,
             href: "https://github.com/antonAce/triggergram",
             demoHref: "https://triggergram.z16.web.core.windows.net/",
             name: "TRIGGERGRAM – A serverless photoalbum online",

@@ -8,6 +8,7 @@ import { faHashtag } from '@fortawesome/free-solid-svg-icons';
 
 export type ProjectProps = {
     imagePath: string,
+    fitImage?: boolean,
     href: string,
     demoHref?: string;
     name: string,
@@ -20,7 +21,7 @@ function ProjectCard(props: ProjectProps) {
     return (
         <Card shadow="sm" padding="lg" style={{ minHeight: "27rem" }}>
             <Card.Section>
-                <Image src={props.imagePath} height={160} alt="thumbnail" />
+                <Image src={props.imagePath} height={160} fit={!props.fitImage ? "cover" : "contain"} alt="thumbnail" />
             </Card.Section>
 
             <Space h="xs" />

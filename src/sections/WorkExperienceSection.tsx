@@ -44,6 +44,7 @@ function WorkExperienceSection() {
                 <Grid.Col span={gridSpan}>
                     <ProjectCard
                         imagePath={WKLogo}
+                        fitImage
                         href="https://www.wolterskluwer.com/en/about-us/resources"
                         name="FULLSTACK WEB DEVELOPER – Wolters Kluwer: CRA Wiz SaaS"
                         dateCaption="SEP 2019 – NOV 2020"
