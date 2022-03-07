@@ -6,6 +6,7 @@ import BlogLogo from '../static/coolengineer_logo.jpg';
 import InAWordLogo from '../static/in_a_word_logo.jpg';
 import GradientDescent from '../static/gradient_descent.png';
 import DashboardLogo from '../static/dashboard_logo.png';
+import TriggergramLogo from '../static/triggergram_logo.png';
 
 function PersonalProjectsSection() {
     const gridSpan = 4;
@@ -53,6 +54,15 @@ function PersonalProjectsSection() {
             dateCaption: "OCT 2021 – NOV 2021",
             badges: ["Dashboard", "Analytics"],
             description: "Collected data via web scraping from popular online platforms: Coursera, Stepik, Udemy, edX, Pluralsight, Alison, FutureLearn, and Skillshare. Developed web crawling bots (Python, Selenium, Zyte.com, Scrapy, Splash). Built map-reduce data processing pipelines (Conda, Jupyter, Apache Spark). Created interactive dashboard for data visualization and reporting (Streamlit, Plotly, Pandas).",
+        },
+        {
+            imagePath: TriggergramLogo,
+            href: "https://github.com/antonAce/triggergram",
+            demoHref: "https://triggergram.z16.web.core.windows.net/",
+            name: "TRIGGERGRAM – A serverless photoalbum online",
+            dateCaption: "AUG 2019 – PRESENT",
+            badges: ["Serverless", "MS Azure"],
+            description: "Developed and maintained an Instagram-like social network for uploading and sharing photos, that is build in top of the serverless architecture using MS Azure cloud provider. Designed and implemented a serverless scalable architecture for the application.",
         }
     ];
 
