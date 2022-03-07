@@ -5,11 +5,11 @@ import {
 } from '@mantine/core';
 import { useState } from 'react';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
-import Social from './Social';
-import EducationPage from './EducationPage';
-import WorkExperiencePage from './WorkExperiencePage';
-import PersonalProjectsPage from './PersonalProjectsPage';
-import ThemeSwitch from './ThemeSwitch';
+import Social from './components/Social';
+import EducationPage from './pages/EducationPage';
+import WorkExperiencePage from './pages/WorkExperiencePage';
+import PersonalProjectsPage from './pages/PersonalProjectsPage';
+import ThemeSwitch from './components/ThemeSwitch';
 
 import profile from './static/profile.png';
 

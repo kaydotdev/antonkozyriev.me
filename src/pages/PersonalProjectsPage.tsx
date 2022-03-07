@@ -1,11 +1,11 @@
 import { Space, Title, Divider, Grid } from '@mantine/core';
-import ProjectCard, { ProjectProps } from './ProjectCard';
+import ProjectCard, { ProjectProps } from '../components/ProjectCard';
 
-import GithubLogo from './static/github_logo.png';
-import BlogLogo from './static/coolengineer_logo.jpg';
-import InAWordLogo from './static/in_a_word_logo.jpg';
-import GradientDescent from './static/gradient_descent.png';
-import DashboardLogo from './static/dashboard_logo.png';
+import GithubLogo from '../static/github_logo.png';
+import BlogLogo from '../static/coolengineer_logo.jpg';
+import InAWordLogo from '../static/in_a_word_logo.jpg';
+import GradientDescent from '../static/gradient_descent.png';
+import DashboardLogo from '../static/dashboard_logo.png';
 
 function PersonalProjectsPage() {
     const gridSpan = 4;

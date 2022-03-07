@@ -1,5 +1,5 @@
 import { Space, Title, Divider } from '@mantine/core';
-import EduSection from './EduSection';
+import EduSection from '../components/EduSection';
 
 function EducationPage() {
     return (<div>

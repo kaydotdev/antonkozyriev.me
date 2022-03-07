@@ -1,7 +1,7 @@
 import { ActionIcon, useMantineColorScheme } from '@mantine/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
-import useScrollPosition from './useScrollPosition';
+import useScrollPosition from '../hooks/useScrollPosition';
 
 function ThemeSwitch() {
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();

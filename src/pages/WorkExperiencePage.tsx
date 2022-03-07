@@ -1,9 +1,9 @@
 import { Space, Title, Divider, Grid } from '@mantine/core';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../components/ProjectCard';
 
-import PostelloLogo from './static/postello_logo.jpg';
-import NRFULogo from './static/nrfu_logo.jpg';
-import WKLogo from './static/wk_logo.png';
+import PostelloLogo from '../static/postello_logo.jpg';
+import NRFULogo from '../static/nrfu_logo.jpg';
+import WKLogo from '../static/wk_logo.png';
 
 function WorkExperiencePage() {
     const gridSpan = 4;
