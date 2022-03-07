@@ -1,3 +1,4 @@
+import React from 'react';
 import { Space, Title, Divider, Grid } from '@mantine/core';
 import ProjectCard from '../components/ProjectCard';
 
@@ -9,7 +10,7 @@ function WorkExperienceSection() {
     const gridSpan = 4;
 
     return (
-        <div>
+        <React.Fragment>
             <Title order={2}>Work experience</Title>
             <Divider size="sm" color="dark" />
             <Space h="xs" />
@@ -56,7 +57,7 @@ function WorkExperienceSection() {
                 </Grid.Col>
             </Grid>    
             <Space h="xl" />
-        </div>
+        </React.Fragment>
     );
 }
 

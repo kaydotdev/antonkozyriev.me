@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, List, Group, Space } from '@mantine/core';
 
 type EducationCardProps = {
@@ -11,7 +12,7 @@ type EducationCardProps = {
 
 function EducationCard(props: EducationCardProps) {
     return (
-        <div>
+        <React.Fragment>
             <Group spacing="xs">
                 <Text weight={700}>{props.degree}</Text>
                 <Text color="gray"> - </Text>
@@ -22,7 +23,7 @@ function EducationCard(props: EducationCardProps) {
             <List withPadding size="xs">
                 {props.courses.map(course => (<List.Item key={course}>{course}</List.Item>))}  
             </List>
-        </div>
+        </React.Fragment>
     );
 }
 

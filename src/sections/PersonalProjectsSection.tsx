@@ -1,3 +1,4 @@
+import React from 'react';
 import { Space, Title, Divider, Grid } from '@mantine/core';
 import ProjectCard, { ProjectProps } from '../components/ProjectCard';
 
@@ -87,7 +88,7 @@ function PersonalProjectsSection() {
     ];
 
     return (
-        <div>
+        <React.Fragment>
             <Title order={2}>Personal projects</Title>
             <Divider size="sm" color="dark" />
             <Space h="xs" />
@@ -99,7 +100,7 @@ function PersonalProjectsSection() {
                 }
             </Grid>  
             <Space h="xl" />
-        </div>
+        </React.Fragment>
     );
 }
 

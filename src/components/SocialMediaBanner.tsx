@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
     Group, ActionIcon, Dialog, Text,
     TextInput, Button, Space, Textarea
@@ -21,7 +21,7 @@ function SocialMediaBanner() {
     };
 
     return (
-        <div>
+        <React.Fragment>
            <Group position="left">
                 <ActionIcon onClick={() => setMailDialogOpened((open) => !open)} variant="hover" size="xl" radius="lg" color="red"
                 ><FontAwesomeIcon icon={faEnvelope} size="lg" /></ActionIcon>
@@ -70,7 +70,7 @@ function SocialMediaBanner() {
 
                 <Button variant="outline" onClick={sendPersonalEmail}>Send</Button>
             </Dialog>
-        </div>
+        </React.Fragment>
     );
 }
 
