@@ -17,7 +17,11 @@ function PersonalProjectsSection() {
             name: "OPENSOURCE CONTRIBUTOR – GitHub",
             dateCaption: "SEP 2016 – PRESENT",
             badges: ["Opensource", "Contribution"],
-            description: "Contributed to Common ML and Calculus Algorithms in TheAlgorithms/C-Sharp. Contributed to Python package freezer brentvollebregt/auto-py-to-exe. Contributed to Python GUI library ChrisKnott/Eel.",
+            description: [
+                "Contributed to Common ML and Calculus Algorithms in TheAlgorithms/C-Sharp.",
+                "Contributed to Python package freezer brentvollebregt/auto-py-to-exe.",
+                "Contributed to Python GUI library ChrisKnott/Eel."
+            ],
         },
         {
             imagePath: BlogLogo,
@@ -26,7 +30,10 @@ function PersonalProjectsSection() {
             name: "PRACTICAL ENGINEERING – Open Telegram Blog",
             dateCaption: "DEC 2017 – JUL 2018",
             badges: ["Telegram", "Blog maintaining"],
-            description: "Developed and maintained a personal blog in Telegram, with the primary topics of Innovations, IoT, AI, and Machine Learning. Wrote articles about IoT, differential equations, and Machine Learning.",
+            description: [
+                "Developed and maintained a personal blog in Telegram, with the primary topics of Innovations, IoT, AI, and Machine Learning.",
+                "Wrote articles about IoT, differential equations, and Machine Learning."
+            ],
         },
         {
             imagePath: GradientDescent,
@@ -35,7 +42,10 @@ function PersonalProjectsSection() {
             name: "ADAPTIVE STOCHASTIC GRADIENT DESCENT – Research paper",
             dateCaption: "OCT 2020 – DEC 2020",
             badges: ["Research", "Scientific paper"],
-            description: "Made research is to compare the efficiency of modern optimization methods on common minimization problems (neural networks, logistic regression). Compared efficiency of standard gradient descent algorithms (Batch GD, Stochastic GD, Mini-batch GD, Momentum, Nesterov GD, ADAGRAD, RMSPROP, ADAM) on applied tasks of ML (TensorFlow, Numpy, Jupyter Notebook, Jupyter Lab, Conda).",
+            description: [
+                "Made research is to compare the efficiency of modern optimization methods on common minimization problems (neural networks, logistic regression).",
+                "Compared efficiency of standard gradient descent algorithms (Batch GD, Stochastic GD, Mini-batch GD, Momentum, Nesterov GD, ADAGRAD, RMSPROP, ADAM) on applied tasks of ML (TensorFlow, Numpy, Jupyter Notebook, Jupyter Lab, Conda)."
+            ],
         },
         {
             imagePath: InAWordLogo,
@@ -44,7 +54,10 @@ function PersonalProjectsSection() {
             name: "IN A WORD BOT – Telegram bot summary generator",
             dateCaption: "FEB 2021 – PRESENT",
             badges: ["Telegram bot", "AI", "Summary"],
-            description: "Developed and maintained a simple Telegram bot for processing articles and massive texts (as a plain text, file, or URL) and generating summary using TF-IDF algorithm and Poiner-Generator Deep Learning model (Python, MongoDB, Redis, Numpy, PyTorch, AIOHTTP/AIOGRAM). Deployed application to MS Azure Cloud service (Azure Functions, Azure Insights, Blob Storage, Queue Storage, Table Storage, Azure Cosmos DB).",
+            description: [
+                "Developed and maintained a simple Telegram bot for processing articles and massive texts (as a plain text, file, or URL) and generating summary using TF-IDF algorithm and Poiner-Generator Deep Learning model (Python, MongoDB, Redis, Numpy, PyTorch, AIOHTTP/AIOGRAM).",
+                "Deployed application to MS Azure Cloud service (Azure Functions, Azure Insights, Blob Storage, Queue Storage, Table Storage, Azure Cosmos DB)."
+            ],
         },
         {
             imagePath: DashboardLogo,
@@ -53,7 +66,11 @@ function PersonalProjectsSection() {
             name: "DATA SCIENCE COURSES INSIGHTS – Interactive dashboard",
             dateCaption: "OCT 2021 – NOV 2021",
             badges: ["Dashboard", "Analytics"],
-            description: "Collected data via web scraping from popular online platforms: Coursera, Stepik, Udemy, edX, Pluralsight, Alison, FutureLearn, and Skillshare. Developed web crawling bots (Python, Selenium, Zyte.com, Scrapy, Splash). Built map-reduce data processing pipelines (Conda, Jupyter, Apache Spark). Created interactive dashboard for data visualization and reporting (Streamlit, Plotly, Pandas).",
+            description: [
+                "Collected data via web scraping from popular online platforms: Coursera, Stepik, Udemy, edX, Pluralsight, Alison, FutureLearn, and Skillshare. Developed web crawling bots (Python, Selenium, Zyte.com, Scrapy, Splash).",
+                "Built map-reduce data processing pipelines (Conda, Jupyter, Apache Spark).",
+                "Created interactive dashboard for data visualization and reporting (Streamlit, Plotly, Pandas)."
+            ],
         },
         {
             imagePath: TriggergramLogo,
@@ -62,7 +79,10 @@ function PersonalProjectsSection() {
             name: "TRIGGERGRAM – A serverless photoalbum online",
             dateCaption: "AUG 2019 – PRESENT",
             badges: ["Serverless", "MS Azure"],
-            description: "Developed and maintained an Instagram-like social network for uploading and sharing photos, that is build in top of the serverless architecture using MS Azure cloud provider. Designed and implemented a serverless scalable architecture for the application.",
+            description: [
+                "Developed and maintained an Instagram-like social network for uploading and sharing photos, that is build in top of the serverless architecture using MS Azure cloud provider.",
+                "Designed and implemented a serverless scalable architecture for the application."
+            ],
         }
     ];
 

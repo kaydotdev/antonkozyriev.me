@@ -1,8 +1,10 @@
 import React from 'react';
 import {
     Card, Image, Text, Badge,
-    Space, Group, Spoiler
+    Space, Group, Spoiler, List
 } from '@mantine/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHashtag } from '@fortawesome/free-solid-svg-icons';
 
 export type ProjectProps = {
     imagePath: string,
@@ -11,7 +13,7 @@ export type ProjectProps = {
     name: string,
     dateCaption: string,
     badges: string[],
-    description: string,
+    description: string[],
 }
 
 function ProjectCard(props: ProjectProps) {
@@ -44,8 +46,16 @@ function ProjectCard(props: ProjectProps) {
             <Space h="md" />
 
             <Text size="sm" style={{ lineHeight: 1.5, minHeight: "2rem" }}>
-                <Spoiler maxHeight={90} showLabel="More" hideLabel="Less">     
-                    {props.description}
+                <Spoiler maxHeight={90} showLabel="More" hideLabel="Less">
+                    <List
+                        spacing="xs"
+                        size="sm"
+                        icon={<FontAwesomeIcon icon={faHashtag}></FontAwesomeIcon>}
+                    >
+                        {
+                            props.description.map(d => (<List.Item>{d}</List.Item>))
+                        }
+                    </List>
                 </Spoiler>
             </Text>
         </Card>

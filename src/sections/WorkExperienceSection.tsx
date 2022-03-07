@@ -21,7 +21,10 @@ function WorkExperienceSection() {
                         name="CHIEF DATA SCIENCE OFFICER – Postello AI"
                         dateCaption="NOV 2021 – PRESENT"
                         badges={["Social media", "AI", "Web app"]}
-                        description="Developed and maintained postello.ai application for generating articles and posts for popular social media platforms using natural language processing toolkit. Designed and implemented architecture for RDS."
+                        description={[
+                            "Developed and maintained postello.ai application for generating articles and posts for popular social media platforms using natural language processing toolkit.",
+                            "Designed and implemented architecture for RDS."
+                        ]}
                     />
                 </Grid.Col>
                 <Grid.Col span={gridSpan}>
@@ -31,7 +34,10 @@ function WorkExperienceSection() {
                         name="PROFESSOR ASSISTANT – National Research Foundation of Ukraine"
                         dateCaption="DEC 2020 – PRESENT"
                         badges={["Research", "Algorithms"]}
-                        description="Assisted in research for gradient descent algorithms."
+                        description={[
+                            "Assisted in research for gradient descent algorithms.",
+                            "Participated as a co-author of a paper on comparing gradient descent algorithms convergence speed."
+                        ]}
                     />
                 </Grid.Col>
                 <Grid.Col span={gridSpan}>
@@ -41,7 +47,11 @@ function WorkExperienceSection() {
                         name="FULLSTACK WEB DEVELOPER – Wolters Kluwer: CRA Wiz SaaS"
                         dateCaption="SEP 2019 – NOV 2020"
                         badges={["Finances", "Web app"]}
-                        description="Developed and maintained CRA WizNG SaaS - technology solutions to help you prepare for and ensure compliance. Designed and implemented architecture of database for a particular microservice. Implemented end-to-end functionality for regular request-response features (HTTPS) and real-time features (WebSockets)."
+                        description={[
+                            "Developed and maintained CRA WizNG SaaS - technology solutions to help you prepare for and ensure compliance.",
+                            "Designed and implemented architecture of database for a particular microservice.",
+                            "Implemented end-to-end functionality for regular request-response features (HTTPS) and real-time features (WebSockets)."
+                        ]}
                     />
                 </Grid.Col>
             </Grid>    
