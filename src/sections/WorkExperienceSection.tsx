@@ -5,7 +5,7 @@ import PostelloLogo from '../static/postello_logo.jpg';
 import NRFULogo from '../static/nrfu_logo.jpg';
 import WKLogo from '../static/wk_logo.png';
 
-function WorkExperiencePage() {
+function WorkExperienceSection() {
     const gridSpan = 4;
 
     return (
@@ -50,4 +50,4 @@ function WorkExperiencePage() {
     );
 }
 
-export default WorkExperiencePage;
+export default WorkExperienceSection;

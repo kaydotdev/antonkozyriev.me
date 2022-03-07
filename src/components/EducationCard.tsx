@@ -1,6 +1,6 @@
 import { Text, List, Group, Space } from '@mantine/core';
 
-type EduSectionProps = {
+type EducationCardProps = {
     degree: string,
     institution: string,
     institutionLink: string,
@@ -9,7 +9,7 @@ type EduSectionProps = {
     courses: string[]
 }
 
-function EduSection(props: EduSectionProps) {
+function EducationCard(props: EducationCardProps) {
     return (
         <div>
             <Group spacing="xs">
@@ -26,4 +26,4 @@ function EduSection(props: EduSectionProps) {
     );
 }
 
-export default EduSection;
+export default EducationCard;

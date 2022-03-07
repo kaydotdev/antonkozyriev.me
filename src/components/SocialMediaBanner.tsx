@@ -10,7 +10,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-function Social() {
+function SocialMediaBanner() {
     const [emailSubject, setEmailSubject] = useState("");
     const [emailMessage, setEmailMessage] = useState("");
     const [mailDialogOpen, setMailDialogOpened] = useState(false);
@@ -74,4 +74,4 @@ function Social() {
     );
 }
 
-export default Social;
+export default SocialMediaBanner;

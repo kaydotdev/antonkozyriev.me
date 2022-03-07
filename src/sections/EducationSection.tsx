@@ -1,12 +1,12 @@
 import { Space, Title, Divider } from '@mantine/core';
-import EduSection from '../components/EduSection';
+import EducationCard from '../components/EducationCard';
 
-function EducationPage() {
+function EducationSection() {
     return (<div>
       <Title order={2}>Education</Title>
       <Divider size="sm" color="dark" />
       <Space h="xs" />
-      <EduSection
+      <EducationCard
         degree="BACHELOR'S DEGREE, DATA SCIENCE"
         institution="Igor Sikorsky Kyiv Polytechnic Institute"
         institutionLink="https://www.linkedin.com/school/national-technical-university-of-ukraine-'kyiv-pol/"
@@ -25,7 +25,7 @@ function EducationPage() {
           ]
         } />
       <Space h="md" />
-      <EduSection
+      <EducationCard
         degree="MASTER'S DEGREE, DATA SCIENCE"
         institution="Igor Sikorsky Kyiv Polytechnic Institute"
         institutionLink="https://www.linkedin.com/school/national-technical-university-of-ukraine-'kyiv-pol/"
@@ -45,4 +45,4 @@ function EducationPage() {
     </div>);
 }
 
-export default EducationPage;
+export default EducationSection;

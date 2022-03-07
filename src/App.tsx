@@ -5,11 +5,12 @@ import {
 } from '@mantine/core';
 import { useState } from 'react';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
-import Social from './components/Social';
-import EducationPage from './pages/EducationPage';
-import WorkExperiencePage from './pages/WorkExperiencePage';
-import PersonalProjectsPage from './pages/PersonalProjectsPage';
+import SocialMediaBanner from './components/SocialMediaBanner';
 import ThemeSwitch from './components/ThemeSwitch';
+
+import EducationSection from './sections/EducationSection';
+import WorkExperienceSection from './sections/WorkExperienceSection';
+import PersonalProjectsSection from './sections/PersonalProjectsSection';
 
 import profile from './static/profile.png';
 
@@ -50,7 +51,7 @@ function App() {
               <Title order={1}>Anton Kozyriev</Title>
               <Text transform="uppercase">Chief Data Science Officer @ Postello.ai</Text>
               <Space h="md" />
-              <Social />
+              <SocialMediaBanner />
             </Grid.Col>
             <Grid.Col span={12} style={styles.profilePicWrapper as React.CSSProperties}>
               <div style={styles.profilePic as React.CSSProperties}>
@@ -71,9 +72,9 @@ function App() {
             My strengths are <strong>creativity</strong>, <strong>perfectionism</strong>, <strong>competitiveness</strong>, <strong>persistence</strong>, and <strong>focusing on the final result</strong>.
           </Blockquote>
           <Space h="xl" />
-          <EducationPage />
-          <WorkExperiencePage />
-          <PersonalProjectsPage />
+          <EducationSection />
+          <WorkExperienceSection />
+          <PersonalProjectsSection />
         </Container>
       </MantineProvider>
     </ColorSchemeProvider>

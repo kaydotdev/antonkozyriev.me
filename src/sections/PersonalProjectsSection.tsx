@@ -7,7 +7,7 @@ import InAWordLogo from '../static/in_a_word_logo.jpg';
 import GradientDescent from '../static/gradient_descent.png';
 import DashboardLogo from '../static/dashboard_logo.png';
 
-function PersonalProjectsPage() {
+function PersonalProjectsSection() {
     const gridSpan = 4;
     const personalProjectsList: ProjectProps[] = [
         {
@@ -73,4 +73,4 @@ function PersonalProjectsPage() {
     );
 }
 
-export default PersonalProjectsPage;
+export default PersonalProjectsSection;
