@@ -8,6 +8,7 @@ import EducationSection from './sections/EducationSection';
 import WorkExperienceSection from './sections/WorkExperienceSection';
 import PersonalProjectsSection from './sections/PersonalProjectsSection';
 import CertificationSection from './sections/CertificationSection';
+import LanguageSection from './sections/LanguageSection';
 
 function App() {
   const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
@@ -20,10 +21,11 @@ function App() {
         <Container>
           <ThemeSwitch />
           <HeaderSection />
+          <LanguageSection />
           <EducationSection />
           <WorkExperienceSection />
-          <PersonalProjectsSection />
           <CertificationSection />
+          <PersonalProjectsSection />
         </Container>
       </MantineProvider>
     </ColorSchemeProvider>
