@@ -9,15 +9,15 @@ import NewRuFlag from '../static/new_ru_flag.svg';
 import UKFlag from '../static/uk_flag.svg';
 
 function LanguageSection() {
-    const countrySize = 12;
+    const countrySize = 36;
 
     return (
         <React.Fragment>
             <Title order={2}>Languages</Title>
             <Divider size="sm" color="dark" />
-            <Space h="xs" />
+            <Space h="xl" />
             <List
-                spacing="xs"
+                spacing="md"
                 size="md"
                 center
                 withPadding
