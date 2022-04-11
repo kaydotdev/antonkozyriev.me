@@ -6,4 +6,4 @@ A static pages site [antonkozyriev.me](https://antonkozyriev.me) contains my con
 
 ### Attributions
 
- - [Development Icon](https://iconscout.com/icons/development) by [Rank Sol](https://iconscout.com/contributors/promotion-king) on [Iconscout](https://iconscout.com);
+ - [Resume Icon](https://iconscout.com/icons/resume) by [Iconscout Store](https://iconscout.com/contributors/iconscout);
