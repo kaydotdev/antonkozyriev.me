@@ -1,6 +1,22 @@
+import GithubIcon from "./icons/GithubIcon";
+import FacebookIcon from "./icons/FacebookIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import TelegramIcon from "./icons/TelegramIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
+
+import SocialMediaButton from "./components/SocialMediaButton";
+
 function App() {
   return (
     <div className="flex justify-center">
+      <SocialMediaButton color="#333">
+        <GithubIcon />
+      </SocialMediaButton>
+
+      <FacebookIcon />
+      <InstagramIcon />
+      <TelegramIcon />
+      <LinkedinIcon />
       <div className="rounded-lg shadow-lg bg-white max-w-sm">
         <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
           <img className="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/182.jpg" alt=""/>
