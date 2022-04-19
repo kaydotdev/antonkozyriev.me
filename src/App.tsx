@@ -8,7 +8,7 @@ import UKFlag from './static/uk_flag.svg';
 
 function App() {
   return (
-    <div className="flex aspect-[9/16] w-screen flex-row">
+    <div className="flex aspect-[1/1.4142] w-screen flex-row">
       <div className="w-0 flex-none bg-sky-900 sm:w-72">
         <div className="flex flex-col text-mono text-slate-100 antialiased tracking-wide">
           <div className="p-8 text-center">
@@ -27,6 +27,10 @@ function App() {
             <LanguageBadge iconSrc={MotherlandFlag} name="Ukrainian" proficiency="Native speaker (C2)" rate={5} />
             <LanguageBadge iconSrc={NewRuFlag} name="Russian" proficiency="Bilingual (C2)" rate={5} />
             <LanguageBadge iconSrc={UKFlag} name="English" proficiency="Advanced (C1)" rate={4} />
+          </div>
+          <Divider text="Skills" />
+          <div className="p-6">
+
           </div>
         </div>
       </div>
