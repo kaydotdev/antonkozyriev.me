@@ -1,3 +1,4 @@
+import Header from './components/Header';
 import Divider from './components/Divider';
 import LanguageBadge from './components/LanguageBadge';
 import SkillBadge from './components/SkillBadge';
@@ -76,6 +77,7 @@ function App() {
       </div>
       <div className="grow bg-slate-100">
         <div className="flex flex-col p-6">
+          <Header text="Work experience" />
           <Timespan sections={workExperienceSection} />
         </div>
       </div>
