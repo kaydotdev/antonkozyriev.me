@@ -1,6 +1,7 @@
 import Divider from './components/Divider';
 import LanguageBadge from './components/LanguageBadge';
 import SkillBadge from './components/SkillBadge';
+import Timespan, { TimespanSection } from './components/Timespan';
 
 import Avatar from './static/profile.png';
 import MotherlandFlag from './static/motherland_flag.svg';
@@ -8,6 +9,34 @@ import NewRuFlag from './static/new_ru_flag.svg';
 import UKFlag from './static/uk_flag.svg';
 
 function App() {
+  const workExperienceSection: TimespanSection[] = [
+    {
+      timestamp: "November 2021 - Present",
+      title: "Chief Data Science Officer - Postello.ai",
+      events: [
+        "Developed and maintained postello.ai application for generating articles and posts for popular social media platforms using natural language processing toolkit;",
+        "Designed and implemented architecture for RDS."
+      ]
+    },
+    {
+      timestamp: "December 2020 - October 2021",
+      title: "Professor assistant - National Research Foundation of Ukraine",
+      events: [
+        "Assisted in research for gradient descent algorithms;",
+        "Participated as a co-author of a paper on comparing gradient descent algorithms convergence speed."
+      ]
+    },
+    {
+      timestamp: "September 2019 - November 2020",
+      title: "Fullstack web developer - Wolters Kluwer: CRA Wiz SaaS",
+      events: [
+        "Developed and maintained CRA WizNG SaaS - technology solutions to help you prepare for and ensure compliance;",
+        "Designed and implemented architecture of database for a particular microservice;",
+        "Implemented end-to-end functionality for regular request-response features (HTTPS) and real-time features (WebSockets)."
+      ]
+    }
+  ];
+
   return (
     <div className="flex aspect-[1/1.4142] w-screen flex-row">
       <div className="w-0 flex-none bg-sky-900 sm:w-72">
@@ -46,6 +75,9 @@ function App() {
         </div>
       </div>
       <div className="grow bg-slate-100">
+        <div className="flex flex-col p-6">
+          <Timespan sections={workExperienceSection} />
+        </div>
       </div>
     </div>
   );
