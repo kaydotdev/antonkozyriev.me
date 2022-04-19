@@ -1,34 +1,21 @@
-import GithubIcon from "./icons/GithubIcon";
-import FacebookIcon from "./icons/FacebookIcon";
-import InstagramIcon from "./icons/InstagramIcon";
-import TelegramIcon from "./icons/TelegramIcon";
-import LinkedinIcon from "./icons/LinkedinIcon";
+import Divider from './components/Divider';
 
-import SocialMediaButton from "./components/SocialMediaButton";
+import Avatar from './static/profile.png';
 
 function App() {
   return (
-    <div className="flex justify-center">
-      <SocialMediaButton color="#333">
-        <GithubIcon />
-      </SocialMediaButton>
-
-      <FacebookIcon />
-      <InstagramIcon />
-      <TelegramIcon />
-      <LinkedinIcon />
-      <div className="rounded-lg shadow-lg bg-white max-w-sm">
-        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-          <img className="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/182.jpg" alt=""/>
-        </a>
-        <div className="p-6">
-          <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
-          <p className="text-gray-700 text-base mb-4">
-            Some quick example text to build on the card title and make up the bulk of the card's
-            content.
-          </p>
-          <button type="button" className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+    <div className="flex aspect-[9/16] w-screen flex-row">
+      <div className="w-0 flex-none bg-sky-900 sm:w-60">
+        <div className="flex flex-col text-mono text-slate-100 antialiased tracking-wide">
+          <div className="p-8 text-center">
+            <img src={Avatar} className="mx-auto mb-4 w-32 rounded-full ring-2 ring-slate-100 ring-offset-4 ring-offset-sky-900" alt="Avatar" />
+            <h5 className="mb-0 text-xl font-bold leading-tight">Anton Kozyriev</h5>
+            <p className="text-sm mt-1">Chief Data Science Officer</p>
+          </div>
+          <Divider text="Profile" />
         </div>
+      </div>
+      <div className="grow bg-slate-100">
       </div>
     </div>
   );
