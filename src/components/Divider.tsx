@@ -4,7 +4,7 @@ interface DividerProps {
 
 function Divider(props: DividerProps) {
     return (
-        <div className="uppercase ml-4 mr-4 border-b-[1px] text-slate-100">{props.text}</div>
+        <div className="uppercase ml-6 mr-6 border-b-[1px] text-slate-100">{props.text}</div>
     );
 }
 
