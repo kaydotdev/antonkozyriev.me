@@ -1,6 +1,10 @@
 import Divider from './components/Divider';
+import LanguageBadge from './components/LanguageBadge';
 
 import Avatar from './static/profile.png';
+import MotherlandFlag from './static/motherland_flag.svg';
+import NewRuFlag from './static/new_ru_flag.svg';
+import UKFlag from './static/uk_flag.svg';
 
 function App() {
   return (
@@ -13,14 +17,16 @@ function App() {
             <p className="text-sm mt-1">Chief Data Science Officer</p>
           </div>
           <Divider text="Profile" />
-          <div className="p-6 text-justify text-xs tracking-tight leading-tight">
+          <div className="p-6 text-justify text-sm tracking-tight leading-tight">
             I'm a Ukrainian graduate student interested in Web technologies and Big Data. 
             Features that motivate me to develop are unique and challenging tasks, discoveries, and friendly team members. 
             My strengths are <span className="font-extrabold">creativity</span>, <span className="font-extrabold">perfectionism</span>, <span className="font-extrabold">competitiveness</span>, <span className="font-extrabold">persistence</span>, and <span className="font-extrabold">focusing on the final result</span>.
           </div>
-          <Divider text="Contacts" />
+          <Divider text="Languages" />
           <div className="p-6">
-
+            <LanguageBadge iconSrc={MotherlandFlag} name="Ukrainian" proficiency="Native speaker (C2)" rate={5} />
+            <LanguageBadge iconSrc={NewRuFlag} name="Russian" proficiency="Bilingual (C2)" rate={5} />
+            <LanguageBadge iconSrc={UKFlag} name="English" proficiency="Advanced (C1)" rate={4} />
           </div>
         </div>
       </div>
