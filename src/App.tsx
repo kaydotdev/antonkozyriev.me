@@ -1,5 +1,6 @@
 import Divider from './components/Divider';
 import LanguageBadge from './components/LanguageBadge';
+import SkillBadge from './components/SkillBadge';
 
 import Avatar from './static/profile.png';
 import MotherlandFlag from './static/motherland_flag.svg';
@@ -18,19 +19,29 @@ function App() {
           </div>
           <Divider text="Profile" />
           <div className="p-6 text-justify text-sm tracking-tight leading-tight">
-            I'm a Ukrainian graduate student interested in Web technologies and Big Data. 
-            Features that motivate me to develop are unique and challenging tasks, discoveries, and friendly team members. 
+            I'm a Ukrainian graduate student interested in Web technologies and Big Data.
+            Features that motivate me to develop are unique and challenging tasks, discoveries, and friendly team members.
             My strengths are <span className="font-extrabold">creativity</span>, <span className="font-extrabold">perfectionism</span>, <span className="font-extrabold">competitiveness</span>, <span className="font-extrabold">persistence</span>, and <span className="font-extrabold">focusing on the final result</span>.
           </div>
           <Divider text="Languages" />
-          <div className="p-6">
+          <div className="px-6 py-3">
             <LanguageBadge iconSrc={MotherlandFlag} name="Ukrainian" proficiency="Native speaker (C2)" rate={5} />
             <LanguageBadge iconSrc={NewRuFlag} name="Russian" proficiency="Bilingual (C2)" rate={5} />
             <LanguageBadge iconSrc={UKFlag} name="English" proficiency="Advanced (C1)" rate={4} />
           </div>
           <Divider text="Skills" />
-          <div className="p-6">
-
+          <div className="px-6 py-3 flex flex-wrap">
+            <SkillBadge name="Software development" />
+            <SkillBadge name="NLP" />
+            <SkillBadge name="Databases" />
+            <SkillBadge name="Feature engineering" />
+            <SkillBadge name="AI/ML" />
+            <SkillBadge name="Big Data" />
+            <SkillBadge name="Deep learning" />
+            <SkillBadge name="Data Visualization" />
+            <SkillBadge name="Applied mathematics" />
+            <SkillBadge name="Statistics" />
+            <SkillBadge name="Cloud" />
           </div>
         </div>
       </div>
