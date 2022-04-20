@@ -8,7 +8,7 @@ interface LanguageBadgeProps {
 function LanguageBadge(props: LanguageBadgeProps) {
     return (
         <div className="flex flex-row justify-between items-center gap-x-2 mb-2">
-          <div className="flex-none"><img src={props.iconSrc} className="w-6 h-6 rounded-full object-cover" alt="Flag" /></div>
+          <div className="flex-none"><img src={props.iconSrc} className="w-6 h-6 rounded-full object-cover sm:filter-none drop-shadow-md" alt="Flag" /></div>
           <div className="grow">
             <p className="text-medium font-bold">{props.name}</p>
             <p className="text-xs tracking-tight">{props.proficiency}</p>
