@@ -12,6 +12,25 @@ import NewRuFlag from './static/new_ru_flag.svg';
 import UKFlag from './static/uk_flag.svg';
 
 function App() {
+  const educationSection: TimespanSection[] = [
+    {
+      timestamp: "September 2020 - Present",
+      title: "Master's degree in Data Science - Igor Sikorsky Kyiv Polytechnic Institute",
+      events: [
+        "Took the courses on the following topics: 'Fuzzy Mathematics', 'Risk theory', 'Data mining', 'Machine learning', 'Numerical Physics' and 'Big Data & Cloud';",
+        "Wrote and presented a scientific paper on 'Investigation of the convergence rate of the stochastic finite-different method of optimization'."
+      ]
+    },
+    {
+      timestamp: "September 2016 - June 2020",
+      title: "Bachelor's degree in Data Science - Igor Sikorsky Kyiv Polytechnic Institute",
+      events: [
+        "Took the courses on the following topics: 'Probability theory and statistics', 'Discrete mathematics', 'Linear algebra and analytical geometry', 'Control theory', 'Calculus', 'Numerical methods', 'Deep learning' and 'Object-oriented programming';",
+        "Wrote and presented a thesis on 'Mathematical and software system for creating musical polyphonic compositions'."
+      ]
+    }
+  ]
+
   const workExperienceSection: TimespanSection[] = [
     {
       timestamp: "November 2021 - Present",
@@ -123,6 +142,9 @@ function App() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
             </svg>
           </Header>
+          <Timespan sections={educationSection} />
+
+          <div className="mt-2"></div>
 
           <Header text="Work experience">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
