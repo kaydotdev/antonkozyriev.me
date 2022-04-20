@@ -39,11 +39,11 @@ function App() {
   ];
 
   return (
-    <div className="flex aspect-[1/1.4142] w-screen flex-row">
-      <div className="w-0 flex-none bg-sky-900 sm:w-72">
-        <div className="flex flex-col text-mono text-slate-100 antialiased tracking-wide">
+    <div className="flex print:aspect-[1/1.4142] w-screen h-fit sm:flex-row flex-col">
+      <div className="sm:w-72 w-screen flex-none sm:bg-sky-900 bg-slate-100">
+        <div className="flex flex-col text-mono sm:text-slate-100 text-gray-800 antialiased tracking-wide">
           <div className="p-8 text-center">
-            <img src={Avatar} className="mx-auto mb-4 w-32 rounded-full ring-2 ring-slate-100 ring-offset-4 ring-offset-sky-900" alt="Avatar" />
+            <img src={Avatar} className="mx-auto mb-4 w-32 rounded-full ring-2 sm:ring-slate-100 ring-sky-900 ring-offset-4 sm:ring-offset-sky-900 ring-offset-slate-100" alt="Avatar" />
             <h5 className="mb-0 text-xl font-bold leading-tight">Anton Kozyriev</h5>
             <p className="text-sm mt-1">Chief Data Science Officer</p>
           </div>
