@@ -65,55 +65,52 @@ function App() {
   const certificationSection: CertificationBadgeProps[] = [
     {
       logoSrc: CourseraLogo,
-      name: "Mathematics for Machine Learning Specialization",
-      institution: "Imperial College London",
-      timestamp: "June 2020 - October 2020",
-      hrefs: [{
-        name: "Linear algebra",
-        href: "https://coursera.org/share/188f68d6ad88ff3eef98961e9086a861"
-      },
-      {
-        name: "Multivariate calculus",
-        href: "https://coursera.org/share/06f5f2576a99d093d6ebf16d66182032"
-      },
-      {
-        name: "PCA",
-        href: "https://coursera.org/share/c673eb14edd71538e7b9b6eaaad38fea"
-      },
-      {
-        name: "Machine learning",
-        href: "https://coursera.org/share/22d0fb5678b04bdcdf2fc6bb1f62a23e"
-      }]
-    },
-    {
-      logoSrc: CourseraLogo,
       name: "Neural networks and Deep Learning",
       institution: "Deeplearning.ai",
       timestamp: "March 2020 - May 2020",
-      hrefs: [{
-        name: "Neural networks",
-        href: "https://coursera.org/share/a98baf2ac0434d6efcdeb50084643a07"
-      }]
+      href: "https://coursera.org/share/a98baf2ac0434d6efcdeb50084643a07"
     },
     {
       logoSrc: CourseraLogo,
       name: "Leadership and Emotional Intelligence",
       institution: "ISB",
       timestamp: "November 2020 - December 2020",
-      hrefs: [{
-        name: "Emotional Competence",
-        href: "https://coursera.org/share/844a3c5041000ece5bf36392384db7d0"
-      }]
+      href: "https://coursera.org/share/844a3c5041000ece5bf36392384db7d0"
     },
     {
       logoSrc: CourseraLogo,
       name: "Advanced Machine Learning",
       institution: "HSE",
       timestamp: "November 2020 - December 2020",
-      hrefs: [{
-        name: "Natural Language Processing",
-        href: "https://coursera.org/share/2c30c71a381dc146b511a33309642b10"
-      }]
+      href: "https://coursera.org/share/2c30c71a381dc146b511a33309642b10"
+    },
+    {
+      logoSrc: CourseraLogo,
+      name: "Linear algebra",
+      institution: "Imperial College London",
+      timestamp: "June 2020 - October 2020",
+      href: "https://coursera.org/share/188f68d6ad88ff3eef98961e9086a861"
+    },
+    {
+      logoSrc: CourseraLogo,
+      name: "Multivariate calculus",
+      institution: "Imperial College London",
+      timestamp: "June 2020 - October 2020",
+      href: "https://coursera.org/share/06f5f2576a99d093d6ebf16d66182032"
+    },
+    {
+      logoSrc: CourseraLogo,
+      name: "Principal component analysis",
+      institution: "Imperial College London",
+      timestamp: "June 2020 - October 2020",
+      href: "https://coursera.org/share/c673eb14edd71538e7b9b6eaaad38fea"
+    },
+    {
+      logoSrc: CourseraLogo,
+      name: "Machine learning",
+      institution: "Imperial College London",
+      timestamp: "June 2020 - October 2020",
+      href: "https://coursera.org/share/22d0fb5678b04bdcdf2fc6bb1f62a23e"
     }
   ];
 
@@ -219,7 +216,7 @@ function App() {
             </svg>
           </Header>
 
-          <div className="flex flex-row flex-wrap gap-x-4 gap-y-2 justify-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-stretch gap-x-4">
           {
             certificationSection.map(certificate => (<div><CertificationBadge {...certificate} /></div>))
           }
