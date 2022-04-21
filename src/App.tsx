@@ -13,6 +13,7 @@ import NewRuFlag from './static/new_ru_flag.svg';
 import UKFlag from './static/uk_flag.svg';
 
 import CourseraLogo from './static/coursera_logo.jpg';
+import KaggleLogo from './static/kaggle_logo.png';
 
 function App() {
   const educationSection: TimespanSection[] = [
@@ -111,6 +112,20 @@ function App() {
       institution: "Imperial College London",
       timestamp: "June 2020 - October 2020",
       href: "https://coursera.org/share/22d0fb5678b04bdcdf2fc6bb1f62a23e"
+    },
+    {
+      logoSrc: KaggleLogo,
+      name: "Intro to Machine Learning",
+      institution: "Kaggle",
+      timestamp: "October 2021 - November 2021",
+      href: "https://www.kaggle.com/learn/certification/antonkozyriev/intro-to-machine-learning"
+    },
+    {
+      logoSrc: KaggleLogo,
+      name: "Python",
+      institution: "Kaggle",
+      timestamp: "July 2021 - August 2021",
+      href: "https://www.kaggle.com/learn/certification/antonkozyriev/python"
     }
   ];
 
@@ -216,7 +231,7 @@ function App() {
             </svg>
           </Header>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-stretch gap-x-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-stretch gap-x-4 my-2">
           {
             certificationSection.map(certificate => (<div><CertificationBadge {...certificate} /></div>))
           }
