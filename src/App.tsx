@@ -4,12 +4,15 @@ import LanguageBadge from './components/LanguageBadge';
 import SkillBadge from './components/SkillBadge';
 import SocialMediaButton from './components/SocialMediaButton';
 import SocialMediaBadge from './components/SocialMediaBadge';
+import CertificationBadge, { CertificationBadgeProps } from './components/CertificationBadge';
 import Timespan, { TimespanSection } from './components/Timespan';
 
 import Avatar from './static/profile.png';
 import MotherlandFlag from './static/motherland_flag.svg';
 import NewRuFlag from './static/new_ru_flag.svg';
 import UKFlag from './static/uk_flag.svg';
+
+import CourseraLogo from './static/coursera_logo.jpg';
 
 function App() {
   const educationSection: TimespanSection[] = [
@@ -42,7 +45,7 @@ function App() {
     },
     {
       timestamp: "December 2020 - October 2021",
-      title: "Professor assistant - National Research Foundation of Ukraine",
+      title: "Professor Assistant - National Research Foundation of Ukraine",
       events: [
         "Assisted in research for gradient descent algorithms;",
         "Participated as a co-author of a paper on comparing gradient descent algorithms convergence speed."
@@ -50,12 +53,67 @@ function App() {
     },
     {
       timestamp: "September 2019 - November 2020",
-      title: "Fullstack web developer - Wolters Kluwer: CRA Wiz SaaS",
+      title: "Fullstack Web Developer - Wolters Kluwer: CRA Wiz SaaS",
       events: [
         "Developed and maintained CRA WizNG SaaS - technology solutions to help you prepare for and ensure compliance;",
         "Designed and implemented architecture of database for a particular microservice;",
         "Implemented end-to-end functionality for regular request-response features (HTTPS) and real-time features (WebSockets)."
       ]
+    }
+  ];
+
+  const certificationSection: CertificationBadgeProps[] = [
+    {
+      logoSrc: CourseraLogo,
+      name: "Mathematics for Machine Learning Specialization",
+      institution: "Imperial College London",
+      timestamp: "June 2020 - October 2020",
+      hrefs: [{
+        name: "Linear algebra",
+        href: "https://coursera.org/share/188f68d6ad88ff3eef98961e9086a861"
+      },
+      {
+        name: "Multivariate calculus",
+        href: "https://coursera.org/share/06f5f2576a99d093d6ebf16d66182032"
+      },
+      {
+        name: "PCA",
+        href: "https://coursera.org/share/c673eb14edd71538e7b9b6eaaad38fea"
+      },
+      {
+        name: "Machine learning",
+        href: "https://coursera.org/share/22d0fb5678b04bdcdf2fc6bb1f62a23e"
+      }]
+    },
+    {
+      logoSrc: CourseraLogo,
+      name: "Neural networks and Deep Learning",
+      institution: "Deeplearning.ai",
+      timestamp: "March 2020 - May 2020",
+      hrefs: [{
+        name: "Neural networks",
+        href: "https://coursera.org/share/a98baf2ac0434d6efcdeb50084643a07"
+      }]
+    },
+    {
+      logoSrc: CourseraLogo,
+      name: "Leadership and Emotional Intelligence",
+      institution: "ISB",
+      timestamp: "November 2020 - December 2020",
+      hrefs: [{
+        name: "Emotional Competence",
+        href: "https://coursera.org/share/844a3c5041000ece5bf36392384db7d0"
+      }]
+    },
+    {
+      logoSrc: CourseraLogo,
+      name: "Advanced Machine Learning",
+      institution: "HSE",
+      timestamp: "November 2020 - December 2020",
+      hrefs: [{
+        name: "Natural Language Processing",
+        href: "https://coursera.org/share/2c30c71a381dc146b511a33309642b10"
+      }]
     }
   ];
 
@@ -152,6 +210,28 @@ function App() {
             </svg>
           </Header>
           <Timespan sections={workExperienceSection} />
+
+          <div className="mt-2"></div>
+
+          <Header text="Certification">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </Header>
+
+          <div className="flex flex-row flex-wrap gap-x-4 gap-y-2 justify-start">
+          {
+            certificationSection.map(certificate => (<div><CertificationBadge {...certificate} /></div>))
+          }
+          </div>
+
+          <div className="mt-2"></div>
+
+          <Header text="Personal projects">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+            </svg>
+          </Header>
         </div>
       </div>
     </div>
