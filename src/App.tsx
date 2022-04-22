@@ -130,11 +130,11 @@ function App() {
   ];
 
   return (
-    <div className="flex print:aspect-[1/1.4142] w-screen h-fit sm:flex-row flex-col">
-      <div className="sm:w-72 w-screen flex-none sm:bg-sky-900 bg-slate-100">
+    <div className="flex print:aspect-[1/1.4142] print:h-screen w-screen sm:flex-row flex-col">
+      <div className="sm:w-72 print:w-72 w-screen flex-none sm:bg-sky-900 print:bg-sky-900 bg-slate-100">
         <div className="flex flex-col text-mono sm:text-slate-100 text-gray-800 antialiased tracking-wide">
           <div className="p-8 text-center">
-            <img src={Avatar} className="mx-auto mb-4 w-32 rounded-full ring-2 sm:ring-slate-100 ring-sky-900 ring-offset-4 sm:ring-offset-sky-900 ring-offset-slate-100" alt="Avatar" />
+            <img src={Avatar} className="mx-auto mb-4 w-32 rounded-full ring-2 sm:ring-slate-100 print:ring-slate-100 ring-sky-900 ring-offset-4 sm:ring-offset-sky-900 print:ring-offset-sky-900 ring-offset-slate-100" alt="Avatar" />
             <h5 className="mb-0 text-xl font-bold leading-tight">Anton Kozyriev</h5>
             <p className="text-sm mt-1">Chief Data Science Officer</p>
             <div className="sm:hidden flex pt-2 flex-row flex-wrap justify-evenly sm:justify-center justify-items-stretch sm:gap-x-2 mt-6">
@@ -225,25 +225,27 @@ function App() {
 
           <div className="mt-2"></div>
 
-          <Header text="Certification">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-            </svg>
-          </Header>
+          <div className="print:hidden">
+            <Header text="Certification">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </Header>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-stretch gap-x-4 my-2">
-          {
-            certificationSection.map(certificate => (<div><CertificationBadge {...certificate} /></div>))
-          }
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-stretch gap-x-4 my-2">
+            {
+              certificationSection.map(certificate => (<div><CertificationBadge {...certificate} /></div>))
+            }
+            </div>
+
+            <div className="mt-2"></div>
+
+            <Header text="Personal projects">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+              </svg>
+            </Header>
           </div>
-
-          <div className="mt-2"></div>
-
-          <Header text="Personal projects">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-            </svg>
-          </Header>
         </div>
       </div>
     </div>
