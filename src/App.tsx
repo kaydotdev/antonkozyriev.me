@@ -237,7 +237,7 @@ function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-stretch gap-x-4 my-2 sm:border-l sm:border-sky-900">
               {
-                certificationSection.map(certificate => (<div><CertificationBadge {...certificate} /></div>))
+                certificationSection.map((certificate, i) => (<CertificationBadge key={i} {...certificate} />))
               }
             </div>
 
