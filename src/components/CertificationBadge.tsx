@@ -28,7 +28,7 @@ function CertificationBadge(props: CertificationBadgeProps) {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                     </svg>
                     <a className="block sm:hidden" href={props.href}><p className="text-gray-500 sm:text-gray-800 text-sm">View certificate</p></a>
-                    <p className="hidden sm:block text-gray-500 sm:text-gray-800 text-xs tracking-tight">{props.href}</p>
+                    <p className="hidden sm:block text-gray-500 sm:text-gray-800 text-xs tracking-tight break-all">{props.href}</p>
                 </div>
             </div>
         </div>
