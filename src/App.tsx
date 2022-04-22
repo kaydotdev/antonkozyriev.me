@@ -187,19 +187,22 @@ function App() {
             <LanguageBadge iconSrc={NewRuFlag} name="Russian" proficiency="Bilingual (C2)" rate={5} />
             <LanguageBadge iconSrc={UKFlag} name="English" proficiency="Advanced (C1)" rate={4} />
           </div>
-          <Divider text="Skills" />
-          <div className="px-6 py-3 flex flex-wrap">
-            <SkillBadge name="Software development" />
-            <SkillBadge name="NLP" />
-            <SkillBadge name="Databases" />
-            <SkillBadge name="Feature engineering" />
-            <SkillBadge name="AI/ML" />
-            <SkillBadge name="Big Data" />
-            <SkillBadge name="Deep learning" />
-            <SkillBadge name="Data Visualization" />
-            <SkillBadge name="Applied mathematics" />
-            <SkillBadge name="Statistics" />
-            <SkillBadge name="Cloud" />
+
+          <div className="print:hidden">
+            <Divider text="Skills" />
+            <div className="px-6 py-3 flex flex-wrap">
+              <SkillBadge name="Software development" />
+              <SkillBadge name="NLP" />
+              <SkillBadge name="Databases" />
+              <SkillBadge name="Feature engineering" />
+              <SkillBadge name="AI/ML" />
+              <SkillBadge name="Big Data" />
+              <SkillBadge name="Deep learning" />
+              <SkillBadge name="Data Visualization" />
+              <SkillBadge name="Applied mathematics" />
+              <SkillBadge name="Statistics" />
+              <SkillBadge name="Cloud" />
+            </div>
           </div>
         </div>
       </div>
@@ -223,7 +226,7 @@ function App() {
           </Header>
           <Timespan sections={workExperienceSection} />
 
-          <div className="mt-2"></div>
+          <div className="mt-2 print:mt-1"></div>
 
           <div className="print:hidden">
             <Header text="Certification">
@@ -232,13 +235,13 @@ function App() {
               </svg>
             </Header>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-stretch gap-x-4 my-2">
-            {
-              certificationSection.map(certificate => (<div><CertificationBadge {...certificate} /></div>))
-            }
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-stretch gap-x-4 my-2 sm:border-l sm:border-sky-900">
+              {
+                certificationSection.map(certificate => (<div><CertificationBadge {...certificate} /></div>))
+              }
             </div>
 
-            <div className="mt-2"></div>
+            <div className="mt-2 print:mt-1"></div>
 
             <Header text="Personal projects">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
