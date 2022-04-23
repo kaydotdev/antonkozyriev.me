@@ -6,6 +6,7 @@ import SocialMediaButton from './components/SocialMediaButton';
 import SocialMediaBadge from './components/SocialMediaBadge';
 import CertificationBadge, { CertificationBadgeProps } from './components/CertificationBadge';
 import Timespan, { TimespanSection } from './components/Timespan';
+import UkraineCharityWidget from './components/UkraineCharityWidget';
 
 import Avatar from './static/profile.png';
 import MotherlandFlag from './static/motherland_flag.svg';
@@ -248,6 +249,8 @@ function App() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
               </svg>
             </Header>
+
+            <UkraineCharityWidget />
           </div>
         </div>
       </div>
