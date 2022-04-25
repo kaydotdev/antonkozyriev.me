@@ -9,12 +9,12 @@ import Timespan, { TimespanSection } from './components/Timespan';
 import UkraineCharityWidget from './components/UkraineCharityWidget';
 
 import Avatar from './static/profile.png';
-import MotherlandFlag from './static/motherland_flag.svg';
-import NewRuFlag from './static/new_ru_flag.svg';
-import UKFlag from './static/uk_flag.svg';
+import MotherlandFlag from './static/flags/motherland_flag.svg';
+import NewRuFlag from './static/flags/new_ru_flag.svg';
+import UKFlag from './static/flags/uk_flag.svg';
 
-import CourseraLogo from './static/coursera_logo.jpg';
-import KaggleLogo from './static/kaggle_logo.png';
+import CourseraLogo from './static/accreditation/coursera_logo.jpg';
+import KaggleLogo from './static/accreditation/kaggle_logo.png';
 
 function App() {
   const educationSection: TimespanSection[] = [

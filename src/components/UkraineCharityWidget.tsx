@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MotherlandFlag from '../static/motherland_flag.svg';
+import MotherlandFlag from '../static/flags/motherland_flag.svg';
 
 function UkraineCharityWidget() {
     const [hidden, setHidden] = useState(false);
