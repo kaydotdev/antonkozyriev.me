@@ -8,7 +8,7 @@ function UkraineCharityWidget() {
     const widgetStyle = hidden ? { display: 'none' } : {};
 
     return (
-        <div className="fixed bottom-3 right-3 rounded-md shadow-2xl" style={widgetStyle}>
+        <div className="fixed bottom-3 right-3 rounded-md shadow-2xl ring-1 ring-gray-900/10" style={widgetStyle}>
             <div className="flex space-x-2 justify-center">
                 <div className="bg-white shadow-lg mx-auto w-72 max-w-full text-sm pointer-events-auto bg-clip-padding rounded-lg block">
                     <div className=" bg-white flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-gray-200 rounded-t-lg">
