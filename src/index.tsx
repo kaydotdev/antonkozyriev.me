@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { matchTheme } from './utils/theme';
 import './index.css';
-
-const matchTheme = (matches: boolean) => { const pageRoot = document.querySelector('html'); if (!!pageRoot) { pageRoot.className = matches ? "dark" : "light"; } }
 
 matchTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => matchTheme(event.matches));

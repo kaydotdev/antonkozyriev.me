@@ -8,6 +8,7 @@ import CertificationBadge, { CertificationBadgeProps } from './components/Certif
 import Timespan, { TimespanSection } from './components/Timespan';
 import ProjectTimespan, { ProjectTimespanSection } from './components/ProjectTimespan';
 import UkraineCharityWidget from './components/UkraineCharityWidget';
+import ThemeSwitcher from './components/ThemeSwitcher';
 
 import Avatar from './static/profile.png';
 import MotherlandFlag from './static/flags/motherland_flag.svg';
@@ -580,6 +581,7 @@ function App() {
             <ProjectTimespan sections={petProjectSection} />
 
             <UkraineCharityWidget />
+            <ThemeSwitcher />
           </div>
         </div>
       </div>
