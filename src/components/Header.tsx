@@ -16,7 +16,7 @@ function Header(props: HeaderProps) {
                     {props.text}
                 </div>
             </div>
-            <div className="sm:hidden mb-3 font-extrabold uppercase border-b-[1px] sm:border-slate-100 border-gray-800 sm:text-slate-100 text-gray-800">{props.text}</div>
+            <div className="sm:hidden mb-3 font-extrabold uppercase border-b-[1px] sm:border-slate-100 border-slate-800 sm:text-slate-100 text-slate-800">{props.text}</div>
         </>
     );
 }
