@@ -458,8 +458,8 @@ function App() {
 
   return (
     <div className="flex print:aspect-[1/1.4142] print:h-screen w-screen sm:flex-row flex-col">
-      <div className="sm:w-72 print:w-72 w-screen flex-none sm:bg-sky-900 bg-slate-100 dark:bg-slate-800 dark:sm:bg-slate-900 ">
-        <div className="flex flex-col text-mono text-slate-800 sm:text-slate-100 dark:text-slate-100 antialiased tracking-wide">
+      <div className="sm:w-72 print:w-72 w-screen flex-none sm:bg-primary bg-secondary">
+        <div className="flex flex-col text-mono text-primary sm:text-slate-100 antialiased tracking-wide">
           <div className="p-6 text-center">
             <img src={Avatar} className="mx-auto mb-4 w-32 print:w-28 rounded-full" alt="Avatar" />
             <h5 className="mb-0 text-xl print:text-base font-bold leading-tight">Anton Kozyriev</h5>
@@ -543,7 +543,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="sm:grow bg-slate-100 dark:bg-slate-800">
+      <div className="sm:grow bg-secondary">
         <div className="flex flex-col p-6">
           <Header text="Education">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

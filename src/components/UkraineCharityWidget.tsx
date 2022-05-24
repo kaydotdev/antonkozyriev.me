@@ -12,9 +12,9 @@ function UkraineCharityWidget() {
             <div className="flex space-x-2 justify-center">
                 <div className="bg-white dark:bg-slate-800 shadow-lg mx-auto w-64 max-w-full text-sm pointer-events-auto bg-clip-padding rounded-lg block">
                     <div className=" bg-white dark:bg-slate-800 flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-slate-200 dark:border-slate-900/50 rounded-t-lg">
-                        <p className="text-slate-800 dark:text-slate-100 tracking-tigher"><span className="font-extrabold">{invasionDays}</span> days of invasion</p>
+                        <p className="text-primary tracking-tigher"><span className="font-extrabold">{invasionDays}</span> days of invasion</p>
                         <div className="flex items-center">
-                            <button onClick={() => setHidden(true)} type="button" className="box-content w-4 h-4 ml-2 text-slate-800 dark:text-slate-100 border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-slate-800 hover:opacity-75 hover:no-underline">
+                            <button onClick={() => setHidden(true)} type="button" className="box-content w-4 h-4 ml-2 text-primary border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-slate-900 hover:opacity-75 hover:no-underline">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
@@ -27,8 +27,8 @@ function UkraineCharityWidget() {
                                 <img src={MotherlandFlag} className="w-10 h-10 rounded-md object-cover" alt="Flag" />
                             </div>
                             <div className="grow">
-                                <a href="https://war.ukraine.ua" className="text-medium font-extrabold uppercase underline text-slate-800 dark:text-slate-100">Support Ukraine</a>
-                                <p className="text-xs tracking-tight text-slate-800 dark:text-slate-100">Stop Russian Aggression!</p>
+                                <a href="https://war.ukraine.ua" className="text-medium font-extrabold uppercase underline text-primary">Support Ukraine</a>
+                                <p className="text-xs tracking-tight text-primary">Stop Russian Aggression!</p>
                             </div>
                         </div>
                     </div>

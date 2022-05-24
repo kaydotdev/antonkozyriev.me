@@ -8,7 +8,7 @@ interface HeaderProps {
 function Header(props: HeaderProps) {
     return (
         <>
-            <div className="hidden sm:flex flex-row bg-sky-900 text-slate-100 dark:bg-slate-900 px-4 py-2 mb-2 print:mb-1 items-center">
+            <div className="hidden sm:flex flex-row bg-primary text-slate-100 px-4 py-2 mb-2 print:mb-1 items-center">
                 <div className="h-4 w-4 mr-2 print:h-3 print:w-3">
                     {props.children}
                 </div>

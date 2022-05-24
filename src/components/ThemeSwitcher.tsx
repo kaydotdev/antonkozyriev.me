@@ -15,7 +15,7 @@ function ThemeSwitcher() {
 
     return (
         <div className="fixed bottom-3 right-3 rounded-full shadow-2xl ring-2 ring-slate-900 dark:ring-sky-600">
-            <button onClick={changeColorScheme} className="p-3 bg-slate-100 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-900 shadow-lg mx-auto w-12 h-12 text-sm pointer-events-auto bg-clip-padding rounded-full block transition duration-150 ease-in-out">
+            <button onClick={changeColorScheme} className="p-3 bg-secondary hover:bg-dimmed shadow-lg mx-auto w-12 h-12 text-sm pointer-events-auto bg-clip-padding rounded-full block transition duration-150 ease-in-out">
                 {
                     darkMode ? (
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
