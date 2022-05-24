@@ -17,6 +17,7 @@ import UKFlag from './static/flags/uk_flag.svg';
 
 import CourseraLogo from './static/accreditation/coursera_logo.jpg';
 import KaggleLogo from './static/accreditation/kaggle_logo.png';
+import DuolingoLogo from './static/accreditation/duolingo_logo.svg';
 
 import CoolEnginnerLogo from './static/projects/coolengineer_logo.png';
 import DashboardLogo from './static/projects/dashboard_logo.png';
@@ -75,6 +76,27 @@ function App() {
 
   const certificationSection: CertificationBadgeProps[] = [
     {
+      logoSrc: DuolingoLogo,
+      name: "English Proficiency Certificate (125)",
+      institution: "Duolingo English Test",
+      timestamp: "May 2022 - May 2024",
+      href: "https://certs.duolingo.com/a388c42c26b155e684a8b5a6d603fdff"
+    },
+    {
+      logoSrc: KaggleLogo,
+      name: "Intro to Machine Learning",
+      institution: "Kaggle",
+      timestamp: "October 2021 - November 2021",
+      href: "https://www.kaggle.com/learn/certification/antonkozyriev/intro-to-machine-learning"
+    },
+    {
+      logoSrc: KaggleLogo,
+      name: "Python",
+      institution: "Kaggle",
+      timestamp: "July 2021 - August 2021",
+      href: "https://www.kaggle.com/learn/certification/antonkozyriev/python"
+    },
+    {
       logoSrc: CourseraLogo,
       name: "Neural networks and Deep Learning",
       institution: "Deeplearning.ai",
@@ -122,20 +144,6 @@ function App() {
       institution: "Imperial College London",
       timestamp: "June 2020 - October 2020",
       href: "https://coursera.org/share/22d0fb5678b04bdcdf2fc6bb1f62a23e"
-    },
-    {
-      logoSrc: KaggleLogo,
-      name: "Intro to Machine Learning",
-      institution: "Kaggle",
-      timestamp: "October 2021 - November 2021",
-      href: "https://www.kaggle.com/learn/certification/antonkozyriev/intro-to-machine-learning"
-    },
-    {
-      logoSrc: KaggleLogo,
-      name: "Python",
-      institution: "Kaggle",
-      timestamp: "July 2021 - August 2021",
-      href: "https://www.kaggle.com/learn/certification/antonkozyriev/python"
     }
   ];
 
