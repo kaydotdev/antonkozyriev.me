@@ -30,7 +30,7 @@ function App() {
   const educationSection: TimespanSection[] = [
     {
       timestamp: "September 2020 - Present",
-      title: "Master's degree in Data Science - Igor Sikorsky Kyiv Polytechnic Institute",
+      title: "Master's degree, Applied Mathematics - Igor Sikorsky Kyiv Polytechnic Institute",
       events: [
         "Took the courses on the following topics: 'Fuzzy Mathematics', 'Risk theory', 'Data mining', 'Machine learning', 'Numerical Physics' and 'Big Data & Cloud';",
         "Wrote and presented a scientific paper on 'Investigation of the convergence rate of the stochastic finite-different method of optimization'."
@@ -38,7 +38,7 @@ function App() {
     },
     {
       timestamp: "September 2016 - June 2020",
-      title: "Bachelor's degree in Data Science - Igor Sikorsky Kyiv Polytechnic Institute",
+      title: "Bachelor's degree, Applied Mathematics - Igor Sikorsky Kyiv Polytechnic Institute",
       events: [
         "Took the courses on the following topics: 'Probability theory and statistics', 'Discrete mathematics', 'Linear algebra and analytical geometry', 'Control theory', 'Calculus', 'Numerical methods', 'Deep learning' and 'Object-oriented programming';",
         "Wrote and presented a thesis on 'Mathematical and software system for creating musical polyphonic compositions'."
