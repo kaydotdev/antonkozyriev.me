@@ -29,7 +29,7 @@ function App() {
   const techStackIconSize = "24";
   const educationSection: TimespanSection[] = [
     {
-      timestamp: "September 2020 - Present",
+      timestamp: "September 2020 - June 2022",
       title: "Master's degree, Applied Mathematics - Igor Sikorsky Kyiv Polytechnic Institute",
       events: [
         "Took the courses on the following topics: 'Fuzzy Mathematics', 'Risk theory', 'Data mining', 'Machine learning', 'Numerical Physics' and 'Big Data & Cloud';",
@@ -65,7 +65,7 @@ function App() {
     },
     {
       timestamp: "September 2019 - November 2020",
-      title: "Fullstack Web Developer - Wolters Kluwer: CRA Wiz SaaS",
+      title: "Software Engineer - Wolters Kluwer: CRA Wiz SaaS",
       events: [
         "Developed and maintained CRA WizNG SaaS - technology solutions to help you prepare for and ensure compliance;",
         "Designed and implemented architecture of database for a particular microservice;",
