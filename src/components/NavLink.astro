@@ -1,0 +1,21 @@
+---
+export interface Props {
+	name: string;
+    title: string;
+	href: string;
+}
+
+const { name, title, href } = Astro.props;
+---
+
+<>
+    {name == title ? 
+    (<li><a class="font-bold" href={href}>{title}</a></li>) : 
+    (<li><a href={href}>{title}</a></li>)}
+</>
+<style>
+	li a {
+		font-size: var(--nav-element-size);
+		font-weight: 300;
+	}
+</style>
