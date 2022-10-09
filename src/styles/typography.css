@@ -1,0 +1,16 @@
+@media (min-width: 1024px) {
+    li a {
+        font-size: min(1.6vw, 1.6vh);
+    } 
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(55, 53, 47);
+}
+
+li a {
+    font-weight: 300;
+} 

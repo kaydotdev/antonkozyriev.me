@@ -1,4 +1,6 @@
 ---
+import '../styles/typography.css';
+
 export interface Props {
 	name: string;
     title: string;
@@ -13,9 +15,3 @@ const { name, title, href } = Astro.props;
     (<li><a class="font-bold" href={href}>{title}</a></li>) : 
     (<li><a href={href}>{title}</a></li>)}
 </>
-<style>
-	li a {
-		font-size: min(1.8vw, 1.8vh);
-		font-weight: 300;
-	}
-</style>

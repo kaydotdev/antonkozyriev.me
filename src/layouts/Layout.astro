@@ -2,6 +2,8 @@
 import NavLink from '../components/NavLink.astro';
 import ThemeSwitch from '../components/ThemeSwitch';
 
+import '../styles/typography.css';
+
 export interface Props {
 	name: string;
 	title: string;
@@ -86,13 +88,6 @@ const { name, title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	body {
-		margin: 0;
-		overflow: hidden;
-		font-family: 'Roboto', sans-serif;
-		color: rgb(55, 53, 47);
-	}
-
 	.thumbnail {
 		position: absolute;
 		left: 0.75rem;
@@ -156,10 +151,5 @@ const { name, title } = Astro.props;
 
 	.shape-divider .shape-fill {
 		fill: #FFFFFF;
-	}
-
-	li svg {
-		width: min(1.8vw, 1.8vh);
-		height: min(1.8vw, 1.8vh);
 	}
 </style>
