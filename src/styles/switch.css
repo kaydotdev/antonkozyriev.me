@@ -1,5 +1,11 @@
+@media (min-width: 1024px) {
+    .theme-switch {
+        width: min(1.8vw, 2.4vh) !important;
+        height: min(1.8vw, 2.4vh) !important;
+    }
+}
+
 .theme-switch {
-    padding: 0.25rem;
-    width: min(2.5vw, 2.5vh);
-    height: min(2.5vw, 2.5vh);
+    width: 3rem;
+    height: 3rem;
 }
