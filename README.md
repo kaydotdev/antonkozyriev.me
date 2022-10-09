@@ -7,3 +7,4 @@ I am a Ukrainian graduate student and a professional Machine Learning Engineer /
 ### Attributions
 
  - [Father Icon](https://iconscout.com/icons/father) by [Iconscout Store](https://iconscout.com/contributors/iconscout) on [IconScout](https://iconscout.com);
+ - [Wallpaper photo](https://unsplash.com/photos/vJwzxQK7FaE) from Unsplash by NIKON CORPORATION. Free to use under the [Unsplash License](https://unsplash.com/license);

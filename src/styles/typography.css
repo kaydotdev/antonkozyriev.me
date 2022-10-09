@@ -14,10 +14,3 @@ body {
 li a {
     font-weight: 300;
 }
-
-.thumbnail-text {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: min(0.8vw, 1.4vh);
-    line-height: 1rem;
-}
