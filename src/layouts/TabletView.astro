@@ -1,0 +1,49 @@
+---
+import NavBar from '../components/NavBar.astro';
+
+import '../styles/common.css';
+import '../styles/shapes.css';
+
+export interface Props {
+	name: string;
+}
+
+const { name } = Astro.props;
+---
+
+<div class="w-screen h-screen">
+	<div class="relative">
+		<div class="wallpaper">
+			<div style="background-image: url('/assets/wallpaper.jpg')"><img /></div>
+		</div>
+		<div class="shape-divider-tablet">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<rect x="1200" height="3.6"></rect>
+				<rect height="3.6"></rect>
+				<path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" class="shape-fill"></path>
+			</svg>
+		</div>
+	</div>
+    <div class="stretch p-6">
+        <NavBar name={name} />
+        <main class="p-6 slide-content">
+            <slot />
+        </main>
+    </div>
+</div>
+<style>
+	.wallpaper {
+		width: 100%;
+		aspect-ratio: 4 / 1;
+        background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('/assets/wallpaper.jpg');
+		background-color: #D9D9D9;
+	}
+
+    .slide-content {
+		width: 100%;
+		height: calc(100% - 1.75rem);
+	}
+</style>

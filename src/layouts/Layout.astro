@@ -1,6 +1,6 @@
 ---
 import DesktopView from './DesktopView.astro';
-import MobileView from './MobileView.astro';
+import TabletView from './TabletView.astro';
 
 export interface Props {
 	name: string;
@@ -44,7 +44,6 @@ const { name, title } = Astro.props;
 	</head>
 	<body>
 		<div class="hidden lg:block h-screen w-screen"><DesktopView name={name}><slot /></DesktopView></div>
-		<div class="block lg:hidden h-screen w-screen"><MobileView name={name}><slot /></MobileView></div>
+		<div class="block lg:hidden h-screen w-screen"><TabletView name={name}><slot /></TabletView></div>
 	</body>
 </html>
-
