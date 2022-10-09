@@ -2,7 +2,7 @@
 
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg)](https://www.digitalocean.com/?refcode=7367a160fb6b&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
 
-A static pages site [antonkozyriev.me](https://antonkozyriev.me) contains everything you need to know about my education, skills, experience, e.t.c. Built with [React.js](https://reactjs.org) and [Tailwind.css](https://tailwindcss.com).
+I am a Ukrainian graduate student and a professional Machine Learning Engineer / Software Developer with 3+ of experience in both academic and enterprise. My development and research interests are Deep Learning, Natural Language Processing and Big Data. I am looking for a projects with unique and challenging tasks, discoveries, and friendly team members. This static pages site [antonkozyriev.me](https://antonkozyriev.me) contains a brief summary about my education, skills, experience, e.t.c. Built with [Astro](https://astro.build/), [React.js](https://reactjs.org) and [Tailwind.css](https://tailwindcss.com).
 
 ### Attributions
 
