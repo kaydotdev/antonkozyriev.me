@@ -5,10 +5,7 @@
 }
 
 body {
-    margin: 0;
-    overflow: hidden;
     font-family: 'Roboto', sans-serif;
-    color: rgb(55, 53, 47);
 }
 
 li a {
