@@ -43,8 +43,8 @@ const { name, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="flex h-screen w-screen items-center justify-center">
-			<div class="max-w-screen slide aspect-video max-h-screen mx-8">
+		<div class="flex h-screen w-screen items-center justify-center p-12">
+			<div class="slide">
 				<div class="h-full w-full bg-white rounded-lg">
 					<div class="flex h-full w-full flex-row">
 						<div class="relative basis-1/3">
@@ -108,6 +108,8 @@ const { name, title } = Astro.props;
 
 	.slide {
 		box-shadow: 0 0 50px rgba(0,0,0,.1);
+		aspect-ratio: 16 / 9;
+		max-height: calc(100vh - 3rem);
 	}
 
 	.shape-divider {
