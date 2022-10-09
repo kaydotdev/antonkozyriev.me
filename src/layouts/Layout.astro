@@ -3,6 +3,8 @@ import NavLink from '../components/NavLink.astro';
 import ThemeSwitch from '../components/ThemeSwitch';
 
 import '../styles/typography.css';
+import '../styles/common.css';
+import '../styles/shapes.css';
 
 export interface Props {
 	name: string;
@@ -56,7 +58,7 @@ const { name, title } = Astro.props;
 							<div class="shape-divider">
 								<svg id="visual" viewBox="0 0 530 895" width="530" height="895" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M302 900L510 0L530 0L530 900Z" fill="#ffffff" stroke-linecap="square" stroke-linejoin="bevel"></path></svg>
 							</div>
-							<span class="thumbnail text-white">Photo by NIKON CORP. <a class="underline" href="https://unsplash.com/photos/vJwzxQK7FaE">Unsplash</a></span>
+							<span class="thumbnail thumbnail-text">Photo by NIKON CORP. <a class="underline" href="https://unsplash.com/photos/vJwzxQK7FaE">Unsplash</a></span>
 						</div>
 						<div class="basis-2/3 p-4">
 							<div class="stretch">
@@ -87,14 +89,11 @@ const { name, title } = Astro.props;
 		</div>
 	</body>
 </html>
-<style is:global>
+<style>
 	.thumbnail {
 		position: absolute;
 		left: 0.75rem;
 		bottom: 0.75rem;
-		font-weight: 700;
-		font-size: min(0.8vw, 1.6vh);
-    	line-height: 1rem;
 	}
 
 	.wallpaper {
@@ -105,17 +104,6 @@ const { name, title } = Astro.props;
 		background-size: cover;
 		background-image: url('/assets/wallpaper.jpg');
 		background-color: #D9D9D9;
-	}
-
-	.theme-switch {
-		padding: 0.25rem;
-		width: min(2.5vw, 2.5vh);
-		height: min(2.5vw, 2.5vh);
-	}
-
-	.stretch {
-		width: 100%;
-		height: 100%;
 	}
 
 	.slide {
@@ -129,27 +117,5 @@ const { name, title } = Astro.props;
 	.slide-content {
 		width: 100%;
 		height: calc(100% - 1.75rem);
-	}
-
-	.shape-divider {
-		position: absolute;
-		top: 0;
-		right: -1px;
-		width: 100%;
-		overflow: hidden;
-		line-height: 0;
-		max-height: calc(100vh - 6rem);
-		aspect-ratio: 16 / 27;
-	}
-
-	.shape-divider svg {
-		position: relative;
-		display: block;
-		width: 100%;
-		height: 100%;
-	}
-
-	.shape-divider .shape-fill {
-		fill: #FFFFFF;
 	}
 </style>

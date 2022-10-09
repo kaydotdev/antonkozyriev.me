@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../styles/switch.css';
 
 function matchTheme(matches: boolean) {
   const pageRoot = document.querySelector("html");

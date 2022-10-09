@@ -1,0 +1,5 @@
+.theme-switch {
+    padding: 0.25rem;
+    width: min(2.5vw, 2.5vh);
+    height: min(2.5vw, 2.5vh);
+}
