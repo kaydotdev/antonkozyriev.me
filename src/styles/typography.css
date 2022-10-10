@@ -1,5 +1,15 @@
-body {
+* {
     font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h1.title {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 li a {
@@ -7,8 +17,42 @@ li a {
     font-weight: 300;
 }
 
+small {
+    font-size: 0.75rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+p.quote {
+    margin: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+    letter-spacing: -0.025em;
+}
+
+small.description {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
 @media (min-width: 1024px) {
     li a {
         font-size: min(1.6vw, 2.2vh);
-    } 
+    }
+
+    h1 {
+        font-size: min(2.8vw, 4.2vh);
+    }
+
+    small {
+        font-size: min(0.8vw, 1.4vh);
+    }
+
+    p {
+        font-size: min(1.0vw, 1.6vh);
+    }
 }

@@ -1,14 +1,14 @@
-.theme-switch {
+.icon-button {
     width: 1rem;
     height: 1rem;
 }
 
-.theme-switch svg {
+.icon-button svg {
     stroke: rgba(0,0,0,.5);
 }
 
 @media (min-width: 1024px) {
-    .theme-switch {
+    .icon-button {
         width: min(1.8vw, 2.4vh);
         height: min(1.8vw, 2.4vh);
     }

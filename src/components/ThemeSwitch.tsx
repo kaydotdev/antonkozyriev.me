@@ -26,7 +26,7 @@ function ThemeSwitch() {
   }, []);
 
   return (
-    <button onClick={changeColorScheme} type="button" className="theme-switch">
+    <button onClick={changeColorScheme} type="button" className="icon-button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
