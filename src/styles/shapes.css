@@ -52,12 +52,11 @@
     width: 10rem;
     aspect-ratio: 1 / 1;
     border-radius: 9999px;
+    align-self: center;
 }
 
 @media (min-width: 1024px) {
     .profile-picture  {
-        margin-left: auto;
-        margin-right: auto;
         width: min(12vw, 18vh);
     }
 }
