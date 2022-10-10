@@ -55,4 +55,8 @@ small.description {
     p {
         font-size: min(1.0vw, 1.6vh);
     }
+
+    p.quote {
+        margin: min(2.0vw, 3.2vh);
+    }
 }

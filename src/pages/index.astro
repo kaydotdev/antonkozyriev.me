@@ -60,8 +60,24 @@ import '../styles/typography.css';
 	.social-bar {
 		display: flex;
 		flex-direction: row;
-		column-gap: 1rem;
+		column-gap: min(1.6vw, 2.2vh);
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	@media (max-width: 1024px) {
+		.social-bar {
+			column-gap: 2rem;
+		}
+
+		.social-bar a {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+
+		.social-bar a svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
 	}
 </style>
