@@ -24,9 +24,9 @@ const { name } = Astro.props;
 			</svg>
 		</div>
 	</div>
-    <div class="stretch p-6">
+    <div class="slide-container p-4">
         <NavBar name={name} />
-        <main class="p-6 slide-content">
+        <main class="p-4 slide-content">
             <slot />
         </main>
     </div>
@@ -45,5 +45,10 @@ const { name } = Astro.props;
     .slide-content {
 		width: 100%;
 		height: calc(100% - 1.75rem);
+	}
+
+	.slide-container {
+		width: 100%;
+		height: calc(100vh - 100vw / 4);
 	}
 </style>
