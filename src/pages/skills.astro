@@ -27,7 +27,7 @@ const skillsList: string[] = [
 
 <Layout name="SKILLS" title="Anton Kozyriev / Skills">
   <div class="scroll-slide stretch">
-    <h2 class="text-left font-extrabold mb-4 mt-8"># Hard Skills</h2>
+    <h2 class="text-left font-extrabold mb-4 mt-4"># Hard Skills</h2>
     <div class="flex flex-row gap-x-1 flex-wrap mx-6">
       {
         skillsList.map((sk) => (
@@ -37,7 +37,7 @@ const skillsList: string[] = [
         ))
       }
     </div>
-    <h2 class="text-left font-extrabold mb-4 mt-8"># Languages</h2>
+    <h2 class="text-left font-extrabold mb-4 mt-12"># Languages</h2>
     <div class="flex flex-row justify-evenly">
       <div class="flex flex-col justify-center">
         <RadialProgress client:load {...radialSettings} pathLength={1.0}
@@ -67,6 +67,7 @@ const skillsList: string[] = [
         <small class="text-center">Advanced</small>
       </div>
     </div>
+	<h2 class="text-left font-extrabold mb-4 mt-12"># Certification</h2>
   </div>
 </Layout>
 
