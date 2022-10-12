@@ -24,6 +24,6 @@ div.scroll-slide::-webkit-scrollbar-track {
 }
 
 div.scroll-slide::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.2);
+    background-color: #52525b;
     border-radius: 9999px;
 }
