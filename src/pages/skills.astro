@@ -9,29 +9,59 @@ const radialSettings = {
   size: 125,
   color: "#52525b",
 };
+
+const skillsList: string[] = [
+  "Software development",
+  "NLP",
+  "Databases",
+  "Feature engineering",
+  "AI/ML",
+  "Big Data",
+  "Deep learning",
+  "Data Visualization",
+  "Applied mathematics",
+  "Statistics",
+  "Cloud",
+];
 ---
 
 <Layout name="SKILLS" title="Anton Kozyriev / Skills">
   <div class="scroll-slide stretch">
-    <h2 class="text-center font-extrabold mb-8">Languages</h2>
+    <h2 class="text-left font-extrabold mb-4 mt-8"># Hard Skills</h2>
+    <div class="flex flex-row gap-x-1 flex-wrap mx-6">
+      {
+        skillsList.map((sk) => (
+          <span class="mb-1 py-1 px-3 font-bold text-xs rounded-lg text-zinc-600 border border-zinc-600 uppercase">
+            {sk}
+          </span>
+        ))
+      }
+    </div>
+    <h2 class="text-left font-extrabold mb-4 mt-8"># Languages</h2>
     <div class="flex flex-row justify-evenly">
       <div class="flex flex-col justify-center">
         <RadialProgress client:load {...radialSettings} pathLength={1.0}
-          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">C2</h2>
+          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+            C2
+          </h2>
         </RadialProgress>
         <h3 class="text-center">Ukrainian</h3>
         <small class="text-center">Native speaker</small>
       </div>
       <div class="flex flex-col justify-center">
         <RadialProgress client:load {...radialSettings} pathLength={1.0}
-          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">C2</h2>
+          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+            C2
+          </h2>
         </RadialProgress>
         <h3 class="text-center">Russian</h3>
         <small class="text-center">Bilingual</small>
       </div>
       <div class="flex flex-col justify-center">
         <RadialProgress client:load {...radialSettings} pathLength={0.85}
-          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">C1</h2>
+          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+            C1
+          </h2>
         </RadialProgress>
         <h3 class="text-center">English</h3>
         <small class="text-center">Advanced</small>
@@ -41,16 +71,16 @@ const radialSettings = {
 </Layout>
 
 <style>
-	h2.font-radial {
-		font-size: 1.875rem;
-	}
+  h2.font-radial {
+    font-size: 1.875rem;
+  }
 
-	h3 {
-		font-weight: 700;
-	}
+  h3 {
+    font-weight: 700;
+  }
 
-	small {
-		font-weight: 400;
-		font-style: italic;
-	}
+  small {
+    font-weight: 400;
+    font-style: italic;
+  }
 </style>
