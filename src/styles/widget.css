@@ -1,21 +1,41 @@
 .icon-button {
-    width: 1rem;
-    height: 1rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .icon-button svg {
-    stroke: rgba(0,0,0,.5);
+  stroke: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 1024px) {
-    .icon-button {
-        width: min(1.8vw, 2.4vh);
-        height: min(1.8vw, 2.4vh);
-    }
+  .icon-button {
+    width: min(1.8vw, 2.4vh);
+    height: min(1.8vw, 2.4vh);
+  }
 }
 
-circle {
-  stroke-width: 15px;
-  stroke-linecap: round;
+.radial {
+  position: relative;
+}
+
+.radial div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.radial small {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.radial svg {
+  transform: rotate(-90deg);
+}
+
+.radial svg circle {
+  stroke-linecap: none;
   fill: transparent;
 }
