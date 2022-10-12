@@ -13,3 +13,9 @@
         height: min(1.8vw, 2.4vh);
     }
 }
+
+circle {
+  stroke-width: 15px;
+  stroke-linecap: round;
+  fill: transparent;
+}
