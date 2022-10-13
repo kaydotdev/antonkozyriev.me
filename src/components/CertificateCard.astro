@@ -1,0 +1,49 @@
+---
+export interface Props {
+  label: string;
+  issueDate: string;
+  header: string;
+  description: string;
+  link: string;
+}
+
+const { label, issueDate, header, description, link } = Astro.props;
+const certificateLink = `window.location.replace('${link}');`;
+---
+
+<div
+  class="relative h-44 w-56 rounded-md px-4 py-6 shadow-lg shadow-black/5 ring-1 ring-slate-900/10"
+>
+  <img
+    class="absolute top-[-25px] left-[-25px] rounded-full"
+    src={label}
+    alt="Certificate label"
+    width="50px"
+  />
+  <small class="font-thin">{issueDate}</small>
+  <h1 class="text-lg font-bold underline underline-offset-2">
+    {header}
+  </h1>
+  <small class="text-xs leading-none">{description}</small>
+  <button
+    type="button"
+    onclick={certificateLink}
+    class="absolute bottom-6 right-6 inline-block h-10 w-10 rounded-full bg-zinc-600 uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-zinc-700 hover:shadow-lg focus:bg-zinc-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-zinc-800 active:shadow-lg"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="h-5 w-5 m-auto"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+      ></path>
+    </svg>
+  </button>
+</div>
+<style></style>
