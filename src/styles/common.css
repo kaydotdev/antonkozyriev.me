@@ -9,21 +9,45 @@ body {
     color: rgb(55, 53, 47);
 }
 
-div.scroll-slide {
+div.scroll-h {
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-div.scroll-slide::-webkit-scrollbar {
+div.scroll-w {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+div.scroll-none {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+div.scroll-h::-webkit-scrollbar {
     width: 0.25rem;
 }
 
-div.scroll-slide::-webkit-scrollbar-track {
+div.scroll-h::-webkit-scrollbar-track {
     background-color: #ffffff;
     border-radius: 9999px;
 }
 
-div.scroll-slide::-webkit-scrollbar-thumb {
+div.scroll-h::-webkit-scrollbar-thumb {
+    background-color: #52525b;
+    border-radius: 9999px;
+}
+
+div.scroll-w::-webkit-scrollbar {
+    height: 0.25rem;
+}
+
+div.scroll-w::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 9999px;
+}
+
+div.scroll-w::-webkit-scrollbar-thumb {
     background-color: #52525b;
     border-radius: 9999px;
 }

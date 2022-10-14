@@ -108,60 +108,24 @@ const certificationsList: Certificate[] = [
 ---
 
 <Layout name="SKILLS" title="Anton Kozyriev / Skills">
-  <div class="scroll-slide stretch py-4">
-    <h2 class="header">Hard Skills</h2>
-    <div class="flex flex-row gap-x-1 flex-wrap mx-6">
-      {
-        skillsList.map((sk) => (
-          <span class="mb-1 py-1 px-3 font-bold text-xs rounded-lg text-zinc-600 border border-zinc-600 uppercase">
-            {sk}
-          </span>
-        ))
-      }
+  <div class="flex stretch scroll-w snap-mandatory snap-x">
+    <div class="snap-always snap-center flex flex-col stretch scroll-none flex-none">
+      <div class="flex-none">
+        <h2 class="header">Languages</h2>
+      </div>
+      <div class="flex-1"></div>
     </div>
-    <h2 class="header header-child">Languages</h2>
-    <div class="flex flex-row justify-evenly">
-      <div class="flex flex-col justify-center">
-        <RadialProgress client:load {...radialSettings} pathLength={1.0}
-          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
-            C2
-          </h2>
-        </RadialProgress>
-        <h3 class="text-center">Ukrainian</h3>
-        <small class="text-center">Native speaker</small>
+    <div class="snap-always snap-center flex flex-col stretch scroll-none flex-none">
+      <div class="flex-none">
+        <h2 class="header">Hard Skills</h2>
       </div>
-      <div class="flex flex-col justify-center">
-        <RadialProgress client:load {...radialSettings} pathLength={1.0}
-          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
-            C2
-          </h2>
-        </RadialProgress>
-        <h3 class="text-center">Russian</h3>
-        <small class="text-center">Bilingual</small>
-      </div>
-      <div class="flex flex-col justify-center">
-        <RadialProgress client:load {...radialSettings} pathLength={0.85}
-          ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
-            C1
-          </h2>
-        </RadialProgress>
-        <h3 class="text-center">English</h3>
-        <small class="text-center">Advanced</small>
-      </div>
+      <div class="flex-1"></div>
     </div>
-    <h2 class="header header-child">Certification</h2>
-    <div class="flex flex-col gap-y-4 mx-6">
-      {
-        certificationsList.map((certification) => (
-          <CertificateCard
-            label={certification.label}
-            header={certification.header}
-            description={certification.description}
-            issueDate={certification.issueDate}
-            link={certification.link}
-          />
-        ))
-      }
+    <div class="snap-normal snap-center flex flex-col stretch scroll-none flex-none">
+      <div class="flex-none">
+        <h2 class="header">Certification</h2>
+      </div>
+      <div class="flex-1"></div>
     </div>
   </div>
 </Layout>
@@ -172,15 +136,16 @@ const certificationsList: Certificate[] = [
   }
 
   h2.header {
-    @apply text-center font-extrabold mb-2 mx-6;
-  }
-
-  h2.header-child {
-    @apply mt-12;
+    @apply text-center font-extrabold;
   }
 
   h3 {
     font-weight: 700;
+  }
+
+  .slide-snap-section {
+    width: 100%;
+    height: 100%;
   }
 
   small {
