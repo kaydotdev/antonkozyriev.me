@@ -43,7 +43,7 @@ const { name, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="hidden lg:block h-screen w-screen"><DesktopView name={name}><slot /></DesktopView></div>
-		<div class="block lg:hidden h-screen w-screen"><TabletView name={name}><slot /></TabletView></div>
+		<div class="hidden xl:block h-screen w-screen"><DesktopView name={name}><slot /></DesktopView></div>
+		<div class="block xl:hidden h-screen w-screen"><TabletView name={name}><slot /></TabletView></div>
 	</body>
 </html>

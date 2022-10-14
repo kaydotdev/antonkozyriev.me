@@ -41,7 +41,7 @@
     fill: #FFFFFF;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1280px) {
     .shape-divider-tablet svg {
         width: calc(200% + 1.3px);
         height: 500px;
@@ -57,7 +57,7 @@
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
     .profile-picture  {
         width: min(12vw, 18vh);
     }
