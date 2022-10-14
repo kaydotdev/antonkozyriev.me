@@ -19,20 +19,6 @@ const radialSettings = {
   color: "#52525b",
 };
 
-const skillsList: string[] = [
-  "Software development",
-  "NLP",
-  "Databases",
-  "Feature engineering",
-  "AI/ML",
-  "Big Data",
-  "Deep learning",
-  "Data Visualization",
-  "Applied mathematics",
-  "Statistics",
-  "Cloud",
-];
-
 const certificationsList: Certificate[] = [
   {
     label: "/assets/certification/duolingo.svg",
@@ -109,23 +95,77 @@ const certificationsList: Certificate[] = [
 
 <Layout name="SKILLS" title="Anton Kozyriev / Skills">
   <div class="flex stretch scroll-w snap-mandatory snap-x">
-    <div class="snap-always snap-center flex flex-col stretch scroll-none flex-none">
-      <div class="flex-none">
+    <div
+      class="snap-always snap-center flex flex-col stretch scroll-none flex-none"
+    >
+      <div class="flex-none basis-16">
         <h2 class="header">Languages</h2>
       </div>
-      <div class="flex-1"></div>
+      <div class="flex-1">
+        <div class="flex justify-center items-center stretch">
+          <div class="flex flex-row justify-evenly stretch">
+            <div class="flex flex-col justify-center">
+              <RadialProgress client:load {...radialSettings} pathLength={1.0}
+                ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+                  C2
+                </h2>
+              </RadialProgress>
+              <h3 class="text-center">Ukrainian</h3>
+              <small class="text-center">Native speaker</small>
+            </div>
+            <div class="flex flex-col justify-center">
+              <RadialProgress client:load {...radialSettings} pathLength={1.0}
+                ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+                  C2
+                </h2>
+              </RadialProgress>
+              <h3 class="text-center">Russian</h3>
+              <small class="text-center">Bilingual</small>
+            </div>
+            <div class="flex flex-col justify-center">
+              <RadialProgress client:load {...radialSettings} pathLength={0.85}
+                ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+                  C1
+                </h2>
+              </RadialProgress>
+              <h3 class="text-center">English</h3>
+              <small class="text-center">Advanced</small>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="snap-always snap-center flex flex-col stretch scroll-none flex-none">
-      <div class="flex-none">
+    <div
+      class="snap-always snap-center flex flex-col stretch scroll-none flex-none"
+    >
+      <div class="flex-none basis-16">
         <h2 class="header">Hard Skills</h2>
       </div>
       <div class="flex-1"></div>
     </div>
-    <div class="snap-normal snap-center flex flex-col stretch scroll-none flex-none">
-      <div class="flex-none">
+    <div
+      class="snap-normal snap-center flex flex-col stretch scroll-none flex-none"
+    >
+      <div class="flex-none basis-16">
         <h2 class="header">Certification</h2>
       </div>
-      <div class="flex-1"></div>
+      <div class="flex-1">
+        <div class="stretch scroll-h">
+          <div class="flex flex-col gap-y-4 m-6">
+            {
+              certificationsList.map((certification) => (
+                <CertificateCard
+                  label={certification.label}
+                  header={certification.header}
+                  description={certification.description}
+                  issueDate={certification.issueDate}
+                  link={certification.link}
+                />
+              ))
+            }
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </Layout>
