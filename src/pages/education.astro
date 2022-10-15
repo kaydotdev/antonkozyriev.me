@@ -1,13 +1,53 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import EducationCard from "../components/EducationCard.astro";
 
-import '../styles/common.css';
+import "../styles/common.css";
+
+interface EducationProfile {
+  degree: string;
+  institution: string;
+  dateRange: string;
+  location: string;
+  disciplines: string[];
+}
+
+const educationProfiles: EducationProfile[] = [
+  {
+    degree: "Master's degree, Applied Mathematics",
+    institution: "Igor Sikorsky Kyiv Polytechnic Institute",
+    dateRange: "September 2020 - June 2022",
+    location: "Kyiv, Ukraine",
+    disciplines: ["Probability theory and statistics", "Discrete mathematics",
+				  "Linear algebra and analytical geometry", "Control theory",
+				  "Calculus", "Numerical methods", "Deep learning", "Object oriented programming"],
+  },
+  {
+    degree: "Bachelor's degree, Applied Mathematics",
+    institution: "Igor Sikorsky Kyiv Polytechnic Institute",
+    dateRange: "September 2016 - June 2020",
+    location: "Kyiv, Ukraine",
+    disciplines: ["Fuzzy Mathematics", "Risk theory", "Data mining",
+				  "Machine learning", "Numerical Physics", "Big Data & Cloud"],
+  },
+];
 ---
 
 <Layout name="EDUCATION" title="Anton Kozyriev / Education">
-	<div class="scroll-slide stretch"></div>
+  <div class="scroll-none stretch">
+    <ol class="ml-4 border-l-2 border-zinc-600 stretch">
+      {
+        educationProfiles.map((ep) => (
+          <EducationCard
+            degree={ep.degree}
+            institution={ep.institution}
+            dateRange={ep.dateRange}
+            location={ep.location}
+            disciplines={ep.disciplines}
+          />
+        ))
+      }
+    </ol>
+  </div>
 </Layout>
-
-<style>
-
-</style>
+<style></style>
