@@ -14,8 +14,8 @@ export interface Certificate {
 }
 
 const radialSettings = {
-  width: 15,
-  size: 125,
+  width: 10,
+  size: 100,
   color: "#52525b",
 };
 
@@ -98,12 +98,12 @@ const certificationsList: Certificate[] = [
     <div
       class="snap-always snap-center flex flex-col stretch scroll-none flex-none"
     >
-      <div class="flex-none basis-16">
+      <div class="flex-none basis-8 md:basis-16">
         <h2 class="header">Languages</h2>
       </div>
       <div class="flex-1">
         <div class="flex justify-center items-center stretch">
-          <div class="flex flex-row justify-evenly stretch">
+          <div class="flex flex-col gap-y-4 md:flex-row md:w-full md:h-full justify-evenly">
             <div class="flex flex-col justify-center">
               <RadialProgress client:load {...radialSettings} pathLength={1.0}
                 ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
@@ -138,7 +138,7 @@ const certificationsList: Certificate[] = [
     <div
       class="snap-always snap-center flex flex-col stretch scroll-none flex-none"
     >
-      <div class="flex-none basis-16">
+      <div class="flex-none basis-8 md:basis-16">
         <h2 class="header">Tech skills</h2>
       </div>
       <div class="flex-1">
@@ -150,7 +150,7 @@ const certificationsList: Certificate[] = [
     <div
       class="snap-normal snap-center flex flex-col stretch scroll-none flex-none"
     >
-      <div class="flex-none basis-16">
+      <div class="flex-none basis-8 md:basis-16">
         <h2 class="header">Certification</h2>
       </div>
       <div class="flex-1 certificate-carousel">
@@ -193,7 +193,7 @@ const certificationsList: Certificate[] = [
   }
 
   .certificate-carousel {
-    max-height: calc(100vh - 22rem);
+    max-height: calc(100vh - 15rem);
   }
 
   .wordcloud {
@@ -206,6 +206,12 @@ const certificationsList: Certificate[] = [
   small {
     font-weight: 400;
     font-style: italic;
+  }
+
+  @media (min-width: 768px) {
+    .certificate-carousel {
+      max-height: calc(100vh - 22rem);
+    }
   }
 
   @media (min-width: 1280px) {
