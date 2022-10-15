@@ -1,10 +1,17 @@
 .icon-button {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .icon-button svg {
   stroke: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .icon-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
