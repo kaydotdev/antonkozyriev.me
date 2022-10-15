@@ -13,9 +13,15 @@ export interface Certificate {
   link: string;
 }
 
+const radialSettingsMobile = {
+  width: 9,
+  size: 90,
+  color: "#52525b",
+};
+
 const radialSettings = {
-  width: 10,
-  size: 100,
+  width: 15,
+  size: 150,
   color: "#52525b",
 };
 
@@ -103,7 +109,7 @@ const certificationsList: Certificate[] = [
       </div>
       <div class="flex-1">
         <div class="flex justify-center items-center stretch">
-          <div class="flex flex-col gap-y-4 md:flex-row md:w-full md:h-full justify-evenly">
+          <div class="hidden md:flex flex-row stretch justify-evenly">
             <div class="flex flex-col justify-center">
               <RadialProgress client:load {...radialSettings} pathLength={1.0}
                 ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
@@ -124,6 +130,35 @@ const certificationsList: Certificate[] = [
             </div>
             <div class="flex flex-col justify-center">
               <RadialProgress client:load {...radialSettings} pathLength={0.85}
+                ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+                  C1
+                </h2>
+              </RadialProgress>
+              <h3 class="text-center">English</h3>
+              <small class="text-center">Advanced</small>
+            </div>
+          </div>
+          <div class="md:hidden flex flex-col gap-y-2">
+            <div class="flex flex-col justify-center">
+              <RadialProgress client:load {...radialSettingsMobile} pathLength={1.0}
+                ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+                  C2
+                </h2>
+              </RadialProgress>
+              <h3 class="text-center">Ukrainian</h3>
+              <small class="text-center">Native speaker</small>
+            </div>
+            <div class="flex flex-col justify-center">
+              <RadialProgress client:load {...radialSettingsMobile} pathLength={1.0}
+                ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
+                  C2
+                </h2>
+              </RadialProgress>
+              <h3 class="text-center">Russian</h3>
+              <small class="text-center">Bilingual</small>
+            </div>
+            <div class="flex flex-col justify-center">
+              <RadialProgress client:load {...radialSettingsMobile} pathLength={0.85}
                 ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
                   C1
                 </h2>
@@ -211,6 +246,10 @@ const certificationsList: Certificate[] = [
   @media (min-width: 768px) {
     .certificate-carousel {
       max-height: calc(100vh - 22rem);
+    }
+
+    h2.font-radial {
+      font-size: 2.5rem;
     }
   }
 
