@@ -34,7 +34,7 @@ div.scroll-h::-webkit-scrollbar-track {
 }
 
 div.scroll-h::-webkit-scrollbar-thumb {
-    background-color: #52525b;
+    background-color: #52525b40;
     border-radius: 9999px;
 }
 
@@ -48,6 +48,6 @@ div.scroll-w::-webkit-scrollbar-track {
 }
 
 div.scroll-w::-webkit-scrollbar-thumb {
-    background-color: #52525b;
+    background-color: #52525b40;
     border-radius: 9999px;
 }
