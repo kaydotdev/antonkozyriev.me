@@ -14,8 +14,8 @@ export interface Certificate {
 }
 
 const radialSettingsMobile = {
-  width: 9,
-  size: 90,
+  width: 8,
+  size: 80,
   color: "#52525b",
 };
 
@@ -138,7 +138,7 @@ const certificationsList: Certificate[] = [
               <small class="text-center">Advanced</small>
             </div>
           </div>
-          <div class="md:hidden flex flex-col gap-y-2">
+          <div class="md:hidden flex flex-col gap-y-3">
             <div class="flex flex-col justify-center">
               <RadialProgress client:load {...radialSettingsMobile} pathLength={1.0}
                 ><h2 class="font-radial font-extrabold leading-4 text-zinc-600">
@@ -211,7 +211,7 @@ const certificationsList: Certificate[] = [
 
 <style>
   h2.font-radial {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 
   h2.header {
