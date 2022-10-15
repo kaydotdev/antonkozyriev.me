@@ -48,7 +48,7 @@ import '../styles/typography.css';
 
 <style>
 	.container {
-		width: 75%;
+		width: 100%;
 		height: auto;
 		padding: 1.5rem;
 		text-align: center;
@@ -60,12 +60,26 @@ import '../styles/typography.css';
 	.social-bar {
 		display: flex;
 		flex-direction: row;
-		column-gap: min(1.6vw, 2.2vh);
+		column-gap: 1.5rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	@media (max-width: 1280px) {
+	.social-bar a {
+		width: 1.15rem;
+		height: 1.15rem;
+	}
+
+	.social-bar a svg {
+		width: 1.15rem;
+		height: 1.15rem;
+	}
+
+	@media (min-width: 768px) {
+		.container {
+			width: 75%;
+		}
+
 		.social-bar {
 			column-gap: 2rem;
 		}
@@ -78,6 +92,12 @@ import '../styles/typography.css';
 		.social-bar a svg {
 			width: 1.5rem;
 			height: 1.5rem;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		.social-bar {
+			column-gap: min(1.6vw, 2.2vh);
 		}
 	}
 </style>
