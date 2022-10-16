@@ -20,7 +20,7 @@ const {
 } = Astro.props;
 ---
 
-<div class="w-96">
+<div class="w-72 md:w-96">
   <div class="flex flex-row gap-x-4 p-2 border-b border-zinc-900/5">
     <img
       src="/assets/portfolio/icons/github.svg"
@@ -30,11 +30,11 @@ const {
     <div class="flex-1">
       <div class="flex-col">
         <a href={projectLink}
-          ><small class="block text-zinc-600 font-bold text-sm underline"
+          ><small class="block text-zinc-600 font-bold text-sm underline truncate"
             >View on Github</small
           >
         </a>
-        <small class="block text-zinc-600 leading-none text-xs"
+        <small class="block text-zinc-600 leading-none text-xs truncate"
           >{dateRange}</small
         >
       </div>
@@ -57,11 +57,11 @@ const {
   <img
     src={imageSrc}
     alt="Dashboard project logo"
-    class="w-96 h-96 border-b border-zinc-900/5"
+    class="w-72 h-72 md:w-96 md:h-96 border-b border-zinc-900/5"
   />
-  <h1 class="text-xl mt-4">{title}</h1>
-  <div class="flex flex-row gap-x-2 tech-stack mt-2">{icons.map(icon => (<Fragment set:html={icon} />))}</div>
-  <p class="py-4 text-justify text-[#00000080] leading-tight text-sm">{description}</p>
+  <h1 class="text-base md:text-xl mt-2 md:mt-4">{title}</h1>
+  <div class="flex flex-row gap-x-2 tech-stack mt-1 md:mt-2">{icons.map(icon => (<Fragment set:html={icon} />))}</div>
+  <p class="py-1 md:py-4 text-justify text-[#00000080] leading-tight text-xs md:text-sm">{description}</p>
 </div>
 <style>
   .logo {
