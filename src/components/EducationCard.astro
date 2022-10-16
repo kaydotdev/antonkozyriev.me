@@ -43,7 +43,13 @@ const { degree, institution, dateRange, location, disciplines } = Astro.props;
         <small class="text-zinc-600 italic">Courses</small>
       </div>
       <div class="flex flex-row flex-wrap">
-        {disciplines.map((dp) => <div class="basis-1/2"><p class="text-xs md:text-sm text-gray-500">{dp}</p></div>)}
+        {
+          disciplines.map((dp) =>
+            <div class="basis-1/2">
+              <ul class="list-disc list-inside text-xs md:text-sm text-gray-500 mx-2"><li>{dp}</li></ul>
+            </div>
+          )
+        }
       </div>
     </div>
   </div>
@@ -51,7 +57,7 @@ const { degree, institution, dateRange, location, disciplines } = Astro.props;
 <style>
   .card-body {
     display: block;
-    padding: 0.25rem;
+    padding: 0 0.5rem;
     margin-left: 1.5rem;
     margin-bottom: 1rem;
     width: calc(100% - 4.5rem);
