@@ -11,9 +11,9 @@ const { label, issueDate, header, description, link } = Astro.props;
 const certificateLink = `window.location.replace('${link}');`;
 ---
 
-<div class="flex w-full flex-row gap-x-4 rounded-md bg-white px-2 py-3 md:px-4 md:py-6 shadow-lg shadow-black/5 ring-1 ring-zinc-900/5">
+<div class="flex w-full flex-row gap-x-4 bg-white px-2 py-3 md:px-4 md:py-6 shadow-lg shadow-black/5 ring-1 ring-zinc-900/5">
   <div class="flex-none basis-12 md:basis-24">
-    <img class="aspect-square w-12 md:w-24 rounded-md mt-2 md:m-0" src={label} alt="Certificate label" />
+    <img class="aspect-square w-12 md:w-24 mt-2 md:m-0" src={label} alt="Certificate label" />
   </div>
   <div class="relative flex-1">
     <small class="text-[0.6rem] md:text-base font-normal text-gray-500 leading-none">{issueDate}</small>
