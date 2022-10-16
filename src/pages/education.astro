@@ -34,19 +34,19 @@ const educationProfiles: EducationProfile[] = [
 ---
 
 <Layout name="EDUCATION" title="Anton Kozyriev / Education">
-  <div class="scroll-none stretch">
+  <div class="scroll-h stretch">
     <ol class="ml-4 border-l-2 border-zinc-600 stretch">
-      {
-        educationProfiles.map((ep) => (
-          <EducationCard
-            degree={ep.degree}
-            institution={ep.institution}
-            dateRange={ep.dateRange}
-            location={ep.location}
-            disciplines={ep.disciplines}
-          />
-        ))
-      }
+    {
+      educationProfiles.map((ep) => (
+        <EducationCard
+          degree={ep.degree}
+          institution={ep.institution}
+          dateRange={ep.dateRange}
+          location={ep.location}
+          disciplines={ep.disciplines}
+        />
+      ))
+    }
     </ol>
   </div>
 </Layout>
