@@ -17,7 +17,11 @@
 }
 
 .shape-divider .shape-fill {
-    fill: #FFFFFF;
+    fill: rgb(255 255 255);
+}
+
+html.dark .shape-divider .shape-fill {
+    fill: var(--dark-secondary);
 }
 
 .shape-divider-tablet {
@@ -38,7 +42,11 @@
 }
 
 .shape-divider-tablet .shape-fill {
-    fill: #FFFFFF;
+    fill: rgb(255 255 255);
+}
+
+html.dark .shape-divider-tablet .shape-fill {
+    fill: var(--dark-secondary);
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {

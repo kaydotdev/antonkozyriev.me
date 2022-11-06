@@ -3,9 +3,14 @@
   height: 1.25rem;
 }
 
-.icon-button svg {
-  stroke: rgba(0, 0, 0, 0.5);
-}
+.icon-button svg { stroke: rgba(0, 0, 0, 0.5); }
+.icon-button.facebook svg rect { fill: #3d5a98; }
+.icon-button.github svg g { fill: #181616; }
+.icon-button.telegram svg path { fill: #0088cc; }
+.icon-button.linkedin svg path:nth-child(1) { fill: #0076b2; }
+.icon-button.linkedin svg path:nth-child(2) { fill: #fff; }
+.icon-button.instagram svg path { fill: #c13584; }
+.icon-button.kaggle svg path { fill: #20beff; }
 
 @media (min-width: 768px) {
   .icon-button {
