@@ -1,5 +1,6 @@
 <script>
 	import profile from '$lib/assets/profile.png';
+	import SocialBar from './SocialBar.svelte';
 </script>
 
 <div>
@@ -12,6 +13,7 @@
 		interests are Deep Learning, Natural Language Processing and Big Data. I am looking for a
 		projects with unique and challenging tasks, discoveries, and friendly team members."
 	</p>
+	<SocialBar />
 </div>
 
 <style>
