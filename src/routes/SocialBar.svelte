@@ -67,7 +67,9 @@
 
 <style>
     div {
+		height: 2rem;
 		display: flex;
+    	align-items: center;
 		flex-direction: row;
 		column-gap: 1.5rem;
 		margin-left: auto;
@@ -75,7 +77,13 @@
 	}
 
     svg, a {
-		width: 1.15rem;
-		height: 1.15rem; 
+		width: 1.5rem;
+		height: 1.5rem;
+		transition: all 0.2s ease-in-out;
+	}
+
+	svg:hover, a:hover {
+		width: 2rem;
+		height: 2rem;
 	}
 </style>
