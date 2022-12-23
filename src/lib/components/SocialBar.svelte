@@ -66,23 +66,25 @@
 </div>
 
 <style>
-    div {
+	div {
 		height: 2rem;
 		display: flex;
-    	align-items: center;
+		align-items: center;
 		flex-direction: row;
 		column-gap: 1.5rem;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-    svg, a {
+	svg,
+	a {
 		width: 1.5rem;
 		height: 1.5rem;
 		transition: all 0.2s ease-in-out;
 	}
 
-	svg:hover, a:hover {
+	svg:hover,
+	a:hover {
 		width: 2rem;
 		height: 2rem;
 	}
