@@ -1,7 +1,7 @@
 <script>
 	import '$lib/styles/global.css';
-	import Slide from './Slide.svelte';
-	import ProfileCard from './ProfileCard.svelte';
+	import ProfileCard from '$lib/components/ProfileCard.svelte';
+	import Slide from '$lib/components/Slide.svelte';
 </script>
 
 <Slide align id="profile">
