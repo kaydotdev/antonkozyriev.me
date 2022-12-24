@@ -78,15 +78,15 @@
 <style>
 	.navbar {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: 0.5rem;
+		gap: 0.25rem;
 	}
 
 	a {
-		width: 1.5rem;
-		height: 1.5rem;
+		width: 1.25rem;
+		height: 1.25rem;
 		padding: 0.5rem;
 		background-color: #ffffff;
 		border-radius: 0.375rem;
@@ -100,5 +100,17 @@
 
 	svg {
 		fill: #64748b;
+	}
+
+	@media (min-width: 1024px) {
+		a {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+
+		.navbar {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
 	}
 </style>

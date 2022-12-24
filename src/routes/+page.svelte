@@ -52,7 +52,7 @@
 
 	p {
 		font-size: 0.75rem;
-		margin: 2rem 0.5rem;
+		margin: 2rem 1rem;
 		font-weight: 200;
 		text-align: justify;
 		letter-spacing: -0.025em;

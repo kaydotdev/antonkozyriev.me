@@ -32,10 +32,12 @@
 	.slide {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
+		grid-template-rows: 4em 1fr;
 		gap: 0px 0px;
 		grid-auto-flow: row;
-		grid-template-areas: 'content';
+		grid-template-areas:
+			'navigation'
+			'content';
 	}
 
 	.wallpaper {
@@ -60,7 +62,6 @@
 	}
 
 	.navigation {
-		display: none;
 		background-color: #ffffff;
 		grid-area: navigation;
 	}
@@ -86,10 +87,6 @@
 		}
 
 		.wallpaper {
-			display: block;
-		}
-
-		.navigation {
 			display: block;
 		}
 
