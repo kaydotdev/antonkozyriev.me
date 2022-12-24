@@ -6,14 +6,14 @@
 <div class="slide full-screen">
 	<div class="wallpaper">
 		<svg
-			viewBox="0 0 600 900"
-			width="600"
-			height="900"
+			viewBox="0 0 900 1600"
+			width="900"
+			height="1600"
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			version="1.1"
-			><rect x="0" y="0" width="600" height="900" fill="#00000000" /><path
-				d="M362 900L464 0L600 0L600 900Z"
+			><rect x="0" y="0" width="900" height="1600" fill="#00000000" /><path
+				d="M725 1600L864 0L900 0L900 1600Z"
 				fill="#FFFFFF"
 				stroke-linecap="round"
 				stroke-linejoin="miter"
@@ -21,7 +21,7 @@
 		>
 		<img loading="lazy" class="wallpaper-img stretch" src={wallpaperSrc} alt="Slide wallpaper" />
 	</div>
-	<div class="content"><slot /></div>
+	<div class="content stretch"><slot /></div>
 	<div class="navigation" />
 </div>
 
@@ -64,7 +64,7 @@
 
 	@media (min-width: 1024px) {
 		.slide {
-			grid-template-columns: 0.6fr 1fr 8em;
+			grid-template-columns: 0.5fr 1fr 8em;
 			grid-template-areas: 'wallpaper content navigation';
 		}
 
