@@ -3,7 +3,6 @@
 	import SocialBar from '$lib/components/SocialBar.svelte';
 	import Slide from '$lib/components/Slide.svelte';
 	import '$lib/styles/global.css';
-	import '$lib/styles/normalize.css';
 </script>
 
 <Slide>
