@@ -1,4 +1,5 @@
 <script>
+	import Navbar from './Navbar.svelte';
 	import wallpaperSrc from '$lib/assets/wallpaper.jpg';
 	import '$lib/styles/normalize.css';
 </script>
@@ -22,7 +23,9 @@
 		<img loading="lazy" class="wallpaper-img stretch" src={wallpaperSrc} alt="Slide wallpaper" />
 	</div>
 	<div class="content stretch"><slot /></div>
-	<div class="navigation" />
+	<div class="navigation"><Navbar /></div>
+	<div class="theme" />
+	<div class="expansion" />
 </div>
 
 <style>
@@ -62,10 +65,24 @@
 		grid-area: navigation;
 	}
 
+	.theme {
+		display: none;
+		grid-area: theme;
+	}
+
+	.expansion {
+		display: none;
+		grid-area: expansion;
+	}
+
 	@media (min-width: 1024px) {
 		.slide {
-			grid-template-columns: 0.5fr 1fr 8em;
-			grid-template-areas: 'wallpaper content navigation';
+			grid-template-columns: 0.4fr 1fr 4em;
+			grid-template-rows: 4em 1fr 4em;
+			grid-template-areas:
+				'wallpaper content theme'
+				'wallpaper content navigation'
+				'wallpaper content expansion';
 		}
 
 		.wallpaper {
@@ -73,6 +90,14 @@
 		}
 
 		.navigation {
+			display: block;
+		}
+
+		.theme {
+			display: block;
+		}
+
+		.expansion {
 			display: block;
 		}
 	}
