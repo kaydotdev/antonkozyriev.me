@@ -7,25 +7,40 @@
 <Slide>
 	<div class="stretch">
 		<div class="stretch flags">
-			<Flag>
-				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ua" viewBox="0 0 640 480" class="stretch">
+			<Flag language="Ukrainian" proficiency="Native speaker (C2)" level={5}>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					id="flag-icons-ua"
+					viewBox="0 0 640 480"
+					class="stretch"
+				>
 					<g fill-rule="evenodd" stroke-width="1pt">
 						<path fill="gold" d="M0 0h640v480H0z" />
 						<path fill="#0057b8" d="M0 0h640v240H0z" />
 					</g>
 				</svg>
 			</Flag>
-			<Flag>
-				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ru" viewBox="0 0 640 480" class="stretch">
+			<Flag language="Russian" proficiency="Bilingual (C2)" level={5}>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					id="flag-icons-ru"
+					viewBox="0 0 640 480"
+					class="stretch"
+				>
 					<g fill-rule="evenodd" stroke-width="1pt">
-					  <path fill="#fff" d="M0 0h640v480H0z"/>
-					  <path fill="#0083d6" d="M0 160h640v320H0z"/>
-					  <path fill="#fff" d="M0 320h640v160H0z"/>
+						<path fill="#fff" d="M0 0h640v480H0z" />
+						<path fill="#0083d6" d="M0 160h640v320H0z" />
+						<path fill="#fff" d="M0 320h640v160H0z" />
 					</g>
-				  </svg>
+				</svg>
 			</Flag>
-			<Flag>
-				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-us" viewBox="0 0 640 480" class="stretch">
+			<Flag language="English" proficiency="Advanced (C1)" level={4}>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					id="flag-icons-us"
+					viewBox="0 0 640 480"
+					class="stretch"
+				>
 					<g fill-rule="evenodd" stroke-width="1pt">
 						<g>
 							<path
@@ -53,9 +68,11 @@
 	.flags {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		align-content: center;
 		align-items: center;
-		gap: 1rem;
+		gap: 10vh;
+		flex-wrap: wrap;
 	}
 
 	svg {

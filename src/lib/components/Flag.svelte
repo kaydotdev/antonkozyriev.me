@@ -1,52 +1,34 @@
+<script lang="ts">
+	export let proficiency: string;
+	export let language: string;
+	export let level: number = 5;
+
+	const levelShowStar = Array.from({ length: level }, (_, i) => i);
+</script>
+
 <div class="banner">
 	<div class="flag"><slot /></div>
-	<div class="proficiency" />
-	<div class="language" />
+	<div class="proficiency">{proficiency}</div>
+	<div class="language">{language}</div>
 	<div class="rating">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star">
-			<path
-				fill-rule="evenodd"
-				d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-				clip-rule="evenodd"
-			/>
-		</svg>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star">
-			<path
-				fill-rule="evenodd"
-				d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-				clip-rule="evenodd"
-			/>
-		</svg>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star">
-			<path
-				fill-rule="evenodd"
-				d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-				clip-rule="evenodd"
-			/>
-		</svg>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star">
-			<path
-				fill-rule="evenodd"
-				d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-				clip-rule="evenodd"
-			/>
-		</svg>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star">
-			<path
-				fill-rule="evenodd"
-				d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-				clip-rule="evenodd"
-			/>
-		</svg>
+		{#each levelShowStar as _}
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star">
+				<path
+					fill-rule="evenodd"
+					d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+					clip-rule="evenodd"
+				/>
+			</svg>
+		{/each}
 	</div>
 </div>
 
 <style>
 	.banner {
 		display: grid;
-		grid-template-columns: 8em max-content;
-		grid-template-rows: 3em 1em 2em;
-		gap: 0px 1em;
+		grid-template-columns: 8rem max-content;
+		grid-template-rows: 2.5rem 1.5rem 2rem;
+		gap: 0px 1rem;
 		grid-auto-flow: row;
 		grid-template-areas:
 			'flag language'
@@ -63,20 +45,30 @@
 	}
 
 	.proficiency {
+		font-size: 0.75rem;
+		font-weight: 200;
+		font-style: italic;
+		color: #1e293b;
+		padding: 0.25rem 0.5rem;
 		grid-area: proficiency;
 	}
 
 	.language {
+		font-size: 2rem;
+		font-weight: 800;
+		color: #1e293b;
+		padding: 0 0.5rem;
 		grid-area: language;
 	}
 
 	.rating {
 		grid-area: rating;
+		min-width: 9.5rem;
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		padding: 0.25rem;
-		gap: 0.25rem;
+		justify-content: start;
+		padding: 0.25rem 0.5rem;
+		gap: 0.5rem;
 	}
 
 	.star {
