@@ -1,5 +1,7 @@
 <div class="banner">
 	<div class="flag"><slot /></div>
+	<div class="proficiency" />
+	<div class="language" />
 	<div class="rating">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="star">
 			<path
@@ -40,24 +42,46 @@
 </div>
 
 <style>
+	.banner {
+		display: grid;
+		grid-template-columns: 8em max-content;
+		grid-template-rows: 3em 1em 2em;
+		gap: 0px 1em;
+		grid-auto-flow: row;
+		grid-template-areas:
+			'flag language'
+			'flag proficiency'
+			'flag rating';
+	}
+
 	.flag {
-        width: 12rem;
-		height: 9rem;
+		grid-area: flag;
+		width: 8rem;
+		height: 6rem;
 		border-radius: 0.375rem;
 		filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 	}
 
-    .rating {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 1rem;
-        gap: 0.5rem;
-    }
+	.proficiency {
+		grid-area: proficiency;
+	}
 
-    .star {
-        width: 1.5rem;
-        height: 1.5rem;
-        color: #fde047;
-    }
+	.language {
+		grid-area: language;
+	}
+
+	.rating {
+		grid-area: rating;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 0.25rem;
+		gap: 0.25rem;
+	}
+
+	.star {
+		width: 1.5rem;
+		height: 1.5rem;
+		color: #fde047;
+	}
 </style>

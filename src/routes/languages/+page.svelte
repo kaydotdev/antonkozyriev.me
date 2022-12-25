@@ -5,10 +5,10 @@
 </script>
 
 <Slide>
-	<div class="stretch center">
-		<div class="flags">
+	<div class="stretch">
+		<div class="stretch flags">
 			<Flag>
-				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ua" viewBox="0 0 640 480">
+				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ua" viewBox="0 0 640 480" class="stretch">
 					<g fill-rule="evenodd" stroke-width="1pt">
 						<path fill="gold" d="M0 0h640v480H0z" />
 						<path fill="#0057b8" d="M0 0h640v240H0z" />
@@ -16,7 +16,7 @@
 				</svg>
 			</Flag>
 			<Flag>
-				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ru" viewBox="0 0 640 480">
+				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ru" viewBox="0 0 640 480" class="stretch">
 					<g fill-rule="evenodd" stroke-width="1pt">
 					  <path fill="#fff" d="M0 0h640v480H0z"/>
 					  <path fill="#0083d6" d="M0 160h640v320H0z"/>
@@ -25,7 +25,7 @@
 				  </svg>
 			</Flag>
 			<Flag>
-				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-us" viewBox="0 0 640 480">
+				<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-us" viewBox="0 0 640 480" class="stretch">
 					<g fill-rule="evenodd" stroke-width="1pt">
 						<g>
 							<path
@@ -51,18 +51,14 @@
 
 <style>
 	.flags {
-		width: 100%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-content: center;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
 		align-items: center;
+		gap: 1rem;
 	}
 
 	svg {
-		width: 12rem;
-		height: 9rem;
 		border-radius: 0.375rem;
 	}
 </style>

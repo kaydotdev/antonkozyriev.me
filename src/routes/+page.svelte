@@ -53,6 +53,7 @@
 		font-size: 0.75rem;
 		margin: 2rem 1rem;
 		font-weight: 200;
+		font-style: italic;
 		text-align: justify;
 		letter-spacing: -0.025em;
 	}
