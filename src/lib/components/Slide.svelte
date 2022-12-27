@@ -24,10 +24,10 @@
 		<Image
 			width={600}
 			height={750}
+			style="object-fit: cover;"
 			hash="LWNKho4:bcW=.TIoWXof00ogayWB"
 			src={wallpaperSrc}
 			imgAlt="Slide wallpaper"
-			objectCover
 		/>
 	</div>
 	<div class="content stretch"><slot /></div>

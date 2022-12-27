@@ -8,14 +8,14 @@
 	export let hash: string;
 	export let src: string;
 	export let imgAlt: string;
-	export let objectCover: boolean = false;
+	export let style: string = "";
 
 	let canvas: HTMLCanvasElement;
 	let isImageLoaded = false;
 
 	onMount(() => {
-        const image = new Image();
-        image.src = src;
+		const image = new Image();
+		image.src = src;
 
 		const pixels = decode(hash, width, height);
 		const ctx = canvas.getContext('2d')!;
@@ -31,17 +31,7 @@
 </script>
 
 {#if isImageLoaded}
-	<img
-		{src}
-		class={objectCover ? 'stretch img-cover' : 'stretch'}
-		alt={imgAlt}
-	/>
+	<img {src} class="stretch" alt={imgAlt} {style} />
 {:else}
-	<canvas class="stretch" bind:this={canvas} {width} {height} />
+	<canvas class="stretch" bind:this={canvas} {width} {height} {style} />
 {/if}
-
-<style>
-	.img-cover {
-		object-fit: cover;
-	}
-</style>
