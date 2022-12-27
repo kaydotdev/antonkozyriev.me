@@ -1,4 +1,5 @@
 <script>
+	import Image from './Image.svelte';
 	import Navbar from './Navbar.svelte';
 	import wallpaperSrc from '$lib/assets/wallpaper.png';
 	import '$lib/styles/normalize.css';
@@ -20,7 +21,14 @@
 				stroke-linejoin="miter"
 			/></svg
 		>
-		<img loading="lazy" class="wallpaper-img stretch" src={wallpaperSrc} alt="Slide wallpaper" />
+		<Image
+			width={600}
+			height={750}
+			hash="LWNKho4:bcW=.TIoWXof00ogayWB"
+			src={wallpaperSrc}
+			imgAlt="Slide wallpaper"
+			objectCover
+		/>
 	</div>
 	<div class="content stretch"><slot /></div>
 	<div class="navigation"><Navbar /></div>
@@ -43,12 +51,8 @@
 	.wallpaper {
 		display: none;
 		position: relative;
-		background-color: #adcccd;
+		background-color: #ffffff;
 		grid-area: wallpaper;
-	}
-
-	.wallpaper-img {
-		object-fit: cover;
 	}
 
 	.wallpaper svg {
