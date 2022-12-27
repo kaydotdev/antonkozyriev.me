@@ -9,17 +9,14 @@
 <Slide>
 	<div class="stretch center">
 		<div class="profile-card">
-			<div class="profile-pic">
-				<Image
-					style="border-radius: 9999px;"
-					width={400}
-					height={400}
-					hash="USHxNW.9%~-p~VkDXSWW0fM_VYRjtQt6xZs:"
-					src={profile}
-					imgAlt="Profile pic"
-				/>
-			</div>
-
+			<Image
+				style="border-radius: 9999px; width: 8rem; height: 8rem; filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));"
+				width={400}
+				height={400}
+				hash="USHxNW.9%~-p~VkDXSWW0fM_VYRjtQt6xZs:"
+				src={profile}
+				imgAlt="Profile pic"
+			/>
 			<h1>Anton Kozyriev</h1>
 			<small>Data Scientist @ Postello.ai</small>
 			<p>
@@ -39,12 +36,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-
-	.profile-pic {
-		width: 8rem;
-		height: 8rem;
-		filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 	}
 
 	h1 {
