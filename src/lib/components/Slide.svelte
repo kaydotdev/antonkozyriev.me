@@ -57,6 +57,8 @@
 
 	.wallpaper svg {
 		right: 0;
+		width: auto;
+		height: 100%;
 		position: absolute;
 	}
 
