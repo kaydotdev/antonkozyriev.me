@@ -62,16 +62,22 @@
 	}
 
 	.navigation {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-left-style: none;
+		border-color: #e2e8f0;
 		background-color: #ffffff;
 		grid-area: navigation;
 	}
 
 	.theme {
+		border-color: #e2e8f0;
 		display: none;
 		grid-area: theme;
 	}
 
 	.expansion {
+		border-color: #e2e8f0;
 		display: none;
 		grid-area: expansion;
 	}
@@ -90,11 +96,23 @@
 			display: block;
 		}
 
+		.navigation {
+			border-left-width: 1px;
+			border-left-style: solid;
+			border-bottom-style: none;
+		}
+
 		.theme {
+			border-left-width: 1px;
+			border-left-style: solid;
+			border-bottom-style: none;
 			display: block;
 		}
 
 		.expansion {
+			border-left-width: 1px;
+			border-left-style: solid;
+			border-bottom-style: none;
 			display: block;
 		}
 	}
