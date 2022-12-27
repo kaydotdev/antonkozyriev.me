@@ -1,20 +1,20 @@
 <script>
 	import Navbar from './Navbar.svelte';
-	import wallpaperSrc from '$lib/assets/wallpaper.jpg';
+	import wallpaperSrc from '$lib/assets/wallpaper.png';
 	import '$lib/styles/normalize.css';
 </script>
 
 <div class="slide full-screen">
 	<div class="wallpaper">
 		<svg
-			viewBox="0 0 900 1600"
-			width="900"
-			height="1600"
+			viewBox="0 0 540 960"
+			width="540"
+			height="960"
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			version="1.1"
-			><rect x="0" y="0" width="900" height="1600" fill="#00000000" /><path
-				d="M725 1600L864 0L900 0L900 1600Z"
+			><rect x="0" y="0" width="540" height="960" fill="#00000000" /><path
+				d="M430 960L427 928C424 896 418 832 426.5 768C435 704 458 640 458.7 576C459.3 512 437.7 448 442.2 384C446.7 320 477.3 256 489.8 192C502.3 128 496.7 64 493.8 32L491 0L540 0L540 32C540 64 540 128 540 192C540 256 540 320 540 384C540 448 540 512 540 576C540 640 540 704 540 768C540 832 540 896 540 928L540 960Z"
 				fill="#FFFFFF"
 				stroke-linecap="round"
 				stroke-linejoin="miter"
