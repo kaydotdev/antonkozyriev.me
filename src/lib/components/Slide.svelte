@@ -1,6 +1,5 @@
 <script>
 	import Image from './Image.svelte';
-	import Navbar from './Navbar.svelte';
 	import wallpaperSrc from '$lib/assets/wallpaper.png';
 	import '$lib/styles/normalize.css';
 </script>
@@ -31,7 +30,7 @@
 		/>
 	</div>
 	<div class="content stretch"><slot /></div>
-	<div class="navigation"><Navbar /></div>
+	<div class="navigation"></div>
 	<div class="theme" />
 	<div class="expansion" />
 </div>
