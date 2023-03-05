@@ -30,7 +30,12 @@
 </div>
 
 <style>
+	.background {
+		position: relative;
+	}
+
 	.background-image {
+		background-position: 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
 		-webkit-background-size: cover;
