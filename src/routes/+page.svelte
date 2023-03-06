@@ -1,4 +1,6 @@
 <script>
+	import SocialBar from '$lib/components/SocialBar.svelte';
+
 	import Typewriter from 'typewriter-effect/dist/core';
 	import particlesConfig from '$lib/config/particlesjs.json';
 	import Particles from 'svelte-particles';
@@ -42,7 +44,7 @@
 	});
 </script>
 
-<section id="home" class="w-screen h-screen relative">
+<section id="home" class="w-screen h-screen relative grid">
 	<div style={bgImage} class="w-full h-full bg-fixed bg-center bg-no-repeat bg-cover z-0" />
 	<div class="w-full h-full top-0 left-0 opacity-60 bg-black absolute z-[1]">
 		<Particles
@@ -62,10 +64,11 @@
 			<span class="text-xl px-2 uppercase">based in Kyiv, Ukraine</span>
 			<span class="mt-3 border-b border-b-[3] w-12" />
 		</div>
+		<SocialBar />
 	</div>
 	<a
 		href="#about"
-		class="w-8 h-16 bottom-4 absolute text-white z-[3] left-1/2"
+		class="w-8 h-8 bottom-4 absolute text-white z-[3] place-self-center"
 		on:click|preventDefault={(_) =>
 			document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
 	>
