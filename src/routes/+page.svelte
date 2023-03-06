@@ -1,8 +1,12 @@
 <script>
-	import wallpaperSrc from '$lib/assets/wallpaper.png';
+	import Typewriter from 'typewriter-effect/dist/core';
 	import particlesConfig from '$lib/config/particlesjs.json';
 	import Particles from 'svelte-particles';
 	import { loadFull } from 'tsparticles';
+	import { onMount } from 'svelte';
+
+	import wallpaperSrc from '$lib/assets/wallpaper.png';
+
 	import '$lib/styles/normalize.css';
 	import '$lib/styles/global.css';
 
@@ -14,6 +18,21 @@
 	let particlesInit = async (engine) => {
 		await loadFull(engine);
 	};
+
+	onMount(() => {
+		const typeDelay = 100;
+		const eraseDelay = 1500;
+
+		let typewriter = new Typewriter("#whoami", {
+			loop: true,
+			delay: 75
+		});
+
+		typewriter.pauseFor(typeDelay)
+			.typeString("I'm ").typeString("Anton Kozyriev").pauseFor(eraseDelay).deleteChars(14)
+			.pauseFor(typeDelay).typeString("a Backend Developer").pauseFor(eraseDelay).deleteChars(19)
+			.pauseFor(typeDelay).typeString("a AI/ML Enginner").pauseFor(eraseDelay).start();
+	});
 </script>
 
 <div class="full-screen background">
@@ -26,7 +45,7 @@
 			{particlesInit}
 		/>
 	</div>
-	<div class="stretch background-content" />
+	<div class="stretch background-content"><div id="whoami"></div></div>
 </div>
 <div class="full-screen background" />
 
@@ -66,5 +85,10 @@
 		letter-spacing: 0.025em;
 		-webkit-font-smoothing: auto;
 		-moz-osx-font-smoothing: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		font-size: 3.5rem;
 	}
 </style>

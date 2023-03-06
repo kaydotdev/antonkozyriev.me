@@ -33,6 +33,7 @@
 	"dependencies": {
 		"blurhash": "^2.0.4",
 		"svelte-particles": "^2.9.3",
-		"tsparticles": "^2.9.3"
+		"tsparticles": "^2.9.3",
+		"typewriter-effect": "^2.19.0"
 	}
 }
