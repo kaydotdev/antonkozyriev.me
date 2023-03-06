@@ -23,15 +23,25 @@
 		const typeDelay = 100;
 		const eraseDelay = 1500;
 
-		let typewriter = new Typewriter("#whoami", {
+		let typewriter = new Typewriter('#whoami', {
 			loop: true,
 			delay: 75
 		});
 
-		typewriter.pauseFor(typeDelay)
-			.typeString("I'm ").typeString("Anton Kozyriev").pauseFor(eraseDelay).deleteChars(14)
-			.pauseFor(typeDelay).typeString("a Backend Developer").pauseFor(eraseDelay).deleteChars(19)
-			.pauseFor(typeDelay).typeString("a AI/ML Enginner").pauseFor(eraseDelay).start();
+		typewriter
+			.pauseFor(typeDelay)
+			.typeString("I'm ")
+			.typeString('Anton Kozyriev')
+			.pauseFor(eraseDelay)
+			.deleteChars(14)
+			.pauseFor(typeDelay)
+			.typeString('a Backend Developer')
+			.pauseFor(eraseDelay)
+			.deleteChars(19)
+			.pauseFor(typeDelay)
+			.typeString('a AI/ML Enginner')
+			.pauseFor(eraseDelay)
+			.start();
 	});
 </script>
 
@@ -45,7 +55,10 @@
 			{particlesInit}
 		/>
 	</div>
-	<div class="stretch background-content"><div id="whoami"></div></div>
+	<div class="stretch background-content">
+		div.
+		<div id="whoami" />
+	</div>
 </div>
 <div class="full-screen background" />
 
@@ -86,8 +99,12 @@
 		-webkit-font-smoothing: auto;
 		-moz-osx-font-smoothing: auto;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+
+	#whoami {
 		font-weight: 700;
 		font-size: 3.5rem;
 	}
