@@ -36,13 +36,13 @@
 			.pauseFor(eraseDelay)
 			.deleteChars(19)
 			.pauseFor(typeDelay)
-			.typeString('a AI/ML Enginner')
+			.typeString('an AI/ML Enginner')
 			.pauseFor(eraseDelay)
 			.start();
 	});
 </script>
 
-<div class="w-screen h-screen relative">
+<section id="home" class="w-screen h-screen relative">
 	<div style={bgImage} class="w-full h-full bg-fixed bg-center bg-no-repeat bg-cover z-0" />
 	<div class="w-full h-full top-0 left-0 opacity-60 bg-black absolute z-[1]">
 		<Particles
@@ -53,9 +53,34 @@
 		/>
 	</div>
 	<div
-		class="w-full h-full top-0 left-0 absolute z-[2] text-white font-light text-xl tracking-wide subpixel-antialiased flex flex-col justify-center items-center"
+		class="w-full h-full top-0 left-0 absolute z-[2] text-white text-xl tracking-wide subpixel-antialiased flex flex-col justify-center items-center"
 	>
-		<div id="whoami" class="font-bold text-5xl" />
+		<div class="mb-4 text-3xl font-light">Hello,</div>
+		<div id="whoami" class="font-bold text-6xl" />
+		<div class="mt-6 flex flex-row items-start">
+			<span class="mt-3 border-b border-b-[3] w-12" />
+			<span class="text-xl px-2 uppercase">based in Kyiv, Ukraine</span>
+			<span class="mt-3 border-b border-b-[3] w-12" />
+		</div>
 	</div>
-</div>
-<div class="w-screen h-screen relative" />
+	<a
+		href="#about"
+		class="w-8 h-16 bottom-4 absolute text-white z-[3] left-1/2"
+		on:click|preventDefault={(_) =>
+			document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 24 24"
+			fill="currentColor"
+			class="animate-bounce w-8 h-8"
+		>
+			<path
+				fill-rule="evenodd"
+				d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+				clip-rule="evenodd"
+			/>
+		</svg>
+	</a>
+</section>
+<section id="about" class="w-screen h-screen relative" />
