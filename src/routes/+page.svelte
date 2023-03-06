@@ -7,9 +7,6 @@
 
 	import wallpaperSrc from '$lib/assets/wallpaper.png';
 
-	import '$lib/styles/normalize.css';
-	import '$lib/styles/global.css';
-
 	$: bgImage = `background-image: url("${wallpaperSrc}");`;
 
 	let onParticlesLoaded = (event) => {
@@ -45,9 +42,9 @@
 	});
 </script>
 
-<div class="full-screen background">
-	<div style={bgImage} class="stretch background-image" />
-	<div class="stretch background-mask">
+<div class="w-screen h-screen relative">
+	<div style={bgImage} class="w-full h-full bg-fixed bg-center bg-no-repeat bg-cover z-0" />
+	<div class="w-full h-full top-0 left-0 opacity-60 bg-black absolute z-[1]">
 		<Particles
 			id="tsparticles"
 			options={particlesConfig}
@@ -55,57 +52,10 @@
 			{particlesInit}
 		/>
 	</div>
-	<div class="stretch background-content">
-		div.
-		<div id="whoami" />
+	<div
+		class="w-full h-full top-0 left-0 absolute z-[2] text-white font-light text-xl tracking-wide subpixel-antialiased flex flex-col justify-center items-center"
+	>
+		<div id="whoami" class="font-bold text-5xl" />
 	</div>
 </div>
-<div class="full-screen background" />
-
-<style>
-	.background {
-		position: relative;
-	}
-
-	.background-image {
-		background-attachment: fixed;
-		background-position: 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		z-index: 0;
-	}
-
-	.background-mask {
-		top: 0;
-		left: 0;
-		opacity: 0.6;
-		background-color: #000000;
-		position: absolute;
-		z-index: 1;
-	}
-
-	.background-content {
-		top: 0;
-		left: 0;
-		position: absolute;
-		z-index: 2;
-		color: white;
-		font-weight: 300;
-		font-size: 1.25rem;
-		line-height: 1.75rem;
-		letter-spacing: 0.025em;
-		-webkit-font-smoothing: auto;
-		-moz-osx-font-smoothing: auto;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	#whoami {
-		font-weight: 700;
-		font-size: 3.5rem;
-	}
-</style>
+<div class="w-screen h-screen relative" />

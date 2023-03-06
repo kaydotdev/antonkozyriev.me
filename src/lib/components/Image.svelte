@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { decode } from 'blurhash';
-	import '$lib/styles/normalize.css';
 
 	export let width: number;
 	export let height: number;
@@ -31,7 +30,7 @@
 </script>
 
 {#if isImageLoaded}
-	<img {src} class="stretch" alt={imgAlt} {style} />
+	<img {src} class="w-full h-full" alt={imgAlt} {style} />
 {:else}
-	<canvas class="stretch" bind:this={canvas} {width} {height} {style} />
+	<canvas class="w-full h-full" bind:this={canvas} {width} {height} {style} />
 {/if}
