@@ -2,9 +2,12 @@
 
 body {
 	margin: 0;
-	overflow: hidden;
 	font-family: 'Inter', sans-serif;
 	background-color: #ffffff;
+}
+
+body::-webkit-scrollbar{
+	display: none;
 }
 
 h1 {

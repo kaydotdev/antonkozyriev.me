@@ -28,6 +28,7 @@
 	</div>
 	<div class="stretch background-content" />
 </div>
+<div class="full-screen background" />
 
 <style>
 	.background {
@@ -35,6 +36,7 @@
 	}
 
 	.background-image {
+		background-attachment: fixed;
 		background-position: 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
