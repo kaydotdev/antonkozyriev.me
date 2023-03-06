@@ -87,3 +87,8 @@
 	</a>
 </section>
 <section id="about" class="w-screen h-screen relative" />
+<section id="skills" class="w-screen h-screen relative" />
+<section id="education" class="w-screen h-screen relative" />
+<section id="experience" class="w-screen h-screen relative" />
+<section id="portfolio" class="w-screen h-screen relative" />
+<section id="contact" class="w-screen h-screen relative" />
