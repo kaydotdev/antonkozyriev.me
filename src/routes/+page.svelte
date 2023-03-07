@@ -1,5 +1,6 @@
 <script>
 	import SocialBar from '$lib/components/SocialBar.svelte';
+	import SectionDivider from '$lib/components/SectionDivider.svelte';
 
 	import Typewriter from 'typewriter-effect/dist/core';
 	import particlesConfig from '$lib/config/particlesjs.json';
@@ -86,9 +87,14 @@
 		</svg>
 	</a>
 </section>
-<section id="about" class="w-screen h-screen relative" />
-<section id="skills" class="w-screen h-screen relative" />
-<section id="education" class="w-screen h-screen relative" />
-<section id="experience" class="w-screen h-screen relative" />
-<section id="portfolio" class="w-screen h-screen relative" />
-<section id="contact" class="w-screen h-screen relative" />
+<section id="about" class="w-screen h-screen relative bg-odd-slide" />
+<SectionDivider bgIdOdd />
+<section id="skills" class="w-screen h-screen relative bg-even-slide" />
+<SectionDivider pathIdOdd />
+<section id="education" class="w-screen h-screen relative bg-odd-slide" />
+<SectionDivider bgIdOdd />
+<section id="experience" class="w-screen h-screen relative bg-even-slide" />
+<SectionDivider pathIdOdd />
+<section id="portfolio" class="w-screen h-screen relative bg-odd-slide" />
+<SectionDivider bgIdOdd />
+<section id="contact" class="w-screen h-screen relative bg-even-slide" />
