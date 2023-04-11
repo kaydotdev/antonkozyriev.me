@@ -5,7 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				'odd-slide': '#FFFFFF',
-				'even-slide': '#F8F9FA'
+				'even-slide': '#000000'
 			}
 		}
 	},
