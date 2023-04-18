@@ -63,7 +63,7 @@
 					>
 				</div>
 			</div>
-			<div class="col-span-5 md:col-span-3 box-border ml-auto">
+			<div class="col-span-5 md:col-span-3 box-border ml-auto 2xl:mx-auto">
 				<img class="logo" src={logo} alt="My home page setup" draggable="false" />
 			</div>
 			<div class="col-span-5 2xl:col-span-1 box-border z-0 h-full">
@@ -100,7 +100,9 @@
 			<img class="animate-bounce w-full" src={arrowIcon} alt="Go to profile section" />
 		</a>
 	</section>
-	<section id="profile" class="p-8 md:p-14 2xl:p-20 box-border overflow-hidden">Profile section</section>
+	<section id="profile" class="p-8 md:p-14 2xl:p-20 box-border overflow-hidden">
+		Profile section
+	</section>
 </main>
 
 <style>
