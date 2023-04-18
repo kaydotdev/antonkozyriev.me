@@ -7,4 +7,4 @@ I am a Ukrainian graduate student and a professional Machine Learning Engineer /
 ### Attributions
 
 - [Father Icon](https://iconscout.com/icons/father) by [Iconscout Store](https://iconscout.com/contributors/iconscout) on [IconScout](https://iconscout.com);
-- Wallpaper made with Midjourney AI Commercial Edition.
+- Other graphic assets made with Midjourney AI Commercial Edition.
