@@ -1,26 +1,122 @@
 <script>
-	import SocialBar from "$lib/components/SocialBar.svelte";
-	import TypeWriter from "$lib/components/TypeWriter.svelte";
-	import wallpaperSrc from '$lib/assets/wallpaper.png';
+	import TypeWriter from '$lib/components/TypeWriter.svelte';
 
+	import facebookLogo from '$lib/assets/social/facebook.svg';
+	import githubLogo from '$lib/assets/social/github.svg';
+	import telegramLogo from '$lib/assets/social/telegram.svg';
+	import linkedinLogo from '$lib/assets/social/linkedin.svg';
+	import kaggleLogo from '$lib/assets/social/kaggle.svg';
 
-	$: bgImage = `background-image: url("${wallpaperSrc}");`;
+	import locationPin from '$lib/assets/pins/location.svg';
+	import experiencePin from '$lib/assets/pins/experience.svg';
+	import employmentPin from '$lib/assets/pins/employment.svg';
+
+	import logo from '$lib/assets/logo.png';
 </script>
 
-<section id="home" class="w-screen h-screen relative grid">
-	<div style={bgImage} class="w-full h-full bg-fixed bg-center bg-no-repeat bg-cover z-0" />
-	<div
-		class="w-full h-full top-0 left-0 absolute z-[2] text-white text-xl tracking-wide subpixel-antialiased flex flex-col justify-center items-center"
-	>
-		<div class="mb-4 text-3xl font-light">Hello,</div>
-		<TypeWriter className="font-bold text-6xl" messages={[
-			"I'm Anton Kozyriev", "I'm a Backend Developer", "I'm an AI/ML Enginner"
-		]} innerText="I'm Anton Kozyriev" />
-		<div class="mt-6 flex flex-row items-start">
-			<span class="mt-3 border-b border-b-[3] w-12" />
-			<span class="text-xl px-2 uppercase">based in Kyiv, Ukraine</span>
-			<span class="mt-3 border-b border-b-[3] w-12" />
+<main class="w-screen min-h-screen bg-ascent box-border">
+	<section id="home" class="relative h-screen p-20 box-border overflow-hidden">
+		<div
+			class="grid grid-cols-5 2xl:grid-cols-6 box-border max-h-92 w-full align-middle items-start"
+		>
+			<div class="col-span-2 box-border z-0 h-full">
+				<h1 class="mt-12 not-italic font-black text-7xl leading-title text-primary">
+					Anton<br />Kozyriev
+				</h1>
+				<div class="mt-20 not-italic font-normal text-xl text-justify text-primary">
+					I am a <TypeWriter
+						className="font-bold text-xl text-primary"
+						messages={[
+							'Machine Learning Engineer',
+							'Big Data Engineer',
+							'Python Backend Engineer',
+							'Machine Learning Researcher'
+						]}
+						innerText="Machine Learning Engineer"
+						eraseDelay="5000"
+					/>, and I have dedicated over three exhilarating years to cutting-edge academic research
+					and AI engineering in the enterprise.
+				</div>
+				<div class="flex flex-row gap-x-4 mt-12 items-start">
+					<a href="https://facebook.com/anton.kozyriev" target="_blank" rel="noreferrer"
+						><img class="w-6 h-6 social" src={facebookLogo} alt="Facebook logo" /></a
+					>
+					<a href="https://github.com/antonAce" target="_blank" rel="noreferrer"
+						><img class="w-6 h-6 social" src={githubLogo} alt="Github logo" /></a
+					>
+					<a href="https://t.me/antonace" target="_blank" rel="noreferrer"
+						><img class="w-6 h-6 social" src={telegramLogo} alt="Telegram logo" /></a
+					>
+					<a href="https://linkedin.com/in/anton-kozyriev" target="_blank" rel="noreferrer"
+						><img class="w-6 h-6 social" src={linkedinLogo} alt="Linkedin logo" /></a
+					>
+					<a href="https://www.kaggle.com/antonkozyriev" target="_blank" rel="noreferrer"
+						><img class="w-6 h-6 social" src={kaggleLogo} alt="Kaggle logo" /></a
+					>
+				</div>
+			</div>
+			<div class="col-span-3 box-border mx-auto">
+				<img class="logo" src={logo} alt="My home page setup" draggable="false" />
+			</div>
+			<div class="col-span-5 2xl:col-span-1 box-border z-0 h-full">
+				<img class="w-16 h-16" src={locationPin} alt="My working location pin" draggable="false" />
+				<h3>Location</h3>
+				<span>Based in Kyiv, Ukraine</span>
+
+				<img
+					class="w-16 h-16"
+					src={experiencePin}
+					alt="My years of experience pin"
+					draggable="false"
+				/>
+				<h3>Experience</h3>
+				<span>3+ years in enterprise</span>
+
+				<img
+					class="w-16 h-16"
+					src={employmentPin}
+					alt="My preferred working environment pin"
+					draggable="false"
+				/>
+				<h3>Employment</h3>
+				<span>In office or remote</span>
+			</div>
 		</div>
-		<SocialBar />
-	</div>
-</section>
+	</section>
+	<!--
+	<section id="profile" class="">profile</section>
+	<section id="skills" class="">skills</section>
+	<section id="education" class="">education</section>
+	<section id="experience" class="">experience</section>
+	<section id="portfolio" class="">portfolio</section>
+	<section id="contact" class="">contact</section>-->
+</main>
+
+<style>
+	img.social {
+		opacity: 0.85;
+	}
+
+	img.social:hover {
+		animation: enlarge 1s cubic-bezier(0, 0, 0.2, 1);
+	}
+
+	img.logo {
+		box-sizing: border-box;
+		display: block;
+		z-index: -50;
+		aspect-ratio: 1 / 1;
+		max-height: calc(100vh - 10rem);
+	}
+
+	@keyframes enlarge {
+		from {
+			opacity: 0.85;
+			transform: translate(0);
+		}
+		to {
+			opacity: 1;
+			transform: translate(0, -0.25rem);
+		}
+	}
+</style>

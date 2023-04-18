@@ -27,4 +27,4 @@
 	});
 </script>
 
-<div id={typeWriterId} class={className}>{innerText}</div>
+<span id={typeWriterId} class={className}>{innerText}</span>
