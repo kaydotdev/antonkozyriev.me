@@ -1,5 +1,6 @@
 <script>
 	import TypeWriter from '$lib/components/TypeWriter.svelte';
+	import DataPin from '$lib/components/DataPin.svelte';
 
 	import facebookLogo from '$lib/assets/social/facebook.svg';
 	import githubLogo from '$lib/assets/social/github.svg';
@@ -15,7 +16,7 @@
 </script>
 
 <main class="w-screen min-h-screen bg-ascent box-border">
-	<section id="home" class="relative h-screen p-20 box-border overflow-hidden">
+	<section id="home" class="relative min-h-screen 2xl:h-screen p-20 box-border overflow-hidden">
 		<div
 			class="grid grid-cols-5 2xl:grid-cols-6 box-border max-h-92 w-full align-middle items-start"
 		>
@@ -59,27 +60,26 @@
 				<img class="logo" src={logo} alt="My home page setup" draggable="false" />
 			</div>
 			<div class="col-span-5 2xl:col-span-1 box-border z-0 h-full">
-				<img class="w-16 h-16" src={locationPin} alt="My working location pin" draggable="false" />
-				<h3>Location</h3>
-				<span>Based in Kyiv, Ukraine</span>
-
-				<img
-					class="w-16 h-16"
-					src={experiencePin}
-					alt="My years of experience pin"
-					draggable="false"
-				/>
-				<h3>Experience</h3>
-				<span>3+ years in enterprise</span>
-
-				<img
-					class="w-16 h-16"
-					src={employmentPin}
-					alt="My preferred working environment pin"
-					draggable="false"
-				/>
-				<h3>Employment</h3>
-				<span>In office or remote</span>
+				<div class="w-full h-full flex flex-col gap-y-12 justify-center items-center">
+					<DataPin
+						src={locationPin}
+						alt="My working location pin"
+						header="Location"
+						description="Based in Kyiv, Ukraine"
+					/>
+					<DataPin
+						src={experiencePin}
+						alt="My years of experience pin"
+						header="Experience"
+						description="3+ years in enterprise"
+					/>
+					<DataPin
+						src={employmentPin}
+						alt="My preferred working environment pin"
+						header="Employment"
+						description="In office or remote"
+					/>
+				</div>
 			</div>
 		</div>
 	</section>
