@@ -12,6 +12,8 @@
 	import experiencePin from '$lib/assets/pins/experience.svg';
 	import employmentPin from '$lib/assets/pins/employment.svg';
 
+	import arrowIcon from '$lib/assets/arrow.svg';
+
 	import logo from '$lib/assets/logo.png';
 </script>
 
@@ -89,14 +91,16 @@
 				</div>
 			</div>
 		</div>
+		<a
+			href="#profile"
+			class="hidden 2xl:block w-6 h-6 bottom-4 absolute z-[3] translate-x-1/2 left-1/2"
+			on:click|preventDefault={(_) =>
+				document.getElementById('profile').scrollIntoView({ behavior: 'smooth' })}
+		>
+			<img class="animate-bounce w-full" src={arrowIcon} alt="Go to profile section" />
+		</a>
 	</section>
-	<!--
-	<section id="profile" class="">profile</section>
-	<section id="skills" class="">skills</section>
-	<section id="education" class="">education</section>
-	<section id="experience" class="">experience</section>
-	<section id="portfolio" class="">portfolio</section>
-	<section id="contact" class="">contact</section>-->
+	<section id="profile" class="p-8 md:p-14 2xl:p-20 box-border overflow-hidden">Profile section</section>
 </main>
 
 <style>
