@@ -16,17 +16,22 @@
 </script>
 
 <main class="w-screen min-h-screen bg-ascent box-border">
-	<section id="home" class="relative min-h-screen 2xl:h-screen p-20 box-border overflow-hidden">
+	<section
+		id="home"
+		class="relative min-h-screen 2xl:h-screen p-8 md:p-14 2xl:p-20 box-border overflow-hidden"
+	>
 		<div
-			class="grid grid-cols-5 2xl:grid-cols-6 box-border max-h-92 w-full align-middle items-start"
+			class="grid grid-cols-5 2xl:grid-cols-6 gap-y-6 2xl:gap-y-0 box-border max-h-92 w-full align-middle items-start"
 		>
-			<div class="col-span-2 box-border z-0 h-full">
-				<h1 class="mt-12 not-italic font-black text-7xl leading-title text-primary">
+			<div class="col-span-5 md:col-span-2 box-border z-0 h-full">
+				<h1 class="mt-12 not-italic font-black text-5xl xl:text-7xl xl:leading-title text-primary">
 					Anton<br />Kozyriev
 				</h1>
-				<div class="mt-20 not-italic font-normal text-xl text-justify text-primary">
+				<div
+					class="mt-12 xl:mt-20 not-italic font-normal text-base xl:text-xl text-justify text-primary"
+				>
 					I am a <TypeWriter
-						className="font-bold text-xl text-primary"
+						className="font-bold text-base xl:text-xl text-primary"
 						messages={[
 							'Machine Learning Engineer',
 							'Big Data Engineer',
@@ -38,29 +43,31 @@
 					/>, and I have dedicated over three exhilarating years to cutting-edge academic research
 					and AI engineering in the enterprise.
 				</div>
-				<div class="flex flex-row gap-x-4 mt-12 items-start">
+				<div class="flex flex-row gap-x-4 mt-6 xl:mt-12 items-start">
 					<a href="https://facebook.com/anton.kozyriev" target="_blank" rel="noreferrer"
-						><img class="w-6 h-6 social" src={facebookLogo} alt="Facebook logo" /></a
+						><img class="w-5 h-5 xl:w-6 xl:h-6 social" src={facebookLogo} alt="Facebook logo" /></a
 					>
 					<a href="https://github.com/antonAce" target="_blank" rel="noreferrer"
-						><img class="w-6 h-6 social" src={githubLogo} alt="Github logo" /></a
+						><img class="w-5 h-5 xl:w-6 xl:h-6 social" src={githubLogo} alt="Github logo" /></a
 					>
 					<a href="https://t.me/antonace" target="_blank" rel="noreferrer"
-						><img class="w-6 h-6 social" src={telegramLogo} alt="Telegram logo" /></a
+						><img class="w-5 h-5 xl:w-6 xl:h-6 social" src={telegramLogo} alt="Telegram logo" /></a
 					>
 					<a href="https://linkedin.com/in/anton-kozyriev" target="_blank" rel="noreferrer"
-						><img class="w-6 h-6 social" src={linkedinLogo} alt="Linkedin logo" /></a
+						><img class="w-5 h-5 xl:w-6 xl:h-6 social" src={linkedinLogo} alt="Linkedin logo" /></a
 					>
 					<a href="https://www.kaggle.com/antonkozyriev" target="_blank" rel="noreferrer"
-						><img class="w-6 h-6 social" src={kaggleLogo} alt="Kaggle logo" /></a
+						><img class="w-5 h-5 xl:w-6 xl:h-6 social" src={kaggleLogo} alt="Kaggle logo" /></a
 					>
 				</div>
 			</div>
-			<div class="col-span-3 box-border mx-auto">
+			<div class="col-span-5 md:col-span-3 box-border ml-auto">
 				<img class="logo" src={logo} alt="My home page setup" draggable="false" />
 			</div>
 			<div class="col-span-5 2xl:col-span-1 box-border z-0 h-full">
-				<div class="w-full h-full flex flex-col gap-y-12 justify-center items-center">
+				<div
+					class="w-full h-full flex flex-row justify-around 2xl:flex-col 2xl:gap-y-12 2xl:justify-center items-center"
+				>
 					<DataPin
 						src={locationPin}
 						alt="My working location pin"
