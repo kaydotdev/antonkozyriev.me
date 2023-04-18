@@ -66,7 +66,7 @@
 			</div>
 			<div class="col-span-5 2xl:col-span-1 box-border z-0 h-full">
 				<div
-					class="w-full h-full flex flex-row justify-around 2xl:flex-col 2xl:gap-y-12 2xl:justify-center items-center"
+					class="w-full h-full flex flex-row flex-wrap gap-8 justify-start md:justify-around lg:flex-nowrap 2xl:flex-col 2xl:gap-y-12 2xl:justify-center items-center"
 				>
 					<DataPin
 						src={locationPin}
