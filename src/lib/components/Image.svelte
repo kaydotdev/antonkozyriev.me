@@ -7,6 +7,7 @@
 	export let hash: string;
 	export let src: string;
 	export let imgAlt: string;
+	export let className: string;
 	export let style: string = "";
 
 	let canvas: HTMLCanvasElement;
@@ -30,7 +31,7 @@
 </script>
 
 {#if isImageLoaded}
-	<img {src} class="w-full h-full" alt={imgAlt} {style} />
+	<img {src} class={className} alt={imgAlt} {style} />
 {:else}
-	<canvas class="w-full h-full" bind:this={canvas} {width} {height} {style} />
+	<canvas class={className} bind:this={canvas} {width} {height} {style} />
 {/if}
