@@ -32,7 +32,9 @@
 				<div
 					class="mt-12 xl:mt-20 not-italic font-normal text-base xl:text-xl text-justify text-primary"
 				>
-					I am a <TypeWriter
+					I have dedicated over four exhilarating years to cutting-edge academic 
+					research and AI engineering in the enterprise. Now I am a professional 
+					<TypeWriter
 						className="font-bold text-base xl:text-xl text-primary"
 						messages={[
 							'Machine Learning Engineer',
@@ -42,8 +44,7 @@
 						]}
 						innerText="Machine Learning Engineer"
 						eraseDelay="5000"
-					/>, and I have dedicated over three exhilarating years to cutting-edge academic research
-					and AI engineering in the enterprise.
+					/>.
 				</div>
 				<div class="flex flex-row gap-x-4 mt-6 xl:mt-12 items-start">
 					<a href="https://facebook.com/anton.kozyriev" target="_blank" rel="noreferrer"
@@ -92,16 +93,13 @@
 			</div>
 		</div>
 		<a
-			href="#profile"
+			href="#home"
 			class="hidden 2xl:block w-6 h-6 bottom-4 absolute z-[3] translate-x-1/2 left-1/2"
 			on:click|preventDefault={(_) =>
-				document.getElementById('profile').scrollIntoView({ behavior: 'smooth' })}
+				document.getElementById('home').scrollIntoView({ behavior: 'smooth' })}
 		>
 			<img class="animate-bounce w-full" src={arrowIcon} alt="Go to profile section" />
 		</a>
-	</section>
-	<section id="profile" class="p-8 md:p-14 2xl:p-20 box-border overflow-hidden">
-		Profile section
 	</section>
 </main>
 
