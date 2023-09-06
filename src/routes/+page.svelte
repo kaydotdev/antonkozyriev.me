@@ -32,7 +32,7 @@
 				<div
 					class="mt-12 xl:mt-20 not-italic font-normal text-base xl:text-xl text-justify text-primary"
 				>
-					I have dedicated over four exhilarating years to cutting-edge academic 
+					I have dedicated over three exhilarating years to cutting-edge academic 
 					research and AI engineering in the enterprise. Now I am a professional 
 					<TypeWriter
 						className="font-bold text-base xl:text-xl text-primary"
