@@ -32,7 +32,7 @@
 				<div
 					class="mt-12 xl:mt-20 not-italic font-normal text-base xl:text-xl text-justify text-primary"
 				>
-					I have dedicated over three exhilarating years to cutting-edge academic 
+					I have dedicated over four exhilarating years to cutting-edge academic 
 					research and AI engineering in the enterprise. Now I am a professional 
 					<TypeWriter
 						className="font-bold text-base xl:text-xl text-primary"
@@ -50,7 +50,7 @@
 					<a href="https://facebook.com/anton.kozyriev" target="_blank" rel="noreferrer"
 						><img class="w-5 h-5 xl:w-6 xl:h-6 social" src={facebookLogo} alt="Facebook logo" /></a
 					>
-					<a href="https://github.com/antonAce" target="_blank" rel="noreferrer"
+					<a href="https://github.com/kaydotdev" target="_blank" rel="noreferrer"
 						><img class="w-5 h-5 xl:w-6 xl:h-6 social" src={githubLogo} alt="Github logo" /></a
 					>
 					<a href="https://t.me/antonace" target="_blank" rel="noreferrer"
@@ -81,7 +81,7 @@
 						src={experiencePin}
 						alt="My years of experience pin"
 						header="Experience"
-						description="3+ years in enterprise"
+						description="4+ years in enterprise"
 					/>
 					<DataPin
 						src={employmentPin}
