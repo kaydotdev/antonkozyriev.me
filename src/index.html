@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Anton Kozyriev</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/presentation.css" />
+  </head>
+  <body>
+    <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="gLine" x1="0" x2="1">
+          <stop offset="0" stop-color="#E8590C" />
+          <stop offset=".5" stop-color="#FFB562" />
+          <stop offset="1" stop-color="#FFB562" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="gLineC" x1="0" x2="1">
+          <stop offset="0" stop-color="#FFB562" stop-opacity="0" />
+          <stop offset=".22" stop-color="#E8590C" />
+          <stop offset=".78" stop-color="#E8590C" />
+          <stop offset="1" stop-color="#FFB562" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="gLineW" x1="0" x2="1">
+          <stop offset="0" stop-color="#fff" stop-opacity=".1" />
+          <stop offset=".5" stop-color="#fff" stop-opacity=".6" />
+          <stop offset="1" stop-color="#fff" stop-opacity=".1" />
+        </linearGradient>
+      </defs>
+      <symbol id="i-orcid" viewBox="0 0 24 24">
+        <text
+          x="12"
+          y="16.4"
+          text-anchor="middle"
+          font-family="'Exo 2',sans-serif"
+          font-weight="700"
+          font-size="13.5"
+          fill="currentColor"
+        >
+          iD
+        </text>
+      </symbol>
+      <symbol id="i-scopus" viewBox="0 0 24 24">
+        <text
+          x="12"
+          y="16.4"
+          text-anchor="middle"
+          font-family="'Exo 2',sans-serif"
+          font-weight="700"
+          font-size="12.5"
+          fill="currentColor"
+        >
+          Sc
+        </text>
+      </symbol>
+      <symbol id="i-li" viewBox="0 0 24 24">
+        <text
+          x="12"
+          y="17"
+          text-anchor="middle"
+          font-family="'Exo 2',sans-serif"
+          font-weight="700"
+          font-size="15"
+          fill="currentColor"
+        >
+          in
+        </text>
+      </symbol>
+      <symbol id="i-git" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="7" cy="5.5" r="2.3" />
+          <circle cx="7" cy="18.5" r="2.3" />
+          <circle cx="17" cy="8.5" r="2.3" />
+          <path d="M7 7.8v8.4M17 10.8c0 3.4-10 2.2-10 5.4" />
+        </g>
+      </symbol>
+      <symbol id="i-link" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="8.5" />
+          <path d="M3.5 12h17M12 3.5c2.6 2.4 3.8 5.2 3.8 8.5s-1.2 6.1-3.8 8.5c-2.6-2.4-3.8-5.2-3.8-8.5s1.2-6.1 3.8-8.5z" />
+        </g>
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" fill="currentColor" />
+      </symbol>
+      <symbol id="i-fork" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.1">
+          <rect x="4" y="2.8" width="5" height="5" />
+          <rect x="15" y="2.8" width="5" height="5" />
+          <rect x="9.5" y="16.2" width="5" height="5" />
+          <path d="M6.5 7.8v2.4h11V7.8M12 10.2v6" />
+        </g>
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="M15.5 15.5l5 5" />
+        </g>
+      </symbol>
+      <symbol id="i-pdf" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+          <path d="M6 2.8h8.2L19 7.6v13.6H6z" />
+          <path d="M14 2.8v5h5" />
+        </g>
+        <text
+          x="12.4"
+          y="17.6"
+          text-anchor="middle"
+          font-family="'Exo 2',sans-serif"
+          font-weight="700"
+          font-size="5.6"
+          fill="currentColor"
+        >
+          PDF
+        </text>
+      </symbol>
+      <symbol id="i-open" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+          <path d="M14 4h6v6M20 4l-9 9" />
+          <path d="M18 14v6H4V6h6" />
+        </g>
+      </symbol>
+      <symbol id="i-down" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+          <path d="M12 3v12M7 10l5 5 5-5M4 20h16" />
+        </g>
+      </symbol>
+      <symbol id="i-prev" viewBox="0 0 24 24">
+        <path d="M14.5 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" />
+      </symbol>
+      <symbol id="i-next" viewBox="0 0 24 24">
+        <path d="M9.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" />
+      </symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12" stroke="currentColor" stroke-width="2.2" /></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M6 12h12M12 6v12" stroke="currentColor" stroke-width="2.2" /></symbol>
+    </svg>
+    <div class="reveal">
+      <div class="slides">
+        <section data-title="Landing" aria-label="Slide 1: Landing">
+          <div class="cv">
+            <svg class="a" style="left: 62px; top: 303px" width="343" height="417" viewBox="0 0 343 417" aria-hidden="true">
+              <polygon points="0,0 301,0 343,42 343,417 0,417" fill="var(--stone)" />
+            </svg>
+            <svg class="a" style="left: 62px; top: 303px" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
+              <path d="M2 42V2h40" fill="none" stroke="var(--ember)" stroke-width="4" />
+            </svg>
+            <svg class="a" style="left: 442px; top: 598px" width="137" height="71" viewBox="0 0 137 71" aria-hidden="true">
+              <rect x="0" y="0" width="5" height="5" fill="var(--apricot)" />
+              <rect x="22" y="0" width="5" height="5" fill="var(--apricot)" />
+              <rect x="44" y="0" width="5" height="5" fill="var(--apricot)" />
+              <rect x="66" y="0" width="5" height="5" fill="var(--apricot)" />
+              <rect x="88" y="0" width="5" height="5" fill="var(--apricot)" />
+              <rect x="110" y="0" width="5" height="5" fill="var(--apricot)" />
+              <rect x="132" y="0" width="5" height="5" fill="var(--apricot)" />
+              <rect x="0" y="22" width="5" height="5" fill="var(--apricot)" />
+              <rect x="22" y="22" width="5" height="5" fill="var(--apricot)" />
+              <rect x="44" y="22" width="5" height="5" fill="var(--apricot)" />
+              <rect x="66" y="22" width="5" height="5" fill="var(--apricot)" />
+              <rect x="88" y="22" width="5" height="5" fill="var(--apricot)" />
+              <rect x="110" y="22" width="5" height="5" fill="var(--apricot)" />
+              <rect x="132" y="22" width="5" height="5" fill="var(--apricot)" />
+              <rect x="0" y="44" width="5" height="5" fill="var(--apricot)" />
+              <rect x="22" y="44" width="5" height="5" fill="var(--apricot)" />
+              <rect x="44" y="44" width="5" height="5" fill="var(--apricot)" />
+              <rect x="66" y="44" width="5" height="5" fill="var(--apricot)" />
+              <rect x="88" y="44" width="5" height="5" fill="var(--apricot)" />
+              <rect x="110" y="44" width="5" height="5" fill="var(--apricot)" />
+              <rect x="132" y="44" width="5" height="5" fill="var(--apricot)" />
+              <rect x="0" y="66" width="5" height="5" fill="var(--apricot)" />
+              <rect x="22" y="66" width="5" height="5" fill="var(--apricot)" />
+              <rect x="44" y="66" width="5" height="5" fill="var(--apricot)" />
+              <rect x="66" y="66" width="5" height="5" fill="var(--apricot)" />
+              <rect x="88" y="66" width="5" height="5" fill="var(--apricot)" />
+              <rect x="110" y="66" width="5" height="5" fill="var(--apricot)" />
+              <rect x="132" y="66" width="5" height="5" fill="var(--apricot)" />
+            </svg>
+            <svg class="a" style="left: 63px; top: 0" width="575" height="9" viewBox="0 0 575 9" aria-hidden="true">
+              <rect width="352" height="9" fill="var(--ember)" />
+              <rect x="352" width="120" height="9" fill="var(--warm)" />
+              <rect x="472" width="103" height="9" fill="var(--apricot)" />
+            </svg>
+            <svg class="a" style="left: 636px; top: 88px" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="32" r="26" fill="none" stroke="var(--apricot)" stroke-width="7" />
+            </svg>
+            <svg class="a" style="left: 612px; top: 214px" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <rect x="4" y="4" width="12" height="12" fill="var(--ember)" transform="rotate(45 10 10)" />
+            </svg>
+            <div class="a t h" style="top: 220px; font-size: 63px; font-weight: 600; color: var(--ember); left: 105px">
+              Hi There,
+            </div>
+            <div class="a t h" style="top: 309px; font-size: 63px; font-weight: 600; color: var(--ink); left: 105px">
+              I’m Anton Kozyriev
+            </div>
+            <div class="a t" style="top: 483px; font-size: 27px; font-weight: 400; color: var(--ember); left: 107px">
+              Machine Learning Engineer
+              <svg
+                style="position: absolute; left: 100%; margin-left: 28px; top: 22px"
+                width="212"
+                height="2"
+                viewBox="0 0 212 2"
+                aria-hidden="true"
+              >
+                <rect width="212" height="2" rx="1" fill="url(#gLine)" />
+              </svg>
+            </div>
+            <img
+              class="a ph"
+              style="
+                left: 740px;
+                top: 0;
+                width: 540px;
+                height: 617px;
+                object-position: top;
+                clip-path: polygon(16.67% 0, 100% 0, 100% 100%, 2.38% 100%);
+                -webkit-clip-path: polygon(16.67% 0, 100% 0, 100% 100%, 2.38% 100%);
+              "
+              src="img/profile.png"
+              alt="Anton Kozyriev, Machine Learning Engineer"
+              loading="eager"
+              decoding="async"
+            />
+            <svg class="a" style="left: 640px; top: 0" width="640" height="720" viewBox="0 0 640 720" aria-hidden="true">
+              <polygon points="112.875,617 640,617 640,720 100.0,720" fill="var(--graphite)" />
+              <polygon points="116,0 120,0 30,720 26,720" fill="var(--apricot)" />
+              <polygon points="134,0 142,0 52,720 44,720" fill="var(--warm)" />
+              <polygon points="158,0 176,0 86,720 68,720" fill="var(--ember)" />
+            </svg>
+            <div class="a t" style="left: 800px; top: 655px; font-size: 21px; font-weight: 400; color: #fff">
+              linkedin.com/in/anton-kozyriev
+            </div>
+            <svg class="a" style="left: 1115px; top: 659px" width="10" height="14" viewBox="0 0 10 14" aria-hidden="true">
+              <rect width="4" height="14" fill="var(--ember)" />
+            </svg>
+            <div class="a t" style="left: 1130px; top: 655px; font-size: 21px; font-weight: 400; color: #fff">iamkay.dev</div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        width: 1280,
+        height: 720,
+        margin: 0.02,
+        minScale: 0.05,
+        maxScale: 4,
+        center: true,
+        hash: true,
+        controls: true,
+        controlsTutorial: false,
+        progress: true,
+        transition: "slide",
+        scrollActivationWidth: null,
+      });
+    </script>
+  </body>
+</html>
