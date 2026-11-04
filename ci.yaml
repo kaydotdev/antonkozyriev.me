@@ -16,3 +16,8 @@ static_sites:
       - path: /
 ingress:
   rules:
+    - component:
+        name: antonkozyriev-me
+      match:
+        path:
+          prefix: /
