@@ -10,9 +10,8 @@ static_sites:
       repo: kaydotdev/antonkozyriev.me
     name: antonkozyriev-me
     source_dir: src
-    output_dir: dist/
+    output_dir: /
     index_document: index.html
-    build_command: 'mkdir -p dist && find . -mindepth 1 -maxdepth 1 ! -name dist -exec cp -R {} dist/ \;'
     routes:
       - path: /
 ingress:
