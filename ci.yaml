@@ -14,10 +14,3 @@ static_sites:
     index_document: index.html
     routes:
       - path: /
-ingress:
-  rules:
-    - component:
-        name: antonkozyriev-me
-      match:
-        path:
-          prefix: /
