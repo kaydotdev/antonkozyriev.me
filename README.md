@@ -57,6 +57,7 @@ Machine Learning, Finance & Risk Assessment, Data Science, NLP, Numerical Optimi
 | Infrastructure         | Docker, Podman, Kubernetes, Terraform, Cloudformation, Git/GitHub, GitHub Actions                                                                                                                         |
 | Backend                | FastAPI, Django, SQLAlchemy, Scrapy                                                                                                                                                                       |
 | Quality & Tooling      | pytest, ruff, Jupyter, Matplotlib, Plotly, Seaborn, Splunk                                                                                                                                                |
+| Publishing             | XeLaTeX                                                                                                                                                                                                   |
 
 ## PUBLICATIONS
 
