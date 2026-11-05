@@ -186,8 +186,12 @@
             <svg class="a" style="left: 612px; top: 214px" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
               <rect x="4" y="4" width="12" height="12" fill="var(--ember)" transform="rotate(45 10 10)" />
             </svg>
-            <div class="a t h" style="top: 220px; font-size: 63px; font-weight: 600; color: var(--ember); left: 105px">
-              Hi There,
+            <div
+              id="greeting-title"
+              class="a t h"
+              style="top: 220px; font-size: 63px; font-weight: 600; color: var(--ember); left: 105px"
+            >
+              Hi there,
             </div>
             <div class="a t h" style="top: 309px; font-size: 63px; font-weight: 600; color: var(--ink); left: 105px">
               I’m Anton Kozyriev
@@ -243,6 +247,25 @@
     <script src="js/reveal.js"></script>
     <script src="js/blurhash.js"></script>
     <script>
+      function getGreeting(timeZone) {
+        try {
+          const options = { hour: "numeric", hourCycle: "h23" };
+          if (timeZone) options.timeZone = timeZone;
+
+          const hour = parseInt(new Intl.DateTimeFormat("en-US", options).format(new Date()), 10);
+
+          if (Number.isNaN(hour) || hour < 0 || hour > 23) return "Hi there,";
+          if (hour >= 5 && hour < 12) return "Good morning,";
+          if (hour >= 12 && hour < 18) return "Good afternoon,";
+
+          return "Good evening,";
+        } catch (e) {
+          return "Hi there,";
+        }
+      }
+
+      document.getElementById("greeting-title").textContent = getGreeting();
+
       Reveal.initialize({
         width: 1280,
         height: 720,
