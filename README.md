@@ -6,8 +6,8 @@ Senior Machine Learning Engineer - https://iamkay.dev
 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0a6 6 0 1 1 0 12A6 6 0 1 1 6 0" fill="#e8590c"/><path d="M3.739 3.987a.712.712 0 1 0 1.425 0 .712.712 0 1 0-1.425 0m0 4.026a.712.712 0 1 0 1.425 0 .712.712 0 1 0-1.425 0m3.097-3.097a.712.712 0 1 0 1.425 0 .712.712 0 1 0-1.425 0m-2.385-.217v2.602m3.098-1.673c0 1.053-3.097.681-3.097 1.673" fill="none" stroke="#fff" stroke-width=".619" stroke-linecap="round"/></svg> [kaydotdev](https://github.com/kaydotdev)
 <svg xmlns="http://www.w3.org/2000/svg" class="bd" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0a6 6 0 1 1 0 12A6 6 0 1 1 6 0" fill="#e8590c"/><path d="m7.083 5.256-.599.797q-.042.067-.107.127-.065.061-.107.089v.014q.042.025.107.098t.107.148l.68 1.02h-.766L5.61 6.257l.709-1.001Zm-1.531-.959.002 1.344q0 .161-.017.315-.017.155-.055.303.031.14.05.292t.02.28v.718h-.685V4.297Zm.321 1.765v.418h-.535v-.418Z" fill="#fff"/></svg> [antonkozyriev](https://www.kaggle.com/antonkozyriev)
 
-I am an ML Engineer with 7 years of experience and expertise in NLP, recommendation systems, FinTech and 
-optimization theory. My expertise is underpinned by a PhD in a STEM field and peer-reviewed publications in 
+I am an ML Engineer with 7 years of experience in the domains of natural language processing, recommendation systems,
+FinTech and optimization theory. My expertise is underpinned by a PhD in a STEM field and peer-reviewed publications in 
 prestigious academic journals, including ones indexed in Scopus Q2. I specialize in taking models from research 
 to production across the full MLOps lifecycle.
 
@@ -57,5 +57,47 @@ Machine Learning, Finance & Risk Assessment, Data Science, NLP, Numerical Optimi
 | Infrastructure         | Docker, Podman, Kubernetes, Terraform, Cloudformation, Git/GitHub, GitHub Actions                                                                                                                         |
 | Backend                | FastAPI, Django, SQLAlchemy, Scrapy                                                                                                                                                                       |
 | Quality & Tooling      | pytest, ruff, Jupyter, Matplotlib, Plotly, Seaborn, Splunk                                                                                                                                                |
+
+## PUBLICATIONS
+
+### Constrained Global Optimization by Smoothing
+2025 | Book chapter  
+DOI: [10.1007/978-3-031-81241-5_10](https://doi.org/10.1007/978-3-031-81241-5_10)  
+Contributors: Vladimir Norkin; Alois Pichler; Anton Kozyriev
+
+### Contemporary Stochastic Quasi‐gradient Algorithms
+Stochastic Modeling and Optimization Methods for Critical Infrastructure Protection 2  
+2025-04-25 | Book chapter  
+DOI: [10.1002/9781394372539.ch6](https://doi.org/10.1002/9781394372539.ch6)  
+ISBN: [9781836690283](https://www.worldcat.org/isbn/9781836690283)  
+ISBN: [9781394372539](https://www.worldcat.org/isbn/9781394372539)
+
+### Robust clustering on high-dimensional data with stochastic quantization
+International Scientific Technical Journal "Problems of Control and Informatics"  
+2025-02-25 | Journal article  
+DOI: [10.34229/1028-0979-2025-1-3](https://doi.org/10.34229/1028-0979-2025-1-3)  
+Contributors: Anton Kozyriev; Vladimir Norkin
+
+### Lossy Image Compression with Stochastic Quantization
+Cybernetics and Computer Technologies  
+2024-09-24 | Journal article  
+DOI: [10.34229/2707-451X.24.3.6](https://doi.org/10.34229/2707-451x.24.3.6)  
+Contributors: Anton Kozyriev; Vladimir Norkin
+
+### Modern stochastic quasi-gradient optimization algorithms
+International Scientific Technical Journal "Problems of Control and Informatics"  
+2024-03-26 | Journal article | Author  
+DOI: [10.34229/1028-0979-2024-2-6](https://doi.org/10.34229/1028-0979-2024-2-6)  
+Part of ISSN: [2786-6505](https://portal.issn.org/resource/ISSN/2786-6505)  
+Part of ISSN: [2786-6491](https://portal.issn.org/resource/ISSN/2786-6491)  
+Contributors: Vladimir Norkin; Anton Kozyriev; Bogdan Norkin
+
+### On Shor's r-Algorithm for Problems with Constraints
+Cybernetics and Computer Technologies  
+2023-09-29 | Journal article  
+DOI: [10.34229/2707-451x.23.3.2](https://doi.org/10.34229/2707-451x.23.3.2)  
+Part of ISSN: [2707-451X](https://portal.issn.org/resource/ISSN/2707-451X)  
+Part of ISSN: [2707-4501](https://portal.issn.org/resource/ISSN/2707-4501)  
+Contributors: Vladimir Norkin; Anton Kozyriev
 
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg)](https://www.digitalocean.com/?refcode=7367a160fb6b&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
