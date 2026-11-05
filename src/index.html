@@ -204,8 +204,8 @@
                 <rect width="212" height="2" rx="1" fill="url(#gLine)" />
               </svg>
             </div>
-            <img
-              class="a ph"
+            <canvas
+              class="a ph bh"
               style="
                 left: 740px;
                 top: 0;
@@ -215,11 +215,14 @@
                 clip-path: polygon(16.67% 0, 100% 0, 100% 100%, 2.38% 100%);
                 -webkit-clip-path: polygon(16.67% 0, 100% 0, 100% 100%, 2.38% 100%);
               "
-              src="img/profile.png"
-              alt="Anton Kozyriev, Machine Learning Engineer"
-              loading="eager"
-              decoding="async"
-            />
+              width="32"
+              height="37"
+              role="img"
+              aria-label="Anton Kozyriev, Machine Learning Engineer"
+              data-blurhash="|CHeas_4~oIV8_9ZE3%L%2~oxa9ba_%2xu%LofM{4nMwVXt7kqxtxFaekWIVROxYahx[NGRPt6W=-p%MozWBIBoJX8WCs.%Nt8NaRPnhWBtRoyV@W?RkaxxtxuoLWBfQR*E1Rjxaj]R,t6n$WCozxtoeoLjbofR*oLWBRk"
+              data-src="img/profile.png"
+              data-alt="Anton Kozyriev, Machine Learning Engineer"
+            ></canvas>
             <svg class="a" style="left: 640px; top: 0" width="640" height="720" viewBox="0 0 640 720" aria-hidden="true">
               <polygon points="112.875,617 640,617 640,720 100.0,720" fill="var(--graphite)" />
               <polygon points="116,0 120,0 30,720 26,720" fill="var(--apricot)" />
@@ -238,6 +241,7 @@
       </div>
     </div>
     <script src="js/reveal.js"></script>
+    <script src="js/blurhash.js"></script>
     <script>
       Reveal.initialize({
         width: 1280,

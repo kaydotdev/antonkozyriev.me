@@ -107,6 +107,22 @@ body {
   overflow: visible;
   display: block;
 }
+.cv canvas.ph {
+  display: block;
+  background: var(--stone);
+}
+.cv img.bh-img {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.cv img.bh-img.in {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cv img.bh-img {
+    transition: none;
+  }
+}
 .sprite {
   position: absolute;
   width: 0;
