@@ -15,7 +15,8 @@ body {
 .reveal .slides {
   text-align: left;
 }
-.reveal .slides > section {
+.reveal .slides > section,
+.reveal .slides > section > section {
   padding: 0;
   height: 100%;
   box-sizing: border-box;
