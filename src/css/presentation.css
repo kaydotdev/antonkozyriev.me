@@ -1,34 +1,3 @@
-@font-face {
-  font-family: "Exo 2";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(../fonts/exo2/Exo2-Variable.woff) format("woff");
-}
-@font-face {
-  font-family: "Exo 2";
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(../fonts/exo2/Exo2-Italic-Variable.woff) format("woff");
-}
-:root {
-  --graphite: #2b2f36;
-  --ember: #e8590c;
-  --warm: #f28c28;
-  --apricot: #ffb562;
-  --stone: #ede9e3;
-  --ink: #2b2f36;
-  --text: #3a3e45;
-  --body: #8a8580;
-  --line: #e4dfd7;
-  --stone-2: #f4f1ec;
-  --apricot-2: #ffe6cc;
-  --bar: #e8590c;
-  --track: #ede9e3;
-  --green: #78c81f;
-  --stage: #1e2126;
-}
 html,
 body {
   margin: 0;
