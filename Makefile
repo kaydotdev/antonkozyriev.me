@@ -11,3 +11,5 @@ format:
 
 download-vendor:
 	@wget -O src/js/reveal.js https://cdnjs.cloudflare.com/ajax/libs/reveal.js/6.0.2/reveal.min.js
+	@wget -O src/css/reset.css https://cdnjs.cloudflare.com/ajax/libs/reveal.js/6.0.2/reset.min.css
+	@wget -O src/css/reveal.css https://cdnjs.cloudflare.com/ajax/libs/reveal.js/6.0.2/reveal.min.css
