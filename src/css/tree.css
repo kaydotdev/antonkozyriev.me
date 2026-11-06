@@ -1,0 +1,258 @@
+.tree button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.tree button:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 3px;
+}
+.tree .tr-links {
+  pointer-events: none;
+}
+.tree .tr-link,
+.tree .tr-cn {
+  fill: none;
+  stroke: #ddd7ce;
+  stroke-width: 1.6;
+  transition:
+    stroke 0.25s,
+    stroke-width 0.25s,
+    opacity 0.3s;
+}
+.tree .tr-link-hi {
+  fill: none;
+  stroke: var(--ember);
+  stroke-width: 2.4;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.tree .tr-link-hi.is-hl,
+.tree .tr-link-hi.is-f {
+  opacity: 1;
+}
+.tree .tr-cn.is-hl {
+  stroke: var(--ember);
+}
+.tree.has-hl:not(.has-focus) .tr-link:not(.is-hl),
+.tree.has-hl:not(.has-focus) .tr-cn:not(.is-hl) {
+  opacity: 0.45;
+}
+.tree.has-focus .tr-link:not(.is-f):not(.is-hl) {
+  opacity: 0.45;
+}
+.tree.has-focus .tr-cn {
+  opacity: 0;
+}
+.tree .tr-root {
+  background: var(--graphite);
+  box-shadow: 0 14px 30px rgba(43, 47, 54, 0.18);
+  transition: background 0.25s;
+}
+.tree .tr-root:hover {
+  background: var(--ember);
+}
+.tree .tr-pass {
+  pointer-events: none;
+}
+.tree .tr-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 0 0 13px;
+  border-radius: 0;
+  background: #fff;
+  border: 2px solid var(--line);
+  border-left: 4px solid var(--apricot);
+  box-shadow: 0 4px 12px rgba(43, 47, 54, 0.06);
+  transition:
+    background 0.25s,
+    border-color 0.25s,
+    opacity 0.3s,
+    box-shadow 0.25s;
+}
+.tree .tr-pill .nm {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--graphite);
+  line-height: 1;
+  padding-top: 1px;
+  transition: color 0.25s;
+}
+.tree .tr-pill .ct {
+  width: 34px;
+  align-self: stretch;
+  background: var(--stone);
+  color: var(--ember);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.tree .tr-pill.is-hl {
+  border-color: var(--ember);
+}
+.tree .tr-pill.is-f {
+  background: var(--ember);
+  border-color: var(--ember);
+  border-left-color: var(--graphite);
+  box-shadow: 0 8px 20px rgba(232, 89, 12, 0.3);
+}
+.tree .tr-pill.is-f .nm {
+  color: #fff;
+}
+.tree .tr-pill.is-f .ct {
+  background: #fff;
+}
+.tree.has-hl:not(.has-focus) .tr-pill:not(.is-hl) {
+  opacity: 0.55;
+}
+.tree.has-focus .tr-pill:not(.is-f) {
+  opacity: 0.55;
+}
+.tree.has-focus .tr-pill:not(.is-f).is-hl {
+  opacity: 0.95;
+}
+.tree .tr-ov {
+  transition:
+    opacity 0.3s,
+    transform 0.35s;
+}
+.tree .chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 0;
+  background: var(--stone-2);
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    opacity 0.25s,
+    box-shadow 0.2s;
+}
+.tree .chip.grp {
+  justify-content: flex-start;
+  gap: 3px;
+  padding: 0 3px 0 9px;
+  background: var(--apricot-2);
+}
+.tree .chip.grp b {
+  font-weight: 600;
+  color: var(--graphite);
+  margin-right: 6px;
+}
+.tree .chip .sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  height: 14px;
+  border-radius: 0;
+  background: #fff;
+  font-size: 11px;
+  color: var(--text);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.tree .tr-ov.is-hl .chip {
+  background: var(--ember);
+  color: #fff;
+}
+.tree .tr-ov.is-hl .chip.grp {
+  background: var(--graphite);
+}
+.tree .tr-ov.is-hl .chip.grp b {
+  color: #fff;
+}
+.tree .tr-ov.is-hl .sub {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.tree.has-hl:not(.has-focus) .tr-ov:not(.is-hl) .chip:not(.is-twin) {
+  opacity: 0.32;
+}
+.tree .chip.is-twin {
+  box-shadow: 0 0 0 2px var(--ember);
+}
+.tree .tr-ov:not(.is-hl) .chip.is-twin {
+  background: #fff;
+  color: var(--ember);
+}
+.tree.has-focus .tr-ov {
+  opacity: 0;
+  transform: translateX(18px);
+  pointer-events: none;
+}
+.tree .tr-fx {
+  visibility: hidden;
+  pointer-events: none;
+  transition: visibility 0s linear 0.45s;
+}
+.tree .tr-fx.is-f {
+  visibility: visible;
+  transition-delay: 0s;
+}
+.tree .tr-fx > svg,
+.tree .tr-fx .lf {
+  pointer-events: none;
+}
+.tree .tr-fx path {
+  fill: none;
+  stroke: #f2a766;
+  stroke-width: 1.6;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) calc(var(--i) * 16ms);
+}
+.tree .tr-fx path.l3 {
+  stroke: #f8cfa6;
+}
+.tree .tr-fx.is-f path {
+  stroke-dashoffset: 0;
+}
+.tree .tr-fx .mk {
+  fill: var(--ember);
+  opacity: 0;
+  transition: opacity 0.3s calc(120ms + var(--i) * 16ms);
+}
+.tree .tr-fx .mk.mid {
+  fill: var(--graphite);
+}
+.tree .tr-fx.is-f .mk {
+  opacity: 1;
+}
+.tree .tr-fx .lf {
+  opacity: 0;
+  transform: translateX(-8px);
+  transition:
+    opacity 0.3s calc(140ms + var(--i) * 16ms),
+    transform 0.35s calc(140ms + var(--i) * 16ms);
+}
+.tree .tr-fx.is-f .lf {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tree * {
+    transition: none !important;
+  }
+}

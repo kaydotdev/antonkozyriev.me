@@ -25,7 +25,7 @@ resources, <ins>resulting in 70% reduction of computation time</ins>;
  - **Machine Learning Engineer, Postello.ai** Delivered a product for solving autoregressive social media content 
 generation from the ground up with domain fine-tuned Decoder-only Transformer that <ins>achieved 2.5x lower perplexity 
 score than open state-of-the-art Decoder-only models (GPT-J)</ins>. Built the core backend services and EMR ETL pipelines 
-and deployed the model to Sagemaker Endpoints. The product earned startup-award nominations and a funding offer from 
+and deployed the model to SageMaker Endpoints. The product earned startup-award nominations and a funding offer from 
 the [Ukrainian Startup Foundation](https://youtu.be/lXGvvYhNWLA?si=e6gDJcCGnPIbvYqd);
  - **Intern ML Researcher, National Research Foundation of Ukraine** Designed novel global optimization algorithms for 
 non-convex loss functions under government research grant 2020.02/0121, <ins>achieving a 10x reduction in convergence 
@@ -46,18 +46,18 @@ Machine Learning, Finance & Risk Assessment, Data Science, NLP, Numerical Optimi
 
 ## TECHNICAL SKILLS
 
-| Languages              | Python, C++, SQL (PL/SQL, PostgreSQL)                                                                                                                                                                     |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ML & Deep Learning     | PyTorch, Lightning, Tensorflow, Keras, scikit-learn, CatBoost, XGBoost, Numpy, Scipy, pandas, optuna, Bedrock, Anthropic SDK, Huggingface Transformer, Langchain, FAISS, ChromaDB                         |
-| Optimization & Serving | ONNX Runtime, llama.cpp, TensorRT, KServe, vLLM                                                                                                                                                           |
-| MLOps & Tracking       | MLFlow, TensorBoard, Sagemaker                                                                                                                                                                            |
-| Amazon Web Services    | EC2, EKS, ECR, Fargate, S3, Lambda, SQS, ElastiCache, Glue, Athena, EMR, RDS / AuroraDB, API Gateway, KMS, Sagemaker, Bedrock, Cloudformation, Cloudwatch, Transcribe, IAM, Secrets Manager, CodeArtifact |
-| Cloud (Other)          | DigitalOcean                                                                                                                                                                                              |
-| Big Data               | Apache Spark / Pyspark, Kafka, Airflow, Snowflake, Databricks, pgvector, Redis, RabbitMQ                                                                                                                  |
-| Infrastructure         | Docker, Podman, Kubernetes, Terraform, Cloudformation, Git/GitHub, GitHub Actions                                                                                                                         |
-| Backend                | FastAPI, Django, SQLAlchemy, Scrapy                                                                                                                                                                       |
-| Quality & Tooling      | pytest, ruff, Jupyter, Matplotlib, Plotly, Seaborn, Splunk                                                                                                                                                |
-| Publishing             | XeLaTeX                                                                                                                                                                                                   |
+| Languages              | Python, C++, SQL (PL/SQL, PostgreSQL)                                                                                                                                                                      |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ML & Deep Learning     | PyTorch (Lightning), scikit-learn, CatBoost, XGBoost, Numpy, Scipy, pandas, optuna, Huggingface Transformer, Langchain, FAISS, ChromaDB, Jupyter, Matplotlib, Plotly, Seaborn                              |
+| Optimization & Serving | ONNX Runtime, llama.cpp, TensorRT, KServe, vLLM                                                                                                                                                            |
+| MLOps & Tracking       | MLFlow, TensorBoard                                                                                                                                                                                        |
+| Amazon Web Services    | EC2, EKS, ECR, Fargate, S3, Lambda, RDS (AuroraDB), SQS, ElastiCache, Glue, Athena, EMR, API Gateway, KMS, SageMaker (Bedrock), Transcribe, Cloudformation, Cloudwatch, IAM, Secrets Manager, CodeArtifact |
+| Cloud (Other)          | DigitalOcean                                                                                                                                                                                               |
+| Big Data               | Apache Spark (Pyspark), Kafka, Snowflake, Databricksr, Redis (Valkey), RabbitMQ                                                                                                                            |
+| Infrastructure         | Docker (Podman), Kubernetes, Terraform, Git, GitHub (Actions), Splunk                                                                                                                                      |
+| Backend                | FastAPI, Django, SQLAlchemy, Scrapy                                                                                                                                                                        |
+| Quality & Tooling      | pytest, ruff, cProfile                                                                                                                                                                                     |
+| Publishing             | XeLaTeX                                                                                                                                                                                                    |
 
 ## PUBLICATIONS
 
