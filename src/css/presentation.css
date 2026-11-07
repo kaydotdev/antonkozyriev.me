@@ -69,9 +69,6 @@ body {
 .cv img.mono {
   filter: grayscale(0.75) brightness(1.04);
 }
-.cv img.mono2 {
-  filter: grayscale(1) contrast(1.08) brightness(1.03);
-}
 .cv svg {
   overflow: visible;
   display: block;
