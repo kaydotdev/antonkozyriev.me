@@ -1,5 +1,7 @@
 {
   "plugins": ["prettier-plugin-organize-attributes"],
+  "printWidth": 128,
+  "htmlWhitespaceSensitivity": "css",
   "attributeGroups": ["^class$", "^(id|name)$", "$DEFAULT", "^data-", "^aria-"],
   "attributeSort": "ASC"
 }
