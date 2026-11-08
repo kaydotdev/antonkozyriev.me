@@ -170,3 +170,40 @@ body {
   line-height: 1;
   white-space: nowrap;
 }
+.cv .framework-attribution {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 30px;
+  padding: 12px 0 11px;
+  box-sizing: border-box;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.cv .framework-attribution b {
+  font-weight: 600;
+  color: var(--graphite);
+  border-bottom: 1.5px solid var(--ember);
+  padding-bottom: 1px;
+}
+.cv .framework-attribution .j {
+  margin-left: 1.5px;
+}
+.cv .framework-attribution svg {
+  flex: none;
+  color: var(--ember);
+  transition: transform 0.2s;
+}
+.cv .framework-attribution:hover svg,
+.cv .framework-attribution:focus-visible svg {
+  transform: translate(2px, -2px);
+}
+.cv .framework-attribution:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 2px;
+}
