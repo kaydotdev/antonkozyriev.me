@@ -1,4 +1,4 @@
-PRETTIER ?= prettier
+PRETTIER ?= "node_modules/prettier/bin/prettier.cjs"
 PYTHON   ?= python3
 
 .PHONY: format serve download-vendor
