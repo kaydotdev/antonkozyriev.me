@@ -1,0 +1,63 @@
+.fragment.education-card .card {
+  height: 95px;
+  background: #fff;
+  transition:
+    height 100ms linear,
+    background 600ms ease-out;
+}
+.fragment.education-card.current-fragment .card {
+  height: 168px;
+  background: var(--ember);
+}
+.education-card b {
+  font-weight: 700;
+}
+.education-card-title {
+  color: var(--ember);
+  font-weight: 400;
+  font-size: 19px;
+  transition: color 600ms ease-out;
+}
+.fragment.education-card.current-fragment .education-card-title {
+  color: #fff;
+}
+.education-card .p {
+  opacity: 0;
+  transition: opacity 600ms ease-out;
+}
+.fragment.education-card.current-fragment .p {
+  opacity: 1;
+  transition-delay: 200ms;
+}
+.education-card-location {
+  color: #999;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  transition: color 600ms ease-out;
+}
+.fragment.education-card.current-fragment .education-card-location {
+  color: #fff;
+}
+svg.status-bit {
+  fill: var(--placeholder);
+  transition: fill 100ms linear;
+}
+.fragment.education-card.current-fragment .status-bar {
+  height: 162px;
+  animation: stretch 100ms linear forwards;
+}
+@keyframes stretch {
+  from {
+    height: 162px;
+  }
+  to {
+    height: 235px;
+  }
+}
+.fragment.education-card.current-fragment ~ .education-card {
+  transform: translate(0, 73px);
+}
+.fragment.education-card.current-fragment + svg.status-bit {
+  fill: var(--ember);
+}

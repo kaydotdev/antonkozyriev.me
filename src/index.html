@@ -26,6 +26,7 @@
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/reveal.css" rel="stylesheet" />
     <link href="css/presentation.css" rel="stylesheet" />
+    <link href="css/fragments.css" rel="stylesheet" />
     <link href="css/tree.css" rel="stylesheet" />
     <link href="favicon.svg" rel="icon" type="image/svg+xml" />
   </head>
@@ -167,7 +168,9 @@
         <path d="M9.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="2.2" />
       </symbol>
       <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12" stroke="currentColor" stroke-width="2.2" /></symbol>
-      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M6 12h12M12 6v12" stroke="currentColor" stroke-width="2.2" /></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24">
+        <path d="M6 12h12M12 6v12" stroke="currentColor" stroke-width="2.2" />
+      </symbol>
       <symbol id="i-down-arrow" viewBox="0 0 1024 1024">
         <path
           d="M989.44 339.84a36.8 36.8 0 0 0-6.72-10.56 32 32 0 0 0-45.44 0 36.8 36.8 0 0 0-6.72 10.56A26.56 26.56 0 0 0 928 352a32 32 0 1 0 64 0 32 32 0 0 0-2.56-12.16m-145.28 62.4-96 75.52A32 32 0 0 0 787.84 528l96-75.52a32 32 0 0 0-39.68-50.24m-192 151.04L512 663.36 83.84 326.72a32 32 0 0 0-39.68 50.24l448 352a32 32 0 0 0 39.68 0l160-125.76a32 32 0 0 0-39.68-50.24z"
@@ -280,9 +283,9 @@
               <a
                 class="a framework-attribution"
                 href="https://revealjs.com/"
+                rel="noopener"
                 style="left: 107px; top: 650px"
                 target="_blank"
-                rel="noopener"
                 aria-label="Made with RevealJS"
                 ><span
                   >Made with <b>Reveal<span class="j">JS</span></b></span
@@ -420,7 +423,7 @@
                 data-src="img/kpi.png"
                 aria-label="Photo by [Myko Makh](https://unsplash.com/@mykomoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/a-large-building-with-a-lawn-in-front-of-it-TXaLnwqxus0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
               ></canvas>
-              <div class="a t h" style="top: 106px; font-size: 63px; font-weight: 600; color: var(--ink); left: 640px">
+              <div class="a t h" style="top: 88px; font-size: 63px; font-weight: 600; color: var(--ink); left: 640px">
                 <span class="b">Edu</span>cation
                 <svg
                   height="2"
@@ -432,57 +435,140 @@
                   <rect fill="url(#gLine)" height="2" rx="1" width="133" />
                 </svg>
               </div>
-              <svg class="a" height="294" style="left: 655px; top: 232px" viewBox="0 0 2 294" width="2" aria-hidden="true">
-                <rect fill="var(--line)" height="294" width="2"></rect></svg
-              ><svg class="a" height="30" style="left: 641px; top: 231px" viewBox="0 0 30 30" width="30" aria-hidden="true">
-                <circle cx="15" cy="15" fill="var(--ember)" r="15"></circle></svg
-              ><svg class="a" height="30" style="left: 641px; top: 364px" viewBox="0 0 30 30" width="30" aria-hidden="true">
-                <circle cx="15" cy="15" fill="var(--warm)" r="15"></circle>
+              <div class="fragment custom education-card">
+                <svg
+                  class="a status-bar"
+                  height="162"
+                  preserveAspectRatio="none"
+                  style="left: 655px; top: 214px"
+                  viewBox="0 0 2 162"
+                  width="2"
+                  aria-hidden="true"
+                >
+                  <rect fill="var(--line)" height="162" width="2"></rect>
+                </svg>
+                <svg class="a" height="30" style="left: 641px; top: 214px" viewBox="0 0 30 30" width="30" aria-hidden="true">
+                  <circle cx="15" cy="15" fill="var(--warm)" r="15"></circle>
+                </svg>
+                <div class="a card" style="left: 700px; top: 214px; width: 490px"></div>
+                <div class="a t education-card-title" style="top: 239px; left: 731px">
+                  <b>Ph. D.,</b> Applied mathematics, 2022 - 2026
+                </div>
+                <div class="a t education-card-location" style="top: 272px; left: 731px">
+                  Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
+                </div>
+                <div
+                  class="a p"
+                  style="
+                    left: 731px;
+                    top: 308px;
+                    width: 440px;
+                    font-size: 13px;
+                    line-height: 26px;
+                    color: #fff;
+                    font-weight: 400;
+                    text-align: left;
+                  "
+                >
+                  Parabolic equation theory, modern optimization theory, soft computing theory, thesis defence
+                </div>
+              </div>
+              <svg
+                class="a status-bit"
+                height="4"
+                style="left: 1088px; top: 683px"
+                viewBox="0 0 167 4"
+                width="167"
+                aria-hidden="true"
+              >
+                <rect height="4" rx="2" width="22" x="72" y="0" />
               </svg>
-              <svg class="a" height="30" style="left: 641px; top: 496px" viewBox="0 0 30 30" width="30" aria-hidden="true">
-                <circle cx="15" cy="15" fill="var(--warm)" r="15"></circle>
+              <div class="fragment custom education-card">
+                <svg
+                  class="a status-bar"
+                  height="162"
+                  preserveAspectRatio="none"
+                  style="left: 655px; top: 346px"
+                  viewBox="0 0 2 162"
+                  width="2"
+                  aria-hidden="true"
+                >
+                  <rect fill="var(--line)" height="162" width="2"></rect>
+                </svg>
+                <svg class="a" height="30" style="left: 641px; top: 346px" viewBox="0 0 30 30" width="30" aria-hidden="true">
+                  <circle cx="15" cy="15" fill="var(--warm)" r="15"></circle>
+                </svg>
+                <div class="a card" style="left: 700px; top: 346px; width: 490px"></div>
+                <div class="a t education-card-title" style="top: 371px; left: 731px">
+                  <b>M. Sc.,</b> Applied mathematics, 2020 - 2022
+                </div>
+                <div class="a t education-card-location" style="top: 404px; left: 731px">
+                  Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
+                </div>
+                <div
+                  class="a p"
+                  style="
+                    left: 731px;
+                    top: 440px;
+                    width: 440px;
+                    font-size: 13px;
+                    line-height: 26px;
+                    color: #fff;
+                    font-weight: 400;
+                    text-align: left;
+                  "
+                >
+                  Numerical methods, machine learning, data analysis, risk theory, big data, applied modeling, distributed
+                  computing, fuzzy mathematics
+                </div>
+              </div>
+              <svg
+                class="a status-bit"
+                height="4"
+                style="left: 1088px; top: 683px"
+                viewBox="0 0 167 4"
+                width="167"
+                aria-hidden="true"
+              >
+                <rect height="4" rx="2" width="22" x="109" y="0" />
               </svg>
-              <div class="a" style="left: 700px; top: 232px; width: 490px; height: 95px; background: var(--ember)"></div>
-              <div class="a t" style="top: 257px; font-size: 19px; font-weight: 400; color: #fff; left: 731px">
-                Ph. D., Applied mathematics, 2022 - 2026
+              <div class="fragment custom education-card">
+                <svg class="a" height="30" style="left: 641px; top: 478px" viewBox="0 0 30 30" width="30" aria-hidden="true">
+                  <circle cx="15" cy="15" fill="var(--warm)" r="15"></circle>
+                </svg>
+                <div class="a card" style="left: 700px; top: 478px; width: 490px"></div>
+                <div class="a t education-card-title" style="top: 503px; left: 731px">
+                  <b>B. Sc.,</b> Applied mathematics, 2016 - 2020
+                </div>
+                <div class="a t education-card-location" style="top: 536px; left: 731px">
+                  Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
+                </div>
+                <div
+                  class="a p"
+                  style="
+                    left: 731px;
+                    top: 572px;
+                    width: 440px;
+                    font-size: 13px;
+                    line-height: 26px;
+                    color: #fff;
+                    font-weight: 400;
+                    text-align: left;
+                  "
+                >
+                  Linear algebra, computing systems architecture, discrete mathematics, differential calculus, field theory,
+                  mathematical logic, probability theory
+                </div>
               </div>
-              <div
-                class="a t"
-                style="
-                  top: 290px;
-                  font-size: 12px;
-                  font-weight: 400;
-                  color: rgba(255, 255, 255, 0.85);
-                  font-style: italic;
-                  left: 731px;
-                "
+              <svg
+                class="a status-bit"
+                height="4"
+                style="left: 1088px; top: 683px"
+                viewBox="0 0 167 4"
+                width="167"
+                aria-hidden="true"
               >
-                Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
-              </div>
-              <div class="a card" style="left: 700px; top: 364px; width: 490px; height: 95px; background: #fff"></div>
-              <div class="a t" style="top: 389px; font-size: 19px; font-weight: 400; color: var(--ember); left: 731px">
-                M. Sc., Applied mathematics, 2020 - 2022
-              </div>
-              <div
-                class="a t"
-                style="top: 422px; font-size: 12px; font-weight: 400; color: #999; font-style: italic; left: 731px"
-              >
-                Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
-              </div>
-              <div class="a card" style="left: 700px; top: 496px; width: 490px; height: 95px; background: #fff"></div>
-              <div class="a t" style="top: 521px; font-size: 19px; font-weight: 400; color: var(--ember); left: 731px">
-                B. Sc., Applied mathematics, 2016 - 2020
-              </div>
-              <div
-                class="a t"
-                style="top: 554px; font-size: 12px; font-weight: 400; color: #999; font-style: italic; left: 731px"
-              >
-                Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
-              </div>
-              <svg class="a" height="4" style="left: 1088px; top: 683px" viewBox="0 0 167 4" width="167" aria-hidden="true">
-                <rect fill="var(--ember)" height="4" rx="2" width="22" x="72" y="0" />
-                <rect fill="var(--placeholder)" height="4" rx="2" width="22" x="109" y="0" />
-                <rect fill="var(--placeholder)" height="4" rx="2" width="23" x="144" y="0" />
+                <rect height="4" rx="2" width="23" x="144" y="0" />
               </svg>
             </div>
           </section>
