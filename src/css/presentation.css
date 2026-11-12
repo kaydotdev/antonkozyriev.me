@@ -197,13 +197,28 @@ body {
 .cv .framework-attribution svg {
   flex: none;
   color: var(--ember);
-  transition: transform 0.2s;
-}
-.cv .framework-attribution:hover svg,
-.cv .framework-attribution:focus-visible svg {
-  transform: translate(2px, -2px);
 }
 .cv .framework-attribution:focus-visible {
   outline: 2px solid var(--ember);
   outline-offset: 2px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cv .framework-attribution svg {
+    transition: transform 0.2s;
+  }
+  .cv .framework-attribution:hover svg,
+  .cv .framework-attribution:focus-visible svg {
+    transform: translate(2px, -2px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cv img.bh-img,
+  .reveal .controls,
+  .cv .idrow span {
+    transition: none;
+  }
+
+  .reveal .down-arrow {
+    animation: none;
+  }
 }

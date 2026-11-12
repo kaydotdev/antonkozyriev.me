@@ -61,3 +61,18 @@ svg.status-bit {
 .fragment.education-card.current-fragment + svg.status-bit {
   fill: var(--ember);
 }
+@media (prefers-reduced-motion: reduce) {
+  .fragment.education-card,
+  .fragment.education-card .card,
+  .education-card-title,
+  .education-card-location,
+  .education-card .p,
+  svg.status-bit {
+    transition: none !important;
+  }
+
+  .fragment.education-card.current-fragment .status-bar {
+    animation: none !important;
+    height: 235px !important;
+  }
+}

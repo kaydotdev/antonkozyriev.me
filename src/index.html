@@ -1797,6 +1797,8 @@
 
       document.getElementById("greeting-title").textContent = getGreeting();
 
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
       Reveal.initialize({
         width: 1280,
         height: 720,
@@ -1807,12 +1809,19 @@
         hash: true,
         controls: true,
         controlsTutorial: false,
-        progress: true,
-        transition: "slide",
+        progress: !reduceMotion.matches,
+        transition: reduceMotion.matches ? "none" : "slide",
         transitionSpeed: "default",
         scrollActivationWidth: null,
         navigationMode: "linear",
         mouseWheel: true,
+      });
+
+      reduceMotion.addEventListener("change", (e) => {
+        Reveal.configure({
+          progress: !e.matches,
+          transition: e.matches ? "none" : "slide",
+        });
       });
     </script>
   </body>
