@@ -3,5 +3,13 @@
   "printWidth": 128,
   "htmlWhitespaceSensitivity": "css",
   "attributeGroups": ["^class$", "^(id|name)$", "$DEFAULT", "^data-", "^aria-"],
-  "attributeSort": "ASC"
+  "attributeSort": "ASC",
+  "overrides": [
+    {
+      "files": ["src/css/reset.css", "src/css/reveal.css"],
+      "options": {
+        "requirePragma": true
+      }
+    }
+  ]
 }
